@@ -1,0 +1,39 @@
+body {
+	overflow: hidden;
+	margin: 0;
+}
+
+.well {
+	transition: 1s cubic-bezier(0.5, 0, 0.5, 1);
+}
+
+.panel {
+	height: 100vh;
+    width: 100%;
+	box-sizing: border-box;
+    
+}
+.bloque1{
+    background-image: url(../img/portada.jpg);
+    background-size:cover;
+}
+.panel:nth-child(2) {
+    background: #6c9b56;
+}
+
+.panel:nth-child(3) {
+    background-color:aqua
+}
+
+.panel:nth-child(4) {
+    background: #345678;
+}
+
+.panel:nth-child(5) {
+    background: #456789;
+}
+@media screen and (max-width: 440px){
+    .bloque1{
+    background-image: url(../img/portada-movil2.jpg);
+    }
+}
