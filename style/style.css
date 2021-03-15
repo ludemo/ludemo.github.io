@@ -16,10 +16,10 @@ body {
 .bloque1{
     background-image: url(../img/portada.jpg);
     background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
 }
-.panel:nth-child(2) {
-    background: #6c9b56;
-}
+
 
 .panel:nth-child(3) {
     background-color:aqua
@@ -35,5 +35,11 @@ body {
 @media screen and (max-width: 440px){
     .bloque1{
     background-image: url(../img/portada-movil2.jpg);
+    }
+    .bloque2{
+    background-image: url(../img/portada-movil.jpg);    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
     }
 }
