@@ -11,11 +11,17 @@ body {
 	height: 100vh;
     width: 100%;
 	box-sizing: border-box;
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .bloque1{
     background-image: url(../img/portada.jpg);
     background-size:cover;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .panel:nth-child(2) {
     background: #6c9b56;
@@ -34,6 +40,6 @@ body {
 }
 @media screen and (max-width: 440px){
     .bloque1{
-    background-image: url(../img/portada-movil2.jpg);
+        background-image: url(../img/portada-movil2.jpg);
     }
 }
