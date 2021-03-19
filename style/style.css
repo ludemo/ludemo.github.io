@@ -8,24 +8,17 @@ body {
 }
 
 .panel {
-	height: 100vh;
-    width: 100%;
+	height:100vh;
+    width: 100vw;
 	box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 .bloque1{
     background-image: url(../img/portada.jpg);
     background-size:cover;
-    width: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background-position:center;
+    background-repeat: no-repeat;
 }
-.panel:nth-child(2) {
-    background: #6c9b56;
-}
+
 
 .panel:nth-child(3) {
     background-color:aqua
@@ -40,6 +33,13 @@ body {
 }
 @media screen and (max-width: 440px){
     .bloque1{
-        background-image: url(../img/portada-movil2.jpg);
+    background-image: url(../img/portada-movil2.jpg);
+    background-attachment: fixed;    
+}
+    .bloque2{
+    background-image: url(../img/portada-movil.jpg);    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
     }
 }
