@@ -20,7 +20,9 @@ body {
     background-repeat: no-repeat;
 }
 
-
+.panel:nth-child(2) {
+    background-color: skyblue;
+}
 .panel:nth-child(3) {
     background-color:aqua
 }
@@ -30,17 +32,64 @@ body {
 }
 
 .panel:nth-child(5) {
-    background: #456789;
+    background: purple;
 }
+
+.bolitas{
+    position: fixed;
+    left: 25px;
+    top: 232px;
+    z-index: 100;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bolita{
+    border-radius: 100%;
+    width: 13px;
+    height: 13px;
+    background-color: rgba(208, 208, 208, 1);
+    margin-bottom: 24px;
+    
+}
+.bolita:nth-child(1){
+    width: 23px;
+    height: 23px;
+    background-color: white;
+}
+.bolita:nth-child(5){
+    margin-bottom: 0px;
+}
+
 @media screen and (max-width: 440px){
     .bloque1{
-    background-image: url(../img/portada-movil2.jpg);
-    background-attachment: fixed;    
-}
+        background-image: url(../img/portada-movil2.jpg);
+        background-attachment: fixed;    
+    }
     .bloque2{
-    background-image: url(../img/portada-movil.jpg);    
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position:center;
+        background-image: url(../img/portada-movil.jpg);    
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position:center;
+    }
+
+    .bolitas{
+        top: 25px;
+    }
+}
+
+@media screen and (max-width: 710px) and (min-width: 441px){
+    .bolitas{
+        top: 25px;
+    }
+    .bolita{
+        margin-bottom: 15px;
+        width: 10px;
+        height: 10px;
+    }
+    .bolita:nth-child(1){
+        width: 18px;
+        height: 18px;
     }
 }
