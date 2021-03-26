@@ -4,15 +4,20 @@
 }
 .bloque2{
     position:relative;
-    display:grid;
-    width:100%;
-    grid-template-columns: repeat(3,1fr);
+    display:flex;
+    flex-wrap: wrap;
+    width:100vw;
+    overflow-x: hidden;
+}
+.servicio:hover{
+    flex-grow:2;
 }
 .servicio{
     position: relative;
+    flex-grow: 1;
     height:100vh;
-    width: 100%;
     color:rgb(255, 255, 255);
+    transition: flex-grow 0.6s cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
     font-family: BebasNeue;
     font-weight: 400;
 }
@@ -27,6 +32,7 @@
     align-items: flex-end;
 }
 .box{
+    transition: width 1s ease;
     position:relative;
     width: 60%;
     height: 30%;
@@ -36,21 +42,24 @@
     background-color: rgb(0, 0, );
     text-align: start;
     display: block;
-    font-size:4em;
+    font-size:3.5em;
     margin:0;
 }
 .servicio .text h2.subtitle2{
-    font-size:4.5em;
+    font-size:4em;
     text-align: end;
 }
 .servicio:nth-child(3) .box{
     width: 70%;
 }
+.servicio:hover .box{
+    width:50%;
+}
 .servicio:nth-child(3) .text .subtitle1{
-    font-size:4.5em;
+    font-size:4em;
 }
 .servicio:nth-child(3) .text .subtitle2{
-    font-size:4em;
+    font-size:3.5em;
 }
 .servicio img{
     position:absolute;
@@ -85,4 +94,30 @@
     width: 10px;
     border-radius: 50%;
     background:rgb(255, 255, 255);
+}
+/*Mediaquery*/
+@media screen and (max-width: 900px){
+    .servicio .text h2{
+        font-size:2.8em;
+    }
+    .servicio .text h2.subtitle2{
+        font-size:3.2em;
+    }
+    .servicio:nth-child(3) .text .subtitle1{
+        font-size:3.2em;
+    }
+    .servicio:nth-child(3) .text .subtitle2{
+        font-size:2.8em;
+    }
+}
+@media screen and (max-width:700px){
+    .bloque2{
+		width: 100vw;
+        flex-direction: column;
+        overflow-x: scroll;
+    }
+    .servicio{
+        width: 100vw;
+    }
+
 }

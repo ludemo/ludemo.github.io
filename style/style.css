@@ -1,6 +1,5 @@
 body {
 	margin: 0;
-    overflow: hidden;
 }
 
 .well {
@@ -59,7 +58,7 @@ body {
 }
 @media screen and (max-width: 440px){
     .bloque1{
-        background-image: url(../img/portada-movil2.jpg);
+        background-image: url(../img/portada-movil.jpg);
         background-attachment: fixed;    
     }
     .bloque2{
