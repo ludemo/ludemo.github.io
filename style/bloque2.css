@@ -1,0 +1,88 @@
+@font-face {
+    font-family:"BebasNeue";
+    src: url('../fonts/BebasNeue-Regular.ttf')
+}
+.bloque2{
+    position:relative;
+    display:grid;
+    width:100%;
+    grid-template-columns: repeat(3,1fr);
+}
+.servicio{
+    position: relative;
+    height:100vh;
+    width: 100%;
+    color:rgb(255, 255, 255);
+    font-family: BebasNeue;
+    font-weight: 400;
+}
+.servicio .text{
+    position:absolute;
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    z-index: 10000;
+    align-items: flex-end;
+}
+.box{
+    position:relative;
+    width: 60%;
+    height: 30%;
+    margin:30px;
+}
+.servicio .text h2{
+    background-color: rgb(0, 0, );
+    text-align: start;
+    display: block;
+    font-size:4em;
+    margin:0;
+}
+.servicio .text h2.subtitle2{
+    font-size:4.5em;
+    text-align: end;
+}
+.servicio:nth-child(3) .box{
+    width: 70%;
+}
+.servicio:nth-child(3) .text .subtitle1{
+    font-size:4.5em;
+}
+.servicio:nth-child(3) .text .subtitle2{
+    font-size:4em;
+}
+.servicio img{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.servicio .text .division{
+    position:absolute;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+}
+.servicio .text .division::after{
+    content:"";
+    display:inline-block;
+    position:absolute;
+    left:0;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background:rgb(255, 255, 255);
+}
+.servicio .text .division::before{
+    content:"";
+    display:inline-block;
+    position:absolute;
+    right:0;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background:rgb(255, 255, 255);
+}

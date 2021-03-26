@@ -1,6 +1,6 @@
 body {
-	overflow: hidden;
 	margin: 0;
+    overflow: hidden;
 }
 
 .well {
@@ -9,7 +9,7 @@ body {
 
 .panel {
 	height:100vh;
-    width: 100vw;
+    width: 100%;
 	box-sizing: border-box;
 }
 .bloque1{
@@ -18,10 +18,6 @@ body {
     background-position:center;
     position:relative;
     background-repeat: no-repeat;
-}
-
-.panel:nth-child(2) {
-    background-color: skyblue;
 }
 .panel:nth-child(3) {
     background-color:aqua
