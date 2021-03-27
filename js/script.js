@@ -1,4 +1,9 @@
 (function() {
+	let bola1 = document.getElementById('bol1');
+    let bola2 = document.getElementById('bol2');
+	let bola3 = document.getElementById('bol3');
+    let bola4 = document.getElementById('bol4');
+	let bola5 = document.getElementById('bol5');
 	"use strict";
 	/*[pan and well CSS scrolls]*/
 	var pnls = document.querySelectorAll('.panel').length,
@@ -32,7 +37,49 @@
 			}, 1000);
 		}
 		console.log(scdir + ':' + slength + ':' + plength + ':' + (plength - plength / pnls));
+	/* wenas aqui la animacion de las bolitas*/
+		if(slength == 0){
+			crecer(bola1);
+			decrecer(bola2);
+			console.log('entro al if del script de angel xd');
+		}
+		if(slength == -100){
+			crecer(bola2);
+			decrecer(bola1);
+			decrecer(bola3);
+			console.log('entro al if del script de angel xd');
+		}
+		if(slength == -200){
+			crecer(bola3);
+			decrecer(bola2);
+			decrecer(bola4);
+			console.log('entro al if del script de angel xd');
+		}
+		if(slength == -300){
+			crecer(bola4);
+			decrecer(bola3);
+			decrecer(bola5);
+			console.log('entro al if del script de angel xd');
+		}
+		if(slength == -400){
+			crecer(bola5);
+			decrecer(bola4);
+			console.log('entro al if del script de angel xd');
+		}
 	}
+
+	function crecer(obj){
+		obj.style.width = '18px';
+		obj.style.height = '18px';
+		obj.style.backgroundColor = 'white';
+	}
+	function decrecer(obj){
+		obj.style.width = '8px';
+		obj.style.height = '8px';
+		obj.style.backgroundColor = 'rgba(208, 208, 208, 1)';
+	}
+	/* termina animación de las bolitas 
+	psdt: SÉ QUE ESTÁ DEL ASCO, PERO YA MEJORARÉ EL CODE ASI QUE NO TOQUE*/ 
 	/*[swipe detection on touchscreen devices]*/
 	function _swipe(obj) {
 		var swdir,
