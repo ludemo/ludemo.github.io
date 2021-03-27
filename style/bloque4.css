@@ -1,0 +1,155 @@
+@font-face {
+    font-family:"PoiretOne";
+    src: url('../fonts/PoiretOne.ttf')
+}
+body{
+    overflow-x: hidden;
+}
+.bloque4{
+    background-image: url(../img/fondo-portada-2.jpg);
+    background-size: cover;
+    font-family: PoiretOne;
+    position:relative;
+    border:2px solid black;
+}
+.bloque4 .footer .boxFooter{
+    padding:400px;
+    position:relative;
+    width: 100%;
+    height: 100%;
+}
+/* FOOTER */
+.mapa{
+	width: 100%;
+	height: 50vh;
+}
+.letras{ /* logo solo letras xd*/
+	width: 248px;
+	height: 46.66px;
+}
+.footer{ /*div general del footer*/
+	height: 50vh;
+    position:relative;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.explore{ /*SUFI TALLERES STUDIO*/
+    margin:25px 10px 20px;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+
+}
+.explore a{
+	font-size: 28px;
+	text-decoration: none;
+	color: white;
+	display: inline-block;
+	text-align: center;
+	padding: 6px 0px;
+
+}
+.explore a:nth-child(2),.explore a:nth-child(3){
+	margin-left: 275px;
+}
+.EfectoCool::after{
+	content: '';
+	display: block;
+	width: 0;
+	height: 1px;
+	background: #fff;
+	transition: width .3s;
+}
+.EfectoCool:hover::after{
+	width: 100%;
+	height: 1.5px;
+	transition: width .4s;
+}
+
+.Redes{ /*la recta de las redes*/
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	color: white;
+	font-family: PoiretOne;
+	margin-bottom: 25px;
+	width: 100%;
+}
+.Redes > div:nth-child(2){
+	margin-left: 60px;
+}
+.Redes > div:nth-child(3){
+	margin-left: 60px;
+}
+.Redes p{
+	color: white;
+	text-align: center;
+	margin-left: 7px; 
+	font-size: 20px;
+}
+.icono{ /* iconos de redes*/
+	height: 70px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+/*.icono:hover{ creo que no queda :v
+	background-color: rgba(255, 255, 255, 0.13);
+	border-radius: 100%;
+}*/
+.Red{ 
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+}
+/*Terminamos contenido*/
+@media screen and (max-width: 755px){
+.footer{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+.footer .explore{
+    flex-direction:column;
+    display:flex;
+    justify-content: center;
+
+}
+.footer .explore a{
+    margin-left: 0;
+    font-size:1.8em;
+}
+/*Fin del footer*/
+}
+@media screen and (max-width: 440px){
+    .footer img {
+        margin-top: 20px;
+        }
+        .footer .Redes{
+            display:flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .footer .Redes > div{
+            margin-left:0;
+        }
+        .footer .explore{
+            margin:10px 0;
+        }
+        .footer .Redes img{
+            height: 3em;
+            margin:4px;
+        }
+        .footer .explore a{
+            font-size:1.4em;
+            letter-spacing: 2.5px;
+        }  }
+        /*Parte final del responsive*/
