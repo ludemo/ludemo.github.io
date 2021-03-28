@@ -80,6 +80,7 @@
 	}
 	/* termina animación de las bolitas 
 	psdt: SÉ QUE ESTÁ DEL ASCO, PERO YA MEJORARÉ EL CODE ASI QUE NO TOQUE*/ 
+	
 	/*[swipe detection on touchscreen devices]*/
 	function _swipe(obj) {
 		var swdir,
