@@ -37,6 +37,7 @@
 			}, 1000);
 		}
 		console.log(scdir + ':' + slength + ':' + plength + ':' + (plength - plength / pnls));
+		
 	/* wenas aqui la animacion de las bolitas*/
 		if(slength == 0){
 			crecer(bola1);
