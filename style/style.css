@@ -70,20 +70,4 @@ body {
         height: 18px;
     }
 }
-
-@keyframes crecer{
-    from {
-        width: 18px;
-        height: 18px;
-        background-color: white;
-    }
-}
-
-@keyframes achicar{
-    from {
-        width: 8px;
-        height: 8px;
-        background-color: rgba(208, 208, 208, 1);
-    }
-}
 /*---------Fin del bloque de bolitas--------------*/

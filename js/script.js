@@ -37,6 +37,7 @@
 			}, 1000);
 		}
 		console.log(scdir + ':' + slength + ':' + plength + ':' + (plength - plength / pnls));
+
 	/* wenas aqui la animacion de las bolitas*/
 		if(slength == 0){
 			crecer(bola1);
@@ -80,6 +81,7 @@
 	}
 	/* termina animación de las bolitas 
 	psdt: SÉ QUE ESTÁ DEL ASCO, PERO YA MEJORARÉ EL CODE ASI QUE NO TOQUE*/ 
+	
 	/*[swipe detection on touchscreen devices]*/
 	function _swipe(obj) {
 		var swdir,
