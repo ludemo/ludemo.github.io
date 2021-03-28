@@ -1,6 +1,6 @@
 body {
 	margin: 0;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 .well {
@@ -39,14 +39,6 @@ body {
     
 }
 
-.bolita:nth-child(1){
-    width: 18px;
-    height: 18px;
-    background-color: white;
-}
-.bolita:nth-child(5){
-    margin-bottom: 0px;
-}
 @media screen and (max-width: 440px){
     .bloque1{
         background-image: url(../img/portada-movil.jpg);

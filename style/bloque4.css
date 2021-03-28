@@ -10,56 +10,67 @@ body{
     background-size: cover;
     font-family: PoiretOne;
     position:relative;
-    border:2px solid black;
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+
 }
-.bloque4 .footer .boxFooter{
-    padding:400px;
-    position:relative;
-    width: 100%;
-    height: 100%;
-}
+
 /* FOOTER */
 .mapa{
 	width: 100%;
 	height: 50vh;
 }
-.letras{ /* logo solo letras xd*/
+.footer{ /*div general del footer*/
+	min-height: 50vh;
+	width: 100%;
+    position:relative;
+
+	box-sizing: border-box;
+	display: grid;
+	grid-template-rows: repeat(4,1fr);
+}
+.footer > *{
+	margin-left:auto;
+	margin-right: auto;
+}
+.imgBox{
+	position: relative;
 	width: 248px;
 	height: 46.66px;
+	padding:20px;
+	margin-left: auto;
+	margin-right: auto;
 }
-.footer{ /*div general del footer*/
-	height: 50vh;
-    position:relative;
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+.letras{ /* logo solo letras xd*/
+		height: 100%;
+		width: 100%;
 }
 .explore{ /*SUFI TALLERES STUDIO*/
-    margin:25px 10px 20px;
-	width: 100%;
+	margin-top:10px;
+
+	position:relative;
+	width: 90vw;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-between;
 
 }
 .explore a{
-	font-size: 28px;
+	font-size: 2em;
 	text-decoration: none;
 	color: white;
+	position: relative;
 	display: inline-block;
 	text-align: center;
 	padding: 6px 0px;
 
 }
-.explore a:nth-child(2),.explore a:nth-child(3){
-	margin-left: 275px;
-}
+
 .EfectoCool::after{
 	content: '';
 	display: block;
 	width: 0;
+	position:absolute;
 	height: 1px;
 	background: #fff;
 	transition: width .3s;
@@ -73,35 +84,24 @@ body{
 .Redes{ /*la recta de las redes*/
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
 	color: white;
 	font-family: PoiretOne;
-	margin-bottom: 25px;
-	width: 100%;
+	position: relative;
+	width: 70%;
 }
-.Redes > div:nth-child(2){
-	margin-left: 60px;
-}
-.Redes > div:nth-child(3){
-	margin-left: 60px;
-}
+
 .Redes p{
 	color: white;
 	text-align: center;
 	margin-left: 7px; 
-	font-size: 20px;
+	font-size: 1.5em;
 }
 .icono{ /* iconos de redes*/
 	height: 70px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
 }
-/*.icono:hover{ creo que no queda :v
-	background-color: rgba(255, 255, 255, 0.13);
-	border-radius: 100%;
-}*/
+
 .Red{ 
 	display: flex;
 	flex-direction: row;
@@ -109,12 +109,13 @@ body{
 	justify-content: center;
 	text-decoration: none;
 }
+.Red ul{
+	padding-left: 0;
+}
 /*Terminamos contenido*/
 @media screen and (max-width: 755px){
-.footer{
-    display: flex;
-    flex-direction: row;
-    overflow: hidden;
+.footer .box p,.footer .box ul{
+	display: none;
 }
 .footer .explore{
     flex-direction:column;
@@ -131,25 +132,16 @@ body{
 @media screen and (max-width: 440px){
     .footer img {
         margin-top: 20px;
-        }
-        .footer .Redes{
-            display:flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .footer .Redes > div{
-            margin-left:0;
-        }
-        .footer .explore{
-            margin:10px 0;
-        }
-        .footer .Redes img{
-            height: 3em;
-            margin:4px;
-        }
-        .footer .explore a{
-            font-size:1.4em;
-            letter-spacing: 2.5px;
-        }  }
-        /*Parte final del responsive*/
+    }
+	.footer .Redes{
+		display: flex;
+		align-items: center;
+	}
+    .footer .Redes img{
+        height: 3em;
+    }
+    .footer .explore a{
+        font-size:1.4em;
+        letter-spacing: 2.5px;
+    }  }
+    /*Parte final del responsive*/
