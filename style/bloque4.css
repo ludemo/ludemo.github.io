@@ -141,7 +141,7 @@ body{
 		margin-left: 0;
     }  
 }
-@media screen and (max-height:340px){
+@media screen and (max-height:380px){
 	.footer .imgBox{
 		height:35px;
 		width: 170px;
