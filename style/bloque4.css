@@ -36,7 +36,7 @@ body{
 	position: relative;
 	width: 248px;
 	height: 46.66px;
-	padding:15px;
+	padding:10px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -45,7 +45,7 @@ body{
 		width: 100%;
 }
 .explore{ /*SUFI TALLERES STUDIO*/
-	margin-top:10px;
+	margin-top:5px;
 	position:relative;
 	width: 90vw;
 	display: flex;
@@ -97,7 +97,7 @@ body{
 	font-size: 1.5em;
 }
 .icono{ /* iconos de redes*/
-	height: 70px;
+	height: 60px;
 }
 
 .Red{ 
@@ -111,31 +111,18 @@ body{
 	padding-left: 0;
 }
 /*Terminamos contenido*/
-@media screen and (max-width: 755px){
-.footer .box p,.footer .box ul{
-	display: none;
-}
-.footer .imgBox{
-	padding:9px;
-}
-.footer .explore{
-    flex-direction:column;
-    display:flex;
-    justify-content: center;
-
-}
-.footer .Redes img{
-	height: 2.9em;
-}
-.footer .explore a{
-    margin-left: 0;
-    font-size:1.6em;
-}
-/*Fin del footer*/
-}
 @media screen and (max-width: 440px){
 	.footer .imgBox{
-		padding:8px;
+		padding:10px;
+	}
+	.footer{
+		align-items: center;
+	}
+	.footer .box p,.footer .box ul{
+		display: none;
+	}
+	.footer .explore{
+		flex-direction: column;
 	}
 	.footer .Redes{
 		display: flex;
@@ -143,9 +130,71 @@ body{
 	}
     .footer .Redes img{
         height: 3em;
+		
     }
+	.footer .derechos p{
+		margin:5px;
+	}
     .footer .explore a{
-        font-size:1.4em;
+        font-size:1.5em;
         letter-spacing: 2.5px;
-    }  }
+		margin-left: 0;
+    }  
+}
+@media screen and (max-height:380px){
+	.footer .imgBox{
+		height:35px;
+		width: 170px;
+	}
+	.footer .explore a.EfectoCool{
+		font-size:1.4em;
+	}
+	.bloque4 .footer .Redes .icono{
+		height: 40px;
+		padding:10px;
+	}
+}
+@media screen and (max-width: 700px) and (min-width: 440px){
+	.footer .box p,.footer .box ul{
+		display: none;
+	}
+	.footer .imgBox{
+		padding:3px;
+	}
+
+	.footer .explore{
+		display:flex;
+		justify-content: space-between;
+	}
+	.footer .Redes .icono{
+		height: 50px;
+	}
+	.footer .explore a{
+		margin-left: 0;
+		font-size:1.8em;
+	}
+	/*Fin del footer*/
+	}
+	.Red{
+		align-items: flex-start;
+	}
+	
     /*Parte final del responsive*/
+@media screen and (max-width: 850px)  and (min-width: 700px), (max-height:540px){
+	.footer .explore{
+		font-size:.9em;
+	}
+	.footer .Redes{
+		font-size:.8em;
+	}
+	.footer .derechos{
+		display: flex;
+		align-items: center;
+	}
+	.footer .derechos p{
+		margin:0;
+	}
+	.footer .Redes img{
+		height: 50px;
+	}
+}
