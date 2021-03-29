@@ -8,6 +8,12 @@ body {
     position:relative;
     background-repeat: no-repeat;
 }
+.bloque1 img{
+    display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 /*---------Bloque de bolitas--------------*/
 .bolitas{
     position: fixed;
@@ -29,15 +35,8 @@ body {
 }
 
 @media screen and (max-width: 440px){
-    .bloque1{
-        background-image: url(../img/portada-movil.jpg);
-        background-attachment: fixed;    
-    }
-    .bloque2{
-        background-image: url(../img/portada-movil.jpg);    
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position:center;
+    .bloque1 img{
+        display: block;
     }
     
     .bolitas{
@@ -45,18 +44,4 @@ body {
     }
 }
 
-@media screen and (max-width: 710px) and (min-width: 441px){
-    .bolitas{
-        top: 25px;
-    }
-    .bolita{
-        margin-bottom: 15px;
-        width: 10px;
-        height: 10px;
-    }
-    .bolita:nth-child(1){
-        width: 18px;
-        height: 18px;
-    }
-}
 /*---------Fin del bloque de bolitas--------------*/
