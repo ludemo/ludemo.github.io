@@ -133,7 +133,7 @@ body{
 }
 /*Fin del footer*/
 }
-@media screen and (max-width: 440px){
+@media screen and (max-width: 440px), (max-height:520px){
 	.footer .imgBox{
 		padding:8px;
 	}
@@ -147,5 +147,5 @@ body{
     .footer .explore a{
         font-size:1.4em;
         letter-spacing: 2.5px;
-    }  }
+}  }
     /*Parte final del responsive*/
