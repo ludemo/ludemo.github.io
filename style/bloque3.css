@@ -1,4 +1,67 @@
 .bloque3{
     background-image: url(../img/fondo-portada-1.jpg);
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+.bloque3 .boxComentario{
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    width: 70vw;
+}
+.bloque3 .boxComentario img{
+    height:100%;
+    width: 100%;
+    object-fit: cover;
+    position:relative;
+}
+.boxComentario .boxImg{
+    position:relative;
+    margin:0;
+    height: 100%;
+    display: inline-block;
+}
+.boxComentario .text{
+    width: 100%;
+    text-align: justify;
+    font-size:1.8em;
+    color:white;
+    position:relative;
+    display: inline-block;
+    padding:0 30px 10px;
+    display: grid;
+    grid-template-rows: repeat(6,1fr);
+    height: 100%;
+}
+.boxComentario .text .comentario{
+    grid-row:2/-1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.boxComentario .text .name{
+    display: flex;
+    align-items: center;
+    margin-top:10px;
+}
+.boxComentario .text p{
+    font-family:"PoiretOne";
+    margin:0;
+}
+.boxComentario .text h3{
+    font-family:"BebasNeue";
+    margin:0;
+    font-size: 1.5em;
+}
+/*Terminamos contenido*/
+@media screen and (max-width: 755px){
+    .boxComentario .text{
+            font-size: 1.4em;
+    }
+}
+@media screen and (max-width: 440px){
+
+}
+      

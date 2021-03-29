@@ -11,6 +11,7 @@
 }
 .servicio:hover{
     flex-grow:2;
+    cursor:pointer;
 }
 .servicio{
     position: relative;
