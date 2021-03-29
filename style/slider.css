@@ -29,8 +29,8 @@ section, .section {
     transform: translate(0, 0);
     transition: transform 0.4s ease-out;
     margin: 0; padding: 0;
-  
 }
+
 .page {
     flex: 1 0 100%;
     display: flex;
