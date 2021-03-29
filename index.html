@@ -10,19 +10,15 @@
   <link rel="stylesheet" href="style/bloque3.css">
   <link rel="stylesheet" href="style/bloque4.css">
   <link rel="stylesheet" href="style/normalize.css">
+  <link rel="stylesheet" href="style/slider.css">
 </head>
 <body>
 <!-- partial:index.partial.html -->
-<div class="bolitas">
-  <div class="bolita" id="bol1"></div>
-  <div class="bolita" id="bol2"></div>
-  <div class="bolita" id="bol3"></div>
-  <div class="bolita" id="bol4"></div>
-</div>
-<div class="well" id="well">
-	<div class="panel bloque1" id="b1"></div>
-	<div class="panel bloque2" id="b2"> 
-    <div class="servicio">
+
+<div id="wholepage">
+	<section class="page bloque1" id="b1"></section>
+	<section class="bloque2" id="b2"> 
+    <div class="page servicio" id="servicio">
       <div class="text">
         <div class="box">
           <h2 class="subtitle1">Suficiencia</h2>
@@ -32,7 +28,7 @@
       </div>
       <img src="img/suficiencia.jpg" alt="suficiencia">
     </div>
-    <div class="servicio">
+    <div class="page servicio" id="servicio">
       <div class="text">
         <div class="box">
           <h2 class="subtitle1">Nuestros</h2>
@@ -42,7 +38,7 @@
       </div>
       <img src="img/talleres.jpg" alt="talleres">
     </div>
-    <div class="servicio">
+    <div class="page servicio" id="servicio">
         <div class="text">
           <div class="box">
             <h2 class="subtitle1">estudio</h2>
@@ -52,8 +48,8 @@
         </div>
         <img src="img/estudio.jpg" alt="estudio">
     </div>
-  </div>
-  <div class="panel bloque3" id="b3">
+  </section>
+  <section class="page bloque3" id="b3">
     <div class="boxComentario">
       <div class="boxImg">
         <img src="img/estudiante.png" alt="">
@@ -67,8 +63,8 @@
         </div>
       </div>
     </div>
-  </div>
-  <div class="panel bloque4">
+  </section>
+  <section class="page bloque4">
     <div class="mapa">
       <iframe title="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d956.8867425860011!2d-71.53440177083614!3d-16.397024312732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91424a50dffcf135%3A0x3721a24f73a5595e!2sCalle%20Sta.%20Marta%20104%2C%20Arequipa%2004001!5e0!3m2!1ses!2spe!4v1611701161938!5m2!1ses!2spe" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     </div> 
@@ -109,7 +105,7 @@
         <p style="color: rgb(172, 172, 172); font-size: large;">Copyright © 2021 Skala Studio</p>
       </div>
     </div>
-</div>
+  </section>
 </div>
 <!-- Bot A-->
 <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
@@ -119,6 +115,9 @@
   agent-id="3db46454-f604-41d8-813c-64792c6dd849"
   language-code="es"
 ></df-messenger>
+ <!--  <script src="js/script.js"></script> -->
+  <script src="js/slider.js"></script>
   <script src="js/script.js"></script>
+
 </body>
 </html>

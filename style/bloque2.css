@@ -3,18 +3,14 @@
     src: url('../fonts/BebasNeue-Regular.ttf')
 }
 .bloque2{
-    position:relative;
     display:flex;
     flex-wrap: wrap;
-    width:100vw;
-    overflow-x: hidden;
 }
 .servicio:hover{
     flex-grow:2;
     cursor:pointer;
 }
 .servicio{
-    position: relative;
     flex-grow: 1;
     height:100vh;
     color:rgb(255, 255, 255);
@@ -112,13 +108,9 @@
     }
 }
 @media screen and (max-width:700px){
-    .bloque2{
-		width: 100vw;
-        flex-direction: column;
-        overflow-x: scroll;
-    }
-    .servicio{
-        width: 100vw;
-    }
 
+.bloque2
+{
+    flex-wrap: nowrap;
+}
 }
