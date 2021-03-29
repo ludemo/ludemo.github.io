@@ -133,6 +133,16 @@ body{
 }
 /*Fin del footer*/
 }
+@media screen and (max-width:755px) and (max-height:520px){
+	.footer .explore{
+		flex-direction:row;
+		justify-content: space-between;
+	}
+	.footer .explore a{
+		font-size:1.2em;
+	}
+
+} 
 @media screen and (max-width: 440px), (max-height:520px){
 	.footer .imgBox{
 		padding:8px;
@@ -147,5 +157,6 @@ body{
     .footer .explore a{
         font-size:1.4em;
         letter-spacing: 2.5px;
-}  }
+}  
+}
     /*Parte final del responsive*/
