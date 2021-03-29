@@ -124,7 +124,7 @@
 }
 
 
-@media screen and (max-width: 785px){
+@media screen and (max-width: 885px){
     /*.boxComentario .text{
             font-size: 1.4em;
     }*/
@@ -146,7 +146,7 @@
         margin-left: 11%;
     }
     .shadow{
-        width: 35%;
+        width: 34.5%;
         height: 100%;
     }
 }
