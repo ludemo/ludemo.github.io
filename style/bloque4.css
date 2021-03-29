@@ -118,6 +118,13 @@ body{
 	.footer .Redes{
 		font-size:.8em;
 	}
+	.footer .derechos{
+		display: flex;
+		align-items: center;
+	}
+	.footer .derechos p{
+		margin:0;
+	}
 	.footer .Redes img{
 		height: 50px;
 	}
