@@ -111,7 +111,76 @@ body{
 	padding-left: 0;
 }
 /*Terminamos contenido*/
-@media screen and (max-width: 850px){
+@media screen and (max-width: 440px){
+	.footer .imgBox{
+		padding:10px;
+	}
+	.footer{
+		align-items: center;
+	}
+	.footer .box p,.footer .box ul{
+		display: none;
+	}
+	.footer .explore{
+		flex-direction: column;
+	}
+	.footer .Redes{
+		display: flex;
+		align-items: center;
+	}
+    .footer .Redes img{
+        height: 3em;
+		
+    }
+	.footer .derechos p{
+		margin:5px;
+	}
+    .footer .explore a{
+        font-size:1.5em;
+        letter-spacing: 2.5px;
+		margin-left: 0;
+    }  
+}
+@media screen and (max-height:340px){
+	.footer .imgBox{
+		height:35px;
+		width: 170px;
+	}
+	.footer .explore a.EfectoCool{
+		font-size:1.4em;
+	}
+	.bloque4 .footer .Redes .icono{
+		height: 40px;
+		padding:10px;
+	}
+}
+@media screen and (max-width: 700px) and (min-width: 440px){
+	.footer .box p,.footer .box ul{
+		display: none;
+	}
+	.footer .imgBox{
+		padding:3px;
+	}
+
+	.footer .explore{
+		display:flex;
+		justify-content: space-between;
+	}
+	.footer .Redes .icono{
+		height: 50px;
+	}
+	.footer .explore a{
+		margin-left: 0;
+		font-size:1.8em;
+	}
+	/*Fin del footer*/
+	}
+	.Red{
+		align-items: flex-start;
+	}
+	
+    /*Parte final del responsive*/
+@media screen and (max-width: 850px)  and (min-width: 700px), (max-height:540px){
 	.footer .explore{
 		font-size:.9em;
 	}
@@ -129,39 +198,3 @@ body{
 		height: 50px;
 	}
 }
-@media screen and (max-width: 700px){
-.footer .box p,.footer .box ul{
-	display: none;
-}
-.footer .explore{
-    display:flex;
-    justify-content: space-between;
-}
-.footer .explore a{
-    margin-left: 0;
-    font-size:1.8em;
-}
-/*Fin del footer*/
-}
-@media screen and (max-width: 440px){
-	.footer .imgBox{
-		padding:5px;
-	}
-	.footer .explore{
-		flex-direction: column;
-	}
-	.footer .Redes{
-		display: flex;
-		align-items: center;
-	}
-    .footer .Redes img{
-        height: 3em;
-    }
-	.footer .derechos p{
-		margin:5px;
-	}
-    .footer .explore a{
-        font-size:1.4em;
-        letter-spacing: 2.5px;
-    }  }
-    /*Parte final del responsive*/
