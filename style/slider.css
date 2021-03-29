@@ -10,12 +10,12 @@ body {
     overflow-y: hidden;
     touch-action: none;
     overscroll-behavior-y: contain;
-}
 
+}
 #wholepage {
     display: block;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     position: fixed;
     overflow: hidden;
 }
@@ -31,11 +31,14 @@ section, .section {
     margin: 0; padding: 0;
   
 }
-
-
-body .page {
-    height:100vh;
+.page {
+    flex: 1 0 100%;
+    display: flex;
+    flex-direction: column;
     width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
     transform: translate(0, 0);
     transition: transform 0.4s ease-out;
 }
@@ -82,6 +85,9 @@ body .page {
     transform: scale(2.2);
     transition: transform 0.2s;
 }
+
+
+
 .page_selection {
     position: absolute;
     display: flex;

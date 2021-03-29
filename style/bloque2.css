@@ -13,6 +13,7 @@
 .servicio{
     flex-grow: 1;
     height:100vh;
+    position: relative;
     color:rgb(255, 255, 255);
     transition: flex-grow 0.6s cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
     font-family: BebasNeue;
@@ -108,9 +109,7 @@
     }
 }
 @media screen and (max-width:700px){
-
-.bloque2
-{
-    flex-wrap: nowrap;
-}
+   .bloque2{
+       flex-wrap: nowrap;
+   }
 }
