@@ -124,7 +124,7 @@
 }
 
 
-@media screen and (max-width: 755px){
+@media screen and (max-width: 785px){
     /*.boxComentario .text{
             font-size: 1.4em;
     }*/
@@ -137,12 +137,12 @@
         height: 26px;
     }
     .bloque3 h2{
-        font-size: 36px;
+        font-size: 35.5px;
         width: 70%;
-        margin-bottom: 11%;
+        margin-bottom: 8%;
     }
     .bloque3 p{
-        font-size: 18px;
+        font-size: 17.5px;
         margin-left: 11%;
     }
     .shadow{
