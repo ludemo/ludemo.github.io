@@ -4,7 +4,6 @@
 }
 .bloque2{
     display:flex;
-    flex-wrap: wrap;
 }
 .servicio:hover{
     flex-grow:2;
@@ -69,9 +68,9 @@
 .servicio .siguiente{
     z-index:1000;
     width: 85%;
-    display: flex;
     justify-content: space-between;
     padding:50px;
+    display: none;
 }
 .servicio .siguiente .flecha1{
     transform: rotate(180deg);
@@ -144,10 +143,8 @@
         font-size:2.5em;
     }
 }
-@media screen and (max-width:650px){
-    .bloque2{
+@media screen and (max-width:700px){
+    .servicio .siguiente{
         display: flex;
-        flex-wrap: nowrap;
     }
-
 }
