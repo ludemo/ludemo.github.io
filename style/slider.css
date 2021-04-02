@@ -56,8 +56,8 @@ section, .section {
 
 .sectionButtonContainer label, .page_selection label {
     display: inline-flex;
-    width: 4px;
-    height: 4px;
+    width: 5px;
+    height: 5px;
     border-radius: 50%;
     background: rgb(255, 255, 255, 0.8);
     transition: transform 0.2s;
@@ -82,7 +82,7 @@ section, .section {
 
 
 .sectionButtonContainer input[type=radio]:checked + label, .page_selection input[type=radio]:checked + label  {
-    transform: scale(2.2);
+    transform: scale(3.3);
     transition: transform 0.2s;
 }
 
