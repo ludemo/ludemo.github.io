@@ -15,24 +15,7 @@ body {
     object-fit: cover;
 }
 /*---------Bloque de bolitas--------------*/
-.bolitas{
-    position: fixed;
-    left: 25px;
-    top: 232px;
-    z-index: 100;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.bolita{
-    border-radius: 100%;
-    width: 8px;
-    height: 8px;
-    background-color: rgba(208, 208, 208, 1);
-    margin-bottom: 24px;
-    
-}
+
 
 @media screen and (max-width: 440px){
     .bloque1 img{
