@@ -18,6 +18,9 @@
     font-family: BebasNeue;
     font-weight: 400;
 }
+.servicio a{
+    color:#ffff;
+}
 .servicio .text{
     position:absolute;
     width:100%;

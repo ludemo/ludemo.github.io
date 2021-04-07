@@ -1,0 +1,44 @@
+@font-face {
+    font-family:"PoiretOne";
+    src: url('../fonts/PoiretOne.ttf')
+}
+.box-testimonios {
+    border: 1px solid #fff;
+    width: 70%;
+    height: 90vh;
+    position:relative;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.box-testimonios .text{
+    position: relative;
+    color:#fff;
+    border: 5px solid #fff;
+    border-right: none;
+    width: 70%;
+    height: 70%;
+    padding:40px 80px 40px 40px;
+}
+.box-testimonios .text h2{
+    font-family:"BebasNeue";
+    font-size: 50px;
+}
+.box-testimonios .text p{
+    font-size:30px;
+    font-family: "PoiretOne";
+}
+.box-testimonios .img{
+    height: 550px;
+    position: absolute;
+    z-index: 1000;
+    right: 0;
+    bottom: 0;
+} 
+/*Brochure*/
+.brochure{
+    height: 100px;
+    width: 100%;
+    background-color:#02484A;
+}
