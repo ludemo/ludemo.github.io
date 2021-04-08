@@ -61,6 +61,9 @@
 }
 }
 @media screen and (max-width: 1000px){
+    .titulo{
+        height: 70vh;
+    }
     .box-testimonios .contenido{
         width: 840px;
     }
@@ -83,18 +86,117 @@
     }
     .titulo .text .subtitle2{
         font-size:200px;
-        display: flex;
-        justify-content: flex-end;
     }
+    .titulo .text .division{
+        height: 2px;
+    }
+    .titulo .text .division::after{
+        height:20px;
+        width: 20px;
+
+    }
+    .titulo .text .division::before{
+        height: 20px;
+        width: 20px;
+
+    }
+    
 }
 @media screen and (max-width: 799px){
+    
+    .box-testimonios{
+        display: flex;
+        justify-content: center;
+    }
     .box-testimonios .contenido{
         display: flex;
-        flex-direction: column; 
+        justify-content: center;
     }
-    .box-testimonios .img-box{
-        position: absolute;
-        z-index: 1000;
-        margin-top:-125px;
-    } 
+    .box-testimonios  .contenido .img-box{
+        right: inherit;
+        width: 360px;
+        height: 390px;
+    }
+    .box-testimonios .contenido .text{
+        margin-bottom:260px;
+        margin-right: auto;
+        margin-left: auto;
+        width: 280px;
+        text-align: center;
+        padding:20px 20px 100px 20px;
+    }
+    .box-testimonios .text h2{
+        font-size: 30px;
+    }
+    .box-testimonios .text p{
+        font-size:20px;
+    }
+
+    .titulo .text .subtitle1{
+        font-size:100px;
+    
+    }
+    .titulo .text .subtitle2{
+        font-size:160px;
+    }
+    .titulo .text .division{
+        height: 2px;
+    }
+    .titulo .text .division::after{
+        height:15px;
+        width: 15px;
+
+    }
+    .titulo .text .division::before{
+        height: 15px;
+        width: 15px;
+
+    }
+}
+@media screen and (max-width: 530px){
+    
+    .titulo .text .subtitle1{
+        font-size:75px;
+    }
+    .titulo .text .subtitle2{
+        font-size:125px;
+    }
+    .titulo .text .division{
+        height: 2px;
+    }
+    .titulo .text .division::after{
+        height:15px;
+        width: 15px;
+
+    }
+    .titulo .text .division::before{
+        height: 15px;
+        width: 15px;
+    }
+    .box-testimonios  .contenido .img-box{
+        width: 330px;
+        height: 350px;
+    }
+    .box-testimonios .contenido .text{
+        margin-bottom:220px;
+    }
+}
+@media screen and (max-width: 400px){
+    
+    .titulo .text .subtitle1{
+        font-size:65px;
+    }
+    .titulo .text .subtitle2{
+        font-size:105px;
+    }
+    .box-testimonios  .contenido .img-box{
+        width: 300px;
+        height: 320px;
+    }
+    .box-testimonios .contenido .text{
+        margin-bottom:200px;
+    }
+    .box-testimonios .contenido{
+        width:290px;
+    }
 }
