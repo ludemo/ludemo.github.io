@@ -19,28 +19,82 @@
     color:#fff;
     border: 5px solid #fff;
     margin:117px auto 60px 103px;
-    padding:30px 120px 30px 30px
+    padding:30px 180px 30px 30px
 }
 .box-testimonios .text h2{
     font-family:"BebasNeue";
     font-size: 50px;
+    margin-top:0;
+}
+.box-testimonios .text .nombre{
+    margin-bottom: 0;;
 }
 .box-testimonios .text p{
     font-size:30px;
     font-family: "PoiretOne";
 }
-.box-testimonios .img{
-    width:460px;
-    height: 498px;
+.box-testimonios .img-box{
+    width:490px;
+    height: 528px;
     position: absolute;
     z-index: 1000;
     bottom: 0;
     right: 0;
-    margin:-125 auto 0 528px;
 } 
+.box-testimonios img{
+    width: 100%;
+    position: relative;
+    height: 100%;
+}
 /*Brochure*/
 .brochure{
     height: 100px;
     width: 100%;
     background-color:#02484A;
+}
+@media screen and (max-width: 1200px){
+.box-testimonios .text{
+    width: 526px;
+}
+.box-testimonios .contenido{
+    width: 980px;
+}
+}
+@media screen and (max-width: 1000px){
+    .box-testimonios .contenido{
+        width: 840px;
+    }
+    .box-testimonios .text{
+        width: 400px;
+    }
+    .box-testimonios .text h2{
+        font-size: 40px;
+    }
+    .box-testimonios .text p{
+        font-size:20px;
+    }
+    .box-testimonios .img-box{
+        width:430px;
+        height: 468px;
+    } 
+    .titulo .text .subtitle1{
+        font-size:130px;
+    
+    }
+    .titulo .text .subtitle2{
+        font-size:200px;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+@media screen and (max-width: 799px){
+    .box-testimonios .contenido{
+        display: flex;
+        flex-direction: column; 
+    }
+    .box-testimonios .img-box{
+        position: absolute;
+        z-index: 1000;
+        margin-top:-125px;
+    } 
 }

@@ -12,6 +12,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top:20px;
 }
 .titulo .text{
     position:absolute;
