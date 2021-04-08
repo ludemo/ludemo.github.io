@@ -3,23 +3,23 @@
     src: url('../fonts/PoiretOne.ttf')
 }
 .box-testimonios {
-    border: 1px solid #fff;
-    width: 70%;
-    height: 90vh;
+    width: 100%;
     position:relative;
     display: flex;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
+    justify-content: center;
+}
+.box-testimonios .contenido{
+    position: relative;
+    width: 1140px;
 }
 .box-testimonios .text{
+    width: 698px;
+    height: auto;
     position: relative;
     color:#fff;
     border: 5px solid #fff;
-    border-right: none;
-    width: 70%;
-    height: 70%;
-    padding:40px 80px 40px 40px;
+    margin:117px auto 60px 103px;
+    padding:30px 120px 30px 30px
 }
 .box-testimonios .text h2{
     font-family:"BebasNeue";
@@ -30,11 +30,13 @@
     font-family: "PoiretOne";
 }
 .box-testimonios .img{
-    height: 550px;
+    width:460px;
+    height: 498px;
     position: absolute;
     z-index: 1000;
-    right: 0;
     bottom: 0;
+    right: 0;
+    margin:-125 auto 0 528px;
 } 
 /*Brochure*/
 .brochure{
