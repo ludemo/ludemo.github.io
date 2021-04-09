@@ -67,3 +67,142 @@ body{
     border-radius: 50%;
     background:rgb(255, 255, 255);
 }
+
+/* BLOQUE MODALIDADES*/
+.modalidades{
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 10%;
+}
+.titulos{
+    font-family: BebasNeue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 86px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.blanco, .turquesa{
+    position: absolute;
+    width: 30%;
+    height: 80%;
+    left: 250px;
+    top: 1390px;
+
+    background: #E3DFDB;
+    border-radius: 39px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.modalidades ul{
+    padding-left: 30px;
+}
+.turquesa{
+    left: 710px;
+    background: #037071;
+}
+
+.check{
+    background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTIgNTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUyIDUyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8Zz4NCgk8cGF0aCBkPSJNMjYsMEMxMS42NjQsMCwwLDExLjY2MywwLDI2czExLjY2NCwyNiwyNiwyNnMyNi0xMS42NjMsMjYtMjZTNDAuMzM2LDAsMjYsMHogTTQwLjQ5NSwxNy4zMjlsLTE2LDE4DQoJCUMyNC4xMDEsMzUuNzcyLDIzLjU1MiwzNiwyMi45OTksMzZjLTAuNDM5LDAtMC44OC0wLjE0NC0xLjI0OS0wLjQzOGwtMTAtOGMtMC44NjItMC42ODktMS4wMDItMS45NDgtMC4zMTItMi44MTENCgkJYzAuNjg5LTAuODYzLDEuOTQ5LTEuMDAzLDIuODExLTAuMzEzbDguNTE3LDYuODEzbDE0LjczOS0xNi41ODFjMC43MzItMC44MjYsMS45OTgtMC45LDIuODIzLTAuMTY2DQoJCUM0MS4xNTQsMTUuMjM5LDQxLjIyOSwxNi41MDMsNDAuNDk1LDE3LjMyOXoiLz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K");
+    width: 29px;
+    height: 29px;
+    margin: 0px;
+    margin-right: 19px;
+}
+
+.turquesa .check{
+    color: #FFFFFF;
+}
+
+.montos{
+    font-family: BebasNeue;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: normal;
+    margin: 0px;
+    color: rgba(0, 0, 0, 1);
+}
+
+.turquesa .montos{
+    color: #FFFFFF;
+}
+
+.modalidades li{
+    font-family: PoiretOne;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+
+    list-style: none;
+    display: flex;
+    color: #000000;
+    align-items: center;
+    margin: 28px 0px;
+}
+.modalidades li:nth-child(1){
+    margin-top: 0px;
+}
+.modalidades li:nth-child(5){
+    margin-bottom: 0px;
+    align-items: flex-start;
+}
+.modalidades li p:nth-child(5){
+    align-items: flex-start;
+}
+.turquesa li{
+    color: #FFFFFF;
+}
+
+/* HORARIOS*/
+.horarios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10%;
+}
+.tabla{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    color: #FFFFFF;
+    grid-gap: 18px;
+    width: 45%;
+}
+.fila{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+}
+
+.nivel{
+    grid-column: 1;
+    border-radius: 25px;
+    font-family: BebasNeue;
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px; 
+}
+
+.fila:nth-child(1) .nivel{
+    background-color: rgba(1, 140, 148, 1);
+}
+.fila:nth-child(2) .nivel{
+    background-color: rgba(0, 105, 115, 1);
+}
+.fila:nth-child(3) .nivel{
+    background-color: rgba(2, 72, 74, 1);
+}
+
+.hora{
+    grid-column: 2;
+    font-family: PoiretOne;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+}
