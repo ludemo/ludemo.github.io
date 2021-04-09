@@ -1,0 +1,57 @@
+@font-face {
+    font-family:"PoiretOne";
+    src: url('../fonts/PoiretOne.ttf')
+}
+.brochure{
+    display: flex;
+    justify-content: center;
+    height: 130px;
+    width: 100%;
+    background-color:#02484A;
+}
+.brochure-box a{
+    color:#fff;
+    text-decoration: none;
+}
+.brochure-box{
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+    width:350px;
+    color:#fff;
+    font-family: "PoiretOne";
+    text-align: center;
+    font-size:18px;
+}
+.brochure-box p{
+    margin:0;
+}
+.brochure-box .descarga{
+    background-color: #013B3B;
+    padding:10px;
+    margin-bottom:5px;
+    border-radius: 5px;
+    margin-top:20px;
+}
+.brochure-box .descarga:hover{
+    background-color:#166b6ec9;
+    color:rgb(25, 29, 28);
+}
+.brochure-box .descarga img{
+    height: 20px;;
+    margin-left: 30px;
+}
+@media screen and (max-width: 400px){
+    .brochure-box{
+        font-size: 15px;
+    }
+    .brochure-box .descarga{
+        background-color: #013B3B;
+        padding:8px;
+        padding-top:5px;
+        margin-bottom:5px;
+        border-radius: 5px;
+        margin-top:20px;
+    }   
+}  

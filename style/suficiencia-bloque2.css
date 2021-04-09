@@ -47,11 +47,7 @@
     height: 100%;
 }
 /*Brochure*/
-.brochure{
-    height: 100px;
-    width: 100%;
-    background-color:#02484A;
-}
+
 @media screen and (max-width: 1200px){
 .box-testimonios .text{
     width: 526px;
