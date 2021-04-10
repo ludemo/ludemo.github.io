@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style/suficiencia-bloque2.css">
     <link rel="stylesheet" href="style/brochure.css">
     <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/bloque4.css">
 </head>
 <body>
     <div class="titulo">
@@ -44,28 +45,29 @@
 
     <div class="modalidades">
         <h2 class="titulos">Nuestras modalidades</h2>
-        <div class="blanco">
-            <h3 class="montos">S/. 180</h3>
-            <ul>
-                <li><p class="check"></p>4 semanas por nivel</li>
-                <li><p class="check"></p>40 h - lunes a viernes</li>
-                <li><p class="check"></p>100% virtual</li>
-                <li><p class="check"></p>Prácticas cada sesión</li>
-                <li><p class="check"></p>Asesoría 24 h - lunes a viernes</li>
-            </ul>
+        <div class="conte">
+            <div class="blanco">
+                <h3 class="montos">S/. 180</h3>
+                <ul>
+                    <li><p class="check"></p>4 semanas por nivel</li>
+                    <li><p class="check"></p>40 h - lunes a viernes</li>
+                    <li><p class="check"></p>100% virtual</li>
+                    <li><p class="check"></p>Prácticas cada sesión</li>
+                    <li><p class="check"></p>Asesoría 24 h - lunes a viernes</li>
+                </ul>
 
+            </div>
+            <div class="turquesa">
+                <h3 class="montos">S/. 210</h3>
+                <ul>
+                    <li><p class="check"></p>4 semanas por nivel</li>
+                    <li><p class="check"></p>48 h - lunes a sábado</li>
+                    <li><p class="check"></p>100% virtual</li>
+                    <li><p class="check"></p>Prácticas cada sesión</li>
+                    <li><p class="check"></p>Asesoría 24 h - lunes a sábado</li>
+                </ul>
+            </div>
         </div>
-        <div class="turquesa">
-            <h3 class="montos">S/. 210</h3>
-            <ul>
-                <li><p class="check"></p>4 semanas por nivel</li>
-                <li><p class="check"></p>48 h - lunes a sábado</li>
-                <li><p class="check"></p>100% virtual</li>
-                <li><p class="check"></p>Prácticas cada sesión</li>
-                <li><p class="check"></p>Asesoría 24 h - lunes a sábado</li>
-            </ul>
-        </div>
-
     </div>
 
     <div class="horarios">
@@ -87,5 +89,51 @@
 
         </div>
     </div>
+
+    <div class="fondo-footer">
+        <div class="footer">
+            <div class="imgBox">
+                <a href="index.html"><img srcset="img/Skala-Letras.png 473w" class="letras" alt="skala-logo"></a>
+            </div>
+            <h3> CONTÁCTANOS </h3>
+            <div class="Redes">
+                <!--Facebook-->
+                <div class="box">
+                    <a href="https://www.facebook.com/studioskala" class="Red">
+                    <img class="icono" src="img/Facebook.png" alt="facebook">
+                    <p>/StudioSkala</p>
+                    </a>
+                </div>
+                    <!--Instagram-->
+                <div class="box">
+                    <a href="https://www.instagram.com/skalastudio_arquitectura/" class="Red">
+                    <img class="icono" src="img/Instagram.png" alt="instagram">  
+                    <p>/SkalaStudio</p>
+                    </a>
+                </div>
+                <!--WhatsApp-->
+                <div class="Red box" >
+                <img class="icono" src="img/WTSPAverQuePedo.png" alt="whatsapp"/>
+                    <div style="margin-left: 7px;">
+                    <ul>- 959 853 167</ul>
+                    <ul>- 982 069 132</ul>
+                    </div>
+                </div>
+            </div>
+            <div class="derechos">
+                <p style="color: rgb(172, 172, 172); font-size: large;">Copyright © 2021 Skala Studio</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bot A-->
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+        intent="WELCOME"
+        chat-title="Skala_Studio_Arquitectura"
+        agent-id="3db46454-f604-41d8-813c-64792c6dd849"
+        language-code="es"
+    ></df-messenger>
+    
 </body>
 </html>

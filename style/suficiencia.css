@@ -72,7 +72,7 @@ body{
 .modalidades{
     width: 100%;
     height: 100vh;
-    margin-bottom: 10%;
+    margin-bottom: 50px;
 }
 .titulos{
     font-family: BebasNeue;
@@ -83,13 +83,17 @@ body{
     text-align: center;
     color: #FFFFFF;
 }
-.blanco, .turquesa{
-    position: absolute;
-    width: 30%;
-    height: 80%;
-    left: 250px;
-    top: 1390px;
 
+.conte{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.blanco, .turquesa{
+    width: 30%;
+    height: 550px;
+    margin: 0px;
     background: #E3DFDB;
     border-radius: 39px;
     display: flex;
@@ -103,6 +107,7 @@ body{
 .turquesa{
     left: 710px;
     background: #037071;
+    margin-left: 3%;
 }
 
 .check{
@@ -123,6 +128,7 @@ body{
     font-style: normal;
     font-weight: normal;
     margin: 0px;
+    margin-bottom: 20px;
     color: rgba(0, 0, 0, 1);
 }
 
@@ -162,7 +168,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 10%;
+    margin-bottom: 80px;
 }
 .tabla{
     display: grid;
@@ -205,4 +211,9 @@ body{
     align-items: center;
     justify-content: center;
     font-size: 26px;
+}
+
+/*fondo del footer*/
+.fondo-footer{
+    background-color: #011D23;
 }
