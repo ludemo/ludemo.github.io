@@ -4,6 +4,7 @@
 }
 body{
     background:#01252B;
+    color: white;
 }
 .titulo{
     position:relative;
@@ -72,7 +73,6 @@ body{
 .modalidades{
     width: 100%;
     height: 100vh;
-    margin-bottom: 50px;
 }
 .titulos{
     font-family: BebasNeue;
@@ -81,7 +81,6 @@ body{
     font-size: 50px;
     line-height: 86px;
     text-align: center;
-    color: #FFFFFF;
 }
 
 .conte{
@@ -90,11 +89,10 @@ body{
     justify-content: center;
     align-items: center;
 }
-.blanco, .turquesa{
+.clásica, .plus{
     width: 30%;
     height: 550px;
     margin: 0px;
-    background: #E3DFDB;
     border-radius: 39px;
     display: flex;
     flex-direction: column;
@@ -104,9 +102,7 @@ body{
 .modalidades ul{
     padding-left: 30px;
 }
-.turquesa{
-    left: 710px;
-    background: #037071;
+.plus{
     margin-left: 3%;
 }
 
@@ -118,9 +114,6 @@ body{
     margin-right: 19px;
 }
 
-.turquesa .check{
-    color: #FFFFFF;
-}
 
 .montos{
     font-family: BebasNeue;
@@ -129,12 +122,8 @@ body{
     font-weight: normal;
     margin: 0px;
     margin-bottom: 20px;
-    color: rgba(0, 0, 0, 1);
 }
 
-.turquesa .montos{
-    color: #FFFFFF;
-}
 
 .modalidades li{
     font-family: PoiretOne;
@@ -144,7 +133,6 @@ body{
 
     list-style: none;
     display: flex;
-    color: #000000;
     align-items: center;
     margin: 28px 0px;
 }
@@ -158,8 +146,8 @@ body{
 .modalidades li p:nth-child(5){
     align-items: flex-start;
 }
-.turquesa li{
-    color: #FFFFFF;
+.chica-modalidades{
+    width: 500px;
 }
 
 /* HORARIOS*/
@@ -168,23 +156,18 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
 }
+
 .tabla{
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    color: #FFFFFF;
-    grid-gap: 18px;
-    width: 45%;
-}
-.fila{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 50px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 20px;
 }
 
 .nivel{
-    grid-column: 1;
+    grid-row: 1;
     border-radius: 25px;
     font-family: BebasNeue;
     font-size: 36px;
@@ -194,25 +177,49 @@ body{
     padding: 40px 20px; 
 }
 
-.fila:nth-child(1) .nivel{
+.niveles, .horas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tabla .nivel:nth-child(1){
+    grid-column: 1;
     background-color: rgba(1, 140, 148, 1);
 }
-.fila:nth-child(2) .nivel{
+.tabla .nivel:nth-child(2){
+    grid-column: 2;
     background-color: rgba(0, 105, 115, 1);
 }
-.fila:nth-child(3) .nivel{
+.tabla .nivel:nth-child(3){
+    grid-column: 3;
     background-color: rgba(2, 72, 74, 1);
 }
 
 .hora{
-    grid-column: 2;
     font-family: PoiretOne;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 26px;
+    font-size: 22px;
 }
 
+/* matricula*/
+.matricula{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5px;
+    height: 800px;
+    margin: 0px;
+}
+.barra-matricula{
+    background-color: rgba(0, 76, 79, 0.67);
+    font-family: BebasNeue;
+    display: flex;
+    justify-content: center;
+    z-index: 10px;
+}
 /*fondo del footer*/
 .fondo-footer{
     background-color: #011D23;

@@ -39,6 +39,7 @@ body{
 	padding:10px;
 	margin-left: auto;
 	margin-right: auto;
+	margin-top: 10px;
 }
 .letras{ /* logo solo letras xd*/
 	height: 100%;
@@ -64,7 +65,7 @@ body{
 
 }
 .footer h3{
-	font-size: 2em;
+	font-size: 30px;
 	font-family: PoiretOne;
 	color: white;
 	margin: 0px;

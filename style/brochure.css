@@ -8,6 +8,7 @@
     height: 130px;
     width: 100%;
     background-color:#02484A;
+    padding-top: 15px;
 }
 .brochure-box a{
     color:#fff;
@@ -32,7 +33,7 @@
     padding:10px;
     margin-bottom:5px;
     border-radius: 5px;
-    margin-top:20px;
+    margin-top: 8px;
 }
 .brochure-box .descarga:hover{
     background-color:#166b6ec9;
