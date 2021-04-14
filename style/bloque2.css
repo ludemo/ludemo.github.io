@@ -74,9 +74,6 @@
     padding:50px;
     display: none;
 }
-.servicio .siguiente .flecha1{
-    transform: rotate(180deg);
-}
 .servicio .siguiente .flecha2{
     position:relative;
     right: 0;
@@ -151,7 +148,24 @@
     }
 }
 @media screen and (max-width:700px){
+    .servicio .box,.servicio:nth-child(3) .box{
+        pointer-events: none;
+        width: 50%;
+    }
     .servicio .siguiente{
         display: flex;
+    }
+    .servicio .flecha2,.servicio .flecha1{
+        animation-name:indicador;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-duration: .35s;
+        animation-timing-function: linear;
+    }
+
+    @keyframes indicador {
+        100%{
+            transform: translateX(-10px);
+        }
     }
 }
