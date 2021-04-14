@@ -74,6 +74,9 @@ body{
     width: 100%;
     height: 100vh;
 }
+.modalidades ul{
+    padding-left: 30px;
+}
 .titulos{
     font-family: BebasNeue;
     font-style: normal;
@@ -99,8 +102,8 @@ body{
     align-items: center;
     justify-content: center;
 }
-.modalidades ul{
-    padding-left: 30px;
+.clásica{
+    color:#E2D8D8;
 }
 .plus{
     margin-left: 3%;
