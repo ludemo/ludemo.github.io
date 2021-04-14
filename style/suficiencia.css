@@ -180,11 +180,6 @@ body{
     padding: 40px 20px; 
 }
 
-.niveles, .horas{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 .tabla .nivel:nth-child(1){
     grid-column: 1;
@@ -226,4 +221,74 @@ body{
 /*fondo del footer*/
 .fondo-footer{
     background-color: #011D23;
+}
+
+@media screen and (max-width: 400px){
+    .titulos{
+        font-size: 35px;
+        line-height: 35px;
+    }
+    .conte{
+        flex-direction: column;
+    }
+    .clásica, .plus{
+        width: 80%;
+    }
+    .clásica{
+        margin-bottom: 40px;
+    }
+    .montos{
+        font-size: 40px;
+    }
+    .matricula{
+        height: 200px;
+        margin: 0px;
+    }
+    .modalidades{
+        height: 100%;
+    }
+    .modalidades li{
+        font-size: 23px;
+    }
+    .chica-modalidades{
+        width: 0px;
+    }
+    .tabla{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        width: 95%;
+        grid-gap: 15px;
+    }
+    .nivel{
+        grid-column: 1;
+        font-size: 32px;
+    }
+    .hora{
+        grid-column: 2;
+        font-size: 18px;
+    }
+    .tabla .nivel:nth-child(1){
+        grid-row: 1;
+        grid-column: 1;
+        background-color: rgba(1, 140, 148, 1);
+    }
+    .tabla .nivel:nth-child(2){
+        grid-row: 2;
+        grid-column: 1;
+        background-color: rgba(0, 105, 115, 1);
+    }
+    .tabla .nivel:nth-child(3){
+        grid-row: 3;
+        grid-column: 1;
+        background-color: rgba(2, 72, 74, 1);
+    }
+    .tabla .hora:nth-child(1){
+        grid-row: 1;
+    }
+    .tabla .hora:nth-child(2){
+        grid-row: 2;
+    }
+    .tabla .hora:nth-child(3){
+        grid-row: 3;
+    }
 }
