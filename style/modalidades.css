@@ -1,0 +1,80 @@
+/* BLOQUE MODALIDADES*/
+.modalidades{
+    width: 100%;
+    height: 100vh;
+}
+.titulos{
+    font-family: BebasNeue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 86px;
+    text-align: center;
+}
+
+.conte{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.clásica, .plus{
+    width: 30%;
+    height: 550px;
+    margin: 0px;
+    border-radius: 39px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.modalidades ul{
+    padding-left: 30px;
+}
+.plus{
+    margin-left: 3%;
+}
+
+.check{
+    background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTIgNTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUyIDUyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8Zz4NCgk8cGF0aCBkPSJNMjYsMEMxMS42NjQsMCwwLDExLjY2MywwLDI2czExLjY2NCwyNiwyNiwyNnMyNi0xMS42NjMsMjYtMjZTNDAuMzM2LDAsMjYsMHogTTQwLjQ5NSwxNy4zMjlsLTE2LDE4DQoJCUMyNC4xMDEsMzUuNzcyLDIzLjU1MiwzNiwyMi45OTksMzZjLTAuNDM5LDAtMC44OC0wLjE0NC0xLjI0OS0wLjQzOGwtMTAtOGMtMC44NjItMC42ODktMS4wMDItMS45NDgtMC4zMTItMi44MTENCgkJYzAuNjg5LTAuODYzLDEuOTQ5LTEuMDAzLDIuODExLTAuMzEzbDguNTE3LDYuODEzbDE0LjczOS0xNi41ODFjMC43MzItMC44MjYsMS45OTgtMC45LDIuODIzLTAuMTY2DQoJCUM0MS4xNTQsMTUuMjM5LDQxLjIyOSwxNi41MDMsNDAuNDk1LDE3LjMyOXoiLz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K");
+    width: 29px;
+    height: 29px;
+    margin: 0px;
+    margin-right: 19px;
+}
+
+
+.montos{
+    font-family: BebasNeue;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: normal;
+    margin: 0px;
+    margin-bottom: 20px;
+}
+
+
+.modalidades li{
+    font-family: PoiretOne;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 28px 0px;
+}
+.modalidades li:nth-child(1){
+    margin-top: 0px;
+}
+.modalidades li:nth-child(5){
+    margin-bottom: 0px;
+    align-items: flex-start;
+}
+.modalidades li p:nth-child(5){
+    align-items: flex-start;
+}
+.chica-modalidades{
+    width: 500px;
+}
