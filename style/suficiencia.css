@@ -42,7 +42,6 @@ body{
 }
 .titulo .text .subtitle1{
     font-size:140px;
-
 }
 .titulo .text .subtitle2{
     font-size:210px;
@@ -55,164 +54,8 @@ body{
     bottom: 0;
     right: 0;
 }
-/*--Quienes somos--*/
-.somos{
-    height: 200px;
-    max-width: 1200px;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-} 
-.somos  .text{
-    font-size:30px;
-    padding:0 80px 0 20px;
-    font-family:"PoiretOne";
-}
-.logo-somos{
-    width: 350px;
-    padding:20px;
-    margin-left: 120px;
-}
-.somos-text{
-    width: 100%;
-    position: relative;
-    display: flex;
-    justify-content: flex-end;
-}
-.quienes-text span{
-    font-size:60px;
-    font-family:"BebasNeue";
-}
-.quienes-text img{
-    height: 45px;
-}
-.somos-text span{
-    font-size:80px;
-    font-family:"BebasNeue";
-}
-.somos-text img{
-    height: 60px;
-}
-/*Fin quienes somos*/
-.modalidades ul{
-    padding-left: 30px;
-}
-.titulos{
-    font-family: BebasNeue;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 50px;
-    line-height: 86px;
-    text-align: center;
-}
 
-.conte{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-.clásica, .plus{
-    width: 30%;
-    height: 550px;
-    margin: 0px;
-    border-radius: 39px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.clásica{
-    color:#E2D8D8;
-}
-.plus{
-    margin-left: 3%;
-}
-
-.check{
-    background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTIgNTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUyIDUyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8Zz4NCgk8cGF0aCBkPSJNMjYsMEMxMS42NjQsMCwwLDExLjY2MywwLDI2czExLjY2NCwyNiwyNiwyNnMyNi0xMS42NjMsMjYtMjZTNDAuMzM2LDAsMjYsMHogTTQwLjQ5NSwxNy4zMjlsLTE2LDE4DQoJCUMyNC4xMDEsMzUuNzcyLDIzLjU1MiwzNiwyMi45OTksMzZjLTAuNDM5LDAtMC44OC0wLjE0NC0xLjI0OS0wLjQzOGwtMTAtOGMtMC44NjItMC42ODktMS4wMDItMS45NDgtMC4zMTItMi44MTENCgkJYzAuNjg5LTAuODYzLDEuOTQ5LTEuMDAzLDIuODExLTAuMzEzbDguNTE3LDYuODEzbDE0LjczOS0xNi41ODFjMC43MzItMC44MjYsMS45OTgtMC45LDIuODIzLTAuMTY2DQoJCUM0MS4xNTQsMTUuMjM5LDQxLjIyOSwxNi41MDMsNDAuNDk1LDE3LjMyOXoiLz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K");
-    width: 29px;
-    height: 29px;
-    margin: 0px;
-    margin-right: 19px;
-}
-
-
-.montos{
-    font-family: BebasNeue;
-    font-size: 50px;
-    font-style: normal;
-    font-weight: normal;
-    margin: 0px;
-    margin-bottom: 20px;
-}
-
-
-.modalidades li{
-    font-family: PoiretOne;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 28px;
-
-    list-style: none;
-    display: flex;
-    align-items: center;
-    margin: 28px 0px;
-}
-.modalidades li:nth-child(1){
-    margin-top: 0px;
-}
-.modalidades li:nth-child(5){
-    margin-bottom: 0px;
-    align-items: flex-start;
-}
-.modalidades li p:nth-child(5){
-    align-items: flex-start;
-}
-.chica-modalidades{
-    width: 500px;
-}
-
-/* HORARIOS*/
-.horarios{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 40px;
-}
-
-.tabla{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 20px;
-}
-
-.nivel{
-    grid-row: 1;
-    border-radius: 25px;
-    font-family: BebasNeue;
-    font-size: 36px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 40px 20px; 
-}
-
-
-.tabla .nivel:nth-child(1){
-    grid-column: 1;
-    background-color: rgba(1, 140, 148, 1);
-}
-.tabla .nivel:nth-child(2){
-    grid-column: 2;
-    background-color: rgba(0, 105, 115, 1);
-}
-.tabla .nivel:nth-child(3){
-    grid-column: 3;
-    background-color: rgba(2, 72, 74, 1);
-}
+/*MATRICULA*/
 .matriculas{
     position: relative;
 }
@@ -244,71 +87,28 @@ body{
 }
 
 @media screen and (max-width: 400px){
-    .titulos{
-        font-size: 35px;
-        line-height: 35px;
+    .titulo .text .subtitle1{
+        font-size:60px;
     }
-    .conte{
-        flex-direction: column;
+    .titulo .text .subtitle2{
+        font-size:80px;
     }
-    .clásica, .plus{
-        width: 80%;
+    
+    .titulo img{
+        position: absolute;
+        width: 300px;
+        transform: rotateY(180deg);
+        bottom: 0;
+        right: 0;
     }
-    .clásica{
-        margin-bottom: 40px;
-    }
-    .montos{
-        font-size: 40px;
-    }
+    
     .matricula{
-        height: 200px;
+        height: 280px;
         margin: 0px;
     }
-    .modalidades{
-        height: 100%;
+
+    .barra-matricula.titulos{
+        padding: 8px 0px;
     }
-    .modalidades li{
-        font-size: 23px;
-    }
-    .chica-modalidades{
-        width: 0px;
-    }
-    .tabla{
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        width: 95%;
-        grid-gap: 15px;
-    }
-    .nivel{
-        grid-column: 1;
-        font-size: 32px;
-    }
-    .hora{
-        grid-column: 2;
-        font-size: 18px;
-    }
-    .tabla .nivel:nth-child(1){
-        grid-row: 1;
-        grid-column: 1;
-        background-color: rgba(1, 140, 148, 1);
-    }
-    .tabla .nivel:nth-child(2){
-        grid-row: 2;
-        grid-column: 1;
-        background-color: rgba(0, 105, 115, 1);
-    }
-    .tabla .nivel:nth-child(3){
-        grid-row: 3;
-        grid-column: 1;
-        background-color: rgba(2, 72, 74, 1);
-    }
-    .tabla .hora:nth-child(1){
-        grid-row: 1;
-    }
-    .tabla .hora:nth-child(2){
-        grid-row: 2;
-    }
-    .tabla .hora:nth-child(3){
-        grid-row: 3;
-    }
+
 }

@@ -28,11 +28,14 @@
     align-items: center;
     justify-content: center;
 }
-.modalidades ul{
-    padding-left: 30px;
+.clásica{
+    color:#E2D8D8;
 }
 .plus{
     margin-left: 3%;
+}
+.modalidades ul{
+    padding-left: 30px;
 }
 
 .check{
@@ -77,4 +80,33 @@
 }
 .chica-modalidades{
     width: 500px;
+}
+
+/*MODALIDADES RESPONSIVE*/
+@media screen and (max-width: 400px){
+    .titulos{
+        font-size: 35px;
+        line-height: 35px;
+    }
+    .conte{
+        flex-direction: column;
+    }
+    .clásica, .plus{
+        width: 80%;
+    }
+    .clásica{
+        margin-bottom: 40px;
+    }
+    .montos{
+        font-size: 40px;
+    }
+    .modalidades{
+        height: 100%;
+    }
+    .modalidades li{
+        font-size: 23px;
+    }
+    .chica-modalidades{
+        width: 0px;
+    }
 }
