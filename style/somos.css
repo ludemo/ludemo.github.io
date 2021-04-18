@@ -38,7 +38,7 @@
 }
 /*Fin quienes somos*/
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 450px){
     .somos{
         height: 500px;
         flex-direction: column;

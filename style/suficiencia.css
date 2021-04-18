@@ -86,7 +86,7 @@ body{
     background-color: #011D23;
 }
 
-@media screen and (max-width: 430px){
+@media screen and (max-width: 450px){
     .titulo .text .subtitle1{
         font-size:60px;
     }

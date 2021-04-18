@@ -83,7 +83,7 @@
 }
 
 /*MODALIDADES RESPONSIVE*/
-@media screen and (max-width: 430px){
+@media screen and (max-width: 450px){
     .titulos{
         font-size: 35px;
         line-height: 35px;
