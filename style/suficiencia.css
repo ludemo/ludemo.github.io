@@ -13,13 +13,13 @@ body{
 }
 
 .titulo{
+    display: grid;
+    grid-template-columns: repeat(15,1fr);
+    grid-template-rows: repeat(10,1fr);
     position:relative;
     height: 550px;
     max-width: 1200px;
-    display: flex;
-    align-items: center;
     margin-top:80px;
-    justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
 }
@@ -29,6 +29,7 @@ body{
     letter-spacing: 5px;
     filter: blur(.5px);
     margin-left: 120px;
+    grid-row: 1/7;
 }
 .titulo .text [class^="subtitle"]{
     position: relative;
@@ -46,13 +47,20 @@ body{
 .titulo .text .subtitle2{
     font-size:210px;
 }
-
-.titulo img{
-    position: absolute;
-    width: 600px;
+.titulo .img{
     transform: rotateY(180deg);
     bottom: 0;
     right: 0;
+    grid-column:8/-1;
+    grid-row: 2/-1;
+    width: 100%;
+    height: 450px;
+}
+.titulo img{
+    position:relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover
 }
 
 /*MATRICULA*/
@@ -85,7 +93,35 @@ body{
 .fondo-footer{
     background-color: #011D23;
 }
-
+@media screen and (max-width: 1300px){
+    .titulo .text .subtitle1{
+        font-size:130px;
+    }
+    .titulo .text .subtitle2{
+        font-size:180px;
+    }
+    .titulo img{
+       width: 650px;
+       height: 450px;
+    }
+}
+@media screen and (max-width: 1100px){
+    .titulo .text .subtitle1{
+        font-size:130px;
+    }
+    .titulo .text .subtitle2{
+        font-size:180px;
+    }
+    .titulo img{
+       width: 550px;
+       height: 400px;
+    }
+}
+@media screen and (max-width: 1000px){
+     .titulo img{
+         display: none;
+     }
+ }
 @media screen and (max-width: 450px){
     .titulo .text .subtitle1{
         font-size:60px;
@@ -94,13 +130,6 @@ body{
         font-size:80px;
     }
     
-    .titulo img{
-        position: absolute;
-        width: 300px;
-        transform: rotateY(180deg);
-        bottom: 0;
-        right: 0;
-    }
     
     .matricula{
         height: 280px;
