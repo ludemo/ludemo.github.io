@@ -27,7 +27,6 @@ body{
     top:-20px;
     position:absolute;
     letter-spacing: 5px;
-    filter: blur(.5px);
     margin-left: 120px;
     grid-row: 1/7;
 }
@@ -232,10 +231,10 @@ body{
  }
 @media screen and (max-width: 450px){
     .titulo .text .subtitle1{
-        font-size:60px;
+        font-size:70px;
     }
     .titulo .text .subtitle2{
-        font-size:80px;
+        font-size:90px;
     }
     .matricula{
         height: 280px;
