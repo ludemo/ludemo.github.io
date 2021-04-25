@@ -1,0 +1,64 @@
+
+.proximo-text{
+    font-family: "PoiretOne";
+    font-size:30px;
+    padding-right:40px;
+    display: flex;
+    align-items: center;
+}
+
+.box-proximo{
+    display: flex;
+    justify-content: space-around;
+    margin:0 180px;
+    align-items: center;
+}
+.proximo-img img{ 
+    width: 450px;
+}
+@media screen and (max-width: 1200px){
+    .proximo-text{
+        font-size:25px;
+    }   
+    .proximo-img img{
+        width: 380px;
+    }
+    .box-proximo{
+        margin:0 150px;
+    }
+}
+@media screen and (max-width: 980px){
+    .box-proximo{
+        margin:0 100px;
+    }
+    .proximo-img img{
+        width: 350px;
+    }
+}
+@media screen and (max-width: 790px){
+    .box-proximo{
+        margin:0 70px;
+    }
+    .proximo-text{
+        font-size:25px;
+    }   
+    .proximo-img img{
+        width: 300px;
+    }
+}
+@media screen and (max-width: 690px){
+    .box-proximo{
+        width:75%;
+	    max-width:960px;
+	    min-width:320px;
+	    margin-left:auto;
+	    margin-right:auto;
+    }
+    .proximo-text{
+        display: none;
+    }   
+    .proximo-img img{
+        width: 400px;
+        max-width: 100%;
+    }
+}
