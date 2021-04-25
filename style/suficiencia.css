@@ -135,8 +135,9 @@ body{
     }
 }
 @media screen and (max-width: 1000px){
-     .titulo img{
+     .titulo{
      }
+   
  }
 @media screen and (max-width: 450px){
     .titulo .text .subtitle1{
@@ -145,15 +146,14 @@ body{
     .titulo .text .subtitle2{
         font-size:80px;
     }
-    
-    
     .matricula{
         height: 280px;
         margin: 0px;
     }
-
     .barra-matricula.titulos{
-        padding: 8px 0px;
+        bottom:40px;
+        font-size:21px;
+        padding: 0px 0px;
     }
 
 }

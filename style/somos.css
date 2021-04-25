@@ -1,6 +1,5 @@
 /*--Quienes somos--*/
 .somos{
-    height: 200px;
     max-width: 1200px;
     display: flex;
     margin-left: auto;
@@ -37,20 +36,56 @@
     height: 60px;
 }
 /*Fin quienes somos*/
-
-@media screen and (max-width: 450px){
+@media screen and (max-width: 900px){
+    .logo-somos{
+        margin:0;
+        padding:0;
+    }
     .somos{
-        height: 500px;
-        flex-direction: column;
-        align-items: center;
         justify-content: center;
+        flex-wrap: wrap;
+    }
+    .somos .text{
+        padding:0 50px;
+        text-align: center;
+    }
+    .somos .text p {
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width: 450px){
+    .quienes-text span{
+        font-size:50px;
+    }
+    
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .quienes-text img{
+        height: 40px;
+    }
+    .somos-text{
+        align-items: center;    
+    }
+    .somos-text span{
+        font-size:60px;
+    }
+    .somos-text img{
+        height: 50px;
+        position:relative;
+        bottom:0;
+    }
+    .somos{
+        flex-direction: column;
+        min-width: 320px;
     }
     .logo-somos{
-        margin: 0px;
+        margin: 0 auto;
+        width: 320px;
     }
     .somos  .text{
-        font-size:23px;
-        padding: 20px;
+        font-size:20px;
+        padding: 10px;
         text-align: center;
     }
 }
