@@ -47,7 +47,10 @@ body{
 .titulo .text .subtitle2{
     font-size:210px;
 }
-.titulo .img{
+.titulo .img-2{
+    display: none;
+}
+.titulo .img-1{
     transform: rotateY(180deg);
     bottom: 0;
     right: 0;
@@ -117,7 +120,7 @@ body{
     .titulo .text .subtitle2{
         font-size:180px;
     }
-    .titulo img{
+    .titulo .img-1 img{
        width: 650px;
        height: 450px;
     }
@@ -129,15 +132,103 @@ body{
     .titulo .text .subtitle2{
         font-size:180px;
     }
-    .titulo img{
+    .titulo .img-1 img{
        width: 550px;
        height: 400px;
     }
 }
-@media screen and (max-width: 1000px){
-     .titulo{
+@media screen and (max-width: 1025px){
+    .titulo{
+        display: flex;
+        justify-content: center;
+        height: auto;
+        flex-wrap: wrap;
+        gap:0;
+    }
+    .titulo .text{
+        margin:0;
+        position: relative;
+    }
+     .titulo .img-1{
+        display: none;
      }
-   
+     .titulo .img-2{
+        position: relative; 
+        display: flex;
+        align-items: flex-end;
+    }
+    .titulo .img-2 img{
+        object-fit: cover;
+        width: 500px;
+        top:-70px;
+    }
+     .titulo .text .subtitle2{
+         text-align: end;
+     }
+
+     .titulo .division{
+        position:absolute;
+        width: 100%;
+        height: 5px;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        align-items: center;
+    }
+    .titulo .division::after{
+        content:"";
+        display:inline-block;
+        position:absolute;
+        left:0;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        background:rgb(255, 255, 255);
+    }
+    .titulo .division::before{
+        content:"";
+        display:inline-block;
+        position:absolute;
+        right:0;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        background:rgb(255, 255, 255);
+    }
+ }
+ @media screen and (max-width: 768px){
+    .titulo .text .subtitle1{
+        font-size: 100px;
+    }
+    .titulo .text .subtitle2{
+        font-size: 150px;
+    }
+    .titulo .img-2 img{
+        width: 400px;
+    }
+    
+ }
+ @media screen and (max-width: 500px){
+    .titulo .text .subtitle1{
+        font-size: 80px;
+    }
+    .titulo .text .subtitle2{
+        font-size: 130px;
+    }
+    .titulo .img-2 img{
+        width: 350px;
+    }
+    .titulo .division{
+        height: 3px;
+    }
+    .titulo .division::after{
+        height: 15px;
+        width: 15px;
+    }
+    .titulo .division::before{
+        height: 15px;
+        width: 15px;
+    }
+
  }
 @media screen and (max-width: 450px){
     .titulo .text .subtitle1{
@@ -155,5 +246,8 @@ body{
         font-size:21px;
         padding: 0px 0px;
     }
-
+    .titulo .img-2 img{
+        width: 300px;
+        top:-50px;
+    }
 }
