@@ -1,4 +1,6 @@
-
+.proximo-inicio{
+    margin-top:80px;
+}
 .proximo-text{
     font-family: "PoiretOne";
     font-size:30px;
@@ -17,6 +19,9 @@
     width: 450px;
 }
 @media screen and (max-width: 1200px){
+    .proximo-inicio{
+        margin-top:40px;
+    }
     .proximo-text{
         font-size:25px;
     }   
