@@ -1,0 +1,39 @@
+.nuestros-logros{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.glide{
+    max-width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.glide__slide img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.glide__slide{
+    opacity: .7;
+    transition: .1s linear;
+}
+
+.glide__slide--active{
+    opacity: 1;
+    filter: none;
+    transform: scale(1.1);
+}
+
+.glide__slides{
+    overflow: visible;
+}
+.tamaño-imagen{
+    width: 526px;
+    height: 526px;
+}
