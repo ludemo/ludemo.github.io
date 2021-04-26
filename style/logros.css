@@ -7,6 +7,30 @@
     align-items: center;
     justify-content: center;
 }
+.base{
+    font-family: BebasNeue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 86px;
+    text-align: center;
+    margin: 0px;
+}
+.resalto{
+    font-size: 80px;
+    margin-left: 15px;
+}
+.slogan{
+    font-size: 40px;
+    color: #E2DCDC;
+}
+.logro-titulo{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin-top: 15px;
+}
+
 .glide{
     max-width: 80%;
     display: flex;
@@ -34,3 +58,14 @@
     overflow: visible;
 }
 
+@media screen and (max-width: 450px){
+    .base{
+        font-size: 50px;
+    }
+    .resalto{
+        font-size: 65px;
+    }
+    .slogan{
+        font-size: 30px;
+    }
+}

@@ -11,14 +11,7 @@
     line-height: 86px;
     text-align: center;
 }
-.resalto{
-    font-size: 70px;
-    margin: 0px;
-}
-.slogan{
-    font-size: 40px;
-    color: #E2DCDC;
-}
+
 .conte{
     display: flex;
     flex-direction: row;
