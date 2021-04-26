@@ -52,7 +52,7 @@
     background-color: rgba(2, 72, 74, 1);
 }
 
-@media screen and (max-width: 450px){
+@media screen and (max-width: 460px){
     .tabla{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
