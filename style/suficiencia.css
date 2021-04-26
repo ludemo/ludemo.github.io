@@ -91,6 +91,7 @@ body{
     bottom:150px;
     display: flex;
     justify-content: center;
+    align-items: center;
     z-index: 10px;
 }
 /*fondo del footer*/
