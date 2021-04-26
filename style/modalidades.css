@@ -1,6 +1,7 @@
 /* BLOQUE MODALIDADES*/
 .modalidades{
     width: 100%;
+    min-height: 660px;
     max-height: 100vh;
 }
 .titulos{
@@ -95,6 +96,7 @@
     }
     .modalidades{
         height: 100%;
+        min-height: 100%;
     }
     .modalidades li{
         font-size: 25px;
