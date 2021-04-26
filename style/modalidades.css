@@ -88,6 +88,30 @@
 }
 
 /*MODALIDADES RESPONSIVE*/
+@media screen and (max-width: 750px){
+    .titulos{
+        font-size: 35px;
+        line-height: 35px;
+    }
+    .clásica, .plus{
+        width: 80%;
+    }
+    .clásica{
+        margin-bottom: 40px;
+    }
+    .montos{
+        font-size: 40px;
+    }
+    .modalidades{
+        height: 100%;
+    }
+    .modalidades li{
+        font-size: 23px;
+    }
+    .chica-modalidades{
+        width: 0px;
+    }
+}
 @media screen and (max-width: 450px){
     .titulos{
         font-size: 35px;

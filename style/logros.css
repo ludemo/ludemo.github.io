@@ -32,6 +32,7 @@
 
 .glide__slides{
     overflow: visible;
+    height: inherit;
 }
 .tamaño-imagen{
     width: 526px;
