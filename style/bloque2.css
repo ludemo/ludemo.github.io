@@ -162,10 +162,22 @@
         animation-duration: .35s;
         animation-timing-function: linear;
     }
+    .servicio .box .division{
+        animation-name:hover;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-duration: .35s;
+        animation-timing-function: linear;
+    }    
     @keyframes indicador {
         100%{
             transform: translateX(-10px);
         }
+    }
+    @keyframes hover{
+        100%{
+        }
+
     }
 
 }
