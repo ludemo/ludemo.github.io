@@ -27,9 +27,8 @@
 }
 .clásica, .plus{
     width: 30%;
-    height: 550px;
+    height: 500px;
     margin: 0px;
-    border-radius: 39px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -58,7 +57,11 @@
     margin-bottom: 20px;
 }
 
-
+.raya{
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+}
 .modalidades li{
     font-family: PoiretOne;
     font-style: normal;
@@ -101,6 +104,10 @@
     }
     .montos{
         font-size: 40px;
+    }
+    .raya{
+        visibility: visible;
+        width: 100%;
     }
     .modalidades{
         height: 100%;
