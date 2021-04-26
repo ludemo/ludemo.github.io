@@ -210,6 +210,11 @@ body{
     .titulo .img-2 img{
         width: 400px;
     }
+    .matriculas .barra-matricula{
+       bottom:100px; 
+       height: 55px;
+       font-size:35px;
+    }
     
  }
  @media screen and (max-width: 500px){
@@ -236,6 +241,9 @@ body{
     .matriculas img{
         height: 500px;
     }
+    .matriculas .barra-matricula{
+        bottom:75px; 
+     }
  }
 @media screen and (max-width: 450px){
     .titulo .text .subtitle1{
