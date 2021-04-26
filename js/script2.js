@@ -5,6 +5,9 @@ new Glide(".images",{
 	autoplay: 2500,
 	focusAt: 'center',
 	breakpoints: {
+		1200:{
+			perView: 2,
+		},
 		800:{
 			perView: 2,
 			gap: 40,
