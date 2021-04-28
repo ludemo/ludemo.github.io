@@ -56,3 +56,11 @@
         margin-top:20px;
     }   
 }  
+@media screen and (max-width: 320px){
+    .brochure-box .descarga{
+        margin-top: 10px;
+    }
+    .brochure-box{
+        margin: 0px 5px;
+    }
+}

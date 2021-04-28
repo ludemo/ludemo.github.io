@@ -23,6 +23,7 @@
     align-items: center;
     justify-content: center;
     padding: 40px 20px; 
+    text-align: center;
 }
 
 .hora{
@@ -52,7 +53,20 @@
     background-color: rgba(2, 72, 74, 1);
 }
 
-@media screen and (max-width: 460px){
+@media screen and (max-width: 740px){
+    .tabla{
+        margin: 0px 10px;
+    }
+    .hora{
+        font-size: 20px;
+    }
+    .nivel{
+        font-size: 35px;
+        padding: 25px 25px;
+    }
+}
+
+@media screen and (max-width: 560px){
     .tabla{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
@@ -91,5 +105,29 @@
     }
     .tabla .hora:nth-child(3){
         grid-row: 3;
+    }
+}
+@media screen and (max-width: 360px){
+    .tabla{
+        grid-gap: 0px;
+        grid-row-gap: 15px;
+        width: 92%;
+    }
+    .hora{
+        font-size: 17px;
+    }
+    .nivel{
+        width: 120px;
+        padding: 20px 15px;
+    }
+}
+@media screen and (max-width: 320px){
+    .nivel{
+        width: 70%;
+        font-size: 22px;
+        padding: 15px 14px;
+    }
+    .hora{
+        font-size: 15px;
     }
 }
