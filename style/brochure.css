@@ -23,7 +23,7 @@
     color:#fff;
     font-family: "PoiretOne";
     text-align: center;
-    font-size:18px;
+    font-size:20px;
 }
 .brochure-box p{
     margin:0;
@@ -45,7 +45,7 @@
 }
 @media screen and (max-width: 400px){
     .brochure-box{
-        font-size: 15px;
+        font-size: 19px;
     }
     .brochure-box .descarga{
         background-color: #013B3B;
