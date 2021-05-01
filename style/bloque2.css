@@ -67,6 +67,9 @@
     height: 100%;
     object-fit: cover;
 }
+.servicio .fondo-movil{
+    display: none;
+}
 .servicio .siguiente{
     z-index:1000;
     width: 85%;
@@ -155,6 +158,16 @@
     }
 }
 @media screen and (max-width:700px){
+    .servicio .fondo-web{
+        display: none;
+    }
+    .servicio .fondo-movil{
+        display: block;
+        position:absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
     .servicio .box,.servicio:nth-child(3) .box{
         pointer-events: none;
         width: 50%;

@@ -1,6 +1,5 @@
 .proximo-inicio{
     margin-top:80px;
-    min-height: 95vh;
 }
 .proximo-text{
     font-family: "PoiretOne";
@@ -23,7 +22,6 @@
     .proximo-inicio{
         margin-top:40px;
         margin-bottom: 40px;
-        min-height: 75vh;
     }
     .proximo-text{
         font-size:25px;
@@ -42,15 +40,9 @@
     .proximo-img img{
         width: 350px;
     }
-    .proximo-inicio{
-        min-height: 65vh;
-    }
+
 }
-@media screen and (max-width: 800px){
-    .proximo-inicio{
-        min-height: 65vh;
-    }
-}
+
 @media screen and (max-width: 790px){
     .box-proximo{
         margin:0 70px;
@@ -62,15 +54,8 @@
         width: 300px;
     }
 }
-@media screen and (max-width: 700px){
-    .proximo-inicio{
-        min-height: 60vh;
-    }
-}
 @media screen and (max-width: 690px){
-    .proximo-inicio{
-        min-height: 70vh;
-    }
+ 
     .box-proximo{
         width:75%;
 	    max-width:960px;
@@ -89,7 +74,6 @@
 @media screen and (max-width: 650px){
     .proximo-inicio{
         margin-bottom: 50px;
-        min-height: 60vh;
     }
     .proximo-img img{
         width: 350px;
@@ -99,14 +83,9 @@
 @media screen and (max-width: 415px){
     .proximo-inicio{
         margin-bottom: 40px;
-        min-height: 60vh;
     }
 }
-@media screen and (max-width: 400px){
-    .proximo-inicio{
-        min-height: 65vh;
-    }
-}
+
 @media screen and (max-width: 320px){
     .proximo-img img{
         width: 280px;

@@ -8,7 +8,9 @@
 }
 
 body{
-    background:#01252B;
+    background-image:url(../img/fondo-pc.jpg);
+    background-size: auto;
+    background-repeat: repeat;
     color: white;
 }
 
@@ -115,6 +117,7 @@ body{
     width:100%;
     height:100%;
 }
+
 @media screen and (max-width: 1300px){
     .titulo .text .subtitle1{
         font-size:130px;
@@ -197,7 +200,17 @@ body{
         background:rgb(255, 255, 255);
     }
  }
+ @media screen and (min-width: 1600px){
+    .container-video{
+        margin-bottom: 100px;
+    }
+ }
+
  @media screen and (max-width: 768px){
+    body{
+        background-image:url(../img/fondo-suficiencia-cel.jpg);
+    }
+    
     .titulo .text .subtitle1{
         font-size: 100px;
     }
@@ -218,6 +231,7 @@ body{
     
  }
  @media screen and (max-width: 500px){
+  
     .titulo .text .subtitle1{
         font-size: 80px;
     }
