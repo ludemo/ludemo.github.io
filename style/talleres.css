@@ -1,5 +1,5 @@
 body{
-    background-image: url(/img/mantenimientopc.jpg);
+    background-image: url(../img/mantenimientopc.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -8,6 +8,6 @@ body{
 }
 @media screen and (max-width: 650px){
     body{
-        background-image: url(/img/mantenimiento\ cel.jpg);
+        background-image: url(../img/mantenimiento\ cel.jpg);
     }
 }
