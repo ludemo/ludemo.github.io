@@ -68,6 +68,12 @@
         width: 100%;
     }
 }
+@media screen and (max-width: 1370px) and (max-height: 1200px){
+    .nuestros-logros{
+        min-height: 80vh;
+    }
+}
+
 @media screen and (max-width: 1200px) and (max-height: 1370px){
     .nuestros-logros{
         min-height: 54vh;

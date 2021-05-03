@@ -65,7 +65,11 @@
         padding: 25px 25px;
     }
 }
-
+@media screen and (max-width: 570px) and (max-height: 320px){
+    .hora{
+        font-size: 17px;
+    }
+}
 @media screen and (max-width: 560px){
     .tabla{
         grid-template-columns: repeat(2, 1fr);
