@@ -8,7 +8,9 @@
 }
 
 body{
-    background:#01252B;
+    background-image:url(../img/fondo-pc.jpg);
+    background-size: auto;
+    background-repeat: repeat;
     color: white;
 }
 
@@ -198,7 +200,17 @@ body{
         background:rgb(255, 255, 255);
     }
 }
+@media screen and (min-width: 1600px){
+    .container-video{
+        margin-bottom: 100px;
+    }
+}
+
 @media screen and (max-width: 768px){
+    body{
+        background-image:url(../img/fondo-suficiencia-cel.jpg);
+    }
+    
     .titulo .text .subtitle1{
         font-size: 100px;
     }

@@ -1,0 +1,13 @@
+body{
+    background-image: url(../img/mantenimientopc.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+}
+@media screen and (max-width: 650px){
+    body{
+        background-image: url(../img/mantenimiento\ cel.jpg);
+    }
+}
