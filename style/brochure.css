@@ -25,8 +25,8 @@
     text-align: center;
     font-size:20px;
     z-index:1000
-
 }
+
 .brochure-box p{
     margin:0;
     width: 90%;
@@ -37,6 +37,8 @@
     padding:10px;
     margin-bottom:5px;
     border-radius: 5px;
+    display: flex;
+    align-items: center;
     margin-top: 8px;
     position: relative;
 }
@@ -46,7 +48,7 @@
 }
 .brochure-box .descarga img{
     height: 20px;;
-    margin-left: 30px;
+    margin-left: 15px;
 }
 .brochure-box .descarga::before{
     content:"";
@@ -68,6 +70,18 @@
 @media screen and (max-width: 690px) and (max-height: 380px){
     .brochure-box p{
         width: 90%;
+    }
+   
+}
+
+@media screen and (min-width:900px){
+    .brochure-box {
+        font-size: 24px;
+    }
+}
+@media screen and (max-width:700px){
+    .brochure-box {
+        font-size: 21px;
     }
 }
 @media screen and (max-width: 400px){
