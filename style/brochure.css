@@ -19,7 +19,7 @@
     position: relative;
     flex-wrap: wrap;
     justify-content: center;
-    width:350px;
+    
     color:#fff;
     font-family: "PoiretOne";
     text-align: center;
@@ -29,6 +29,7 @@
 }
 .brochure-box p{
     margin:0;
+    width: 90%;
 }
 /*boton de descarga*/
 .brochure-box .descarga{
@@ -59,9 +60,20 @@
     bottom: -15%;
 }
 /*Fin del boton de descarga*/
+@media screen and (max-width: 1200px) and (max-height: 1370px){
+    .brochure-box p{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 690px) and (max-height: 380px){
+    .brochure-box p{
+        width: 90%;
+    }
+}
 @media screen and (max-width: 400px){
     .brochure-box{
         font-size: 19px;
+        width:350px;
     }
     .brochure-box .descarga{
         background-color: #013B3B;
@@ -78,5 +90,6 @@
     }
     .brochure-box{
         margin: 0px 5px;
+        font-size: 18px;
     }
 }

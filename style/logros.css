@@ -5,7 +5,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 960px;
     margin: 10px 0px;
 }
 .base{
@@ -68,6 +67,17 @@
         width: 100%;
     }
 }
+@media screen and (max-width: 1370px) and (max-height: 1200px){
+    .nuestros-logros{
+        min-height: 80vh;
+    }
+}
+
+@media screen and (max-width: 1200px) and (max-height: 1370px){
+    .nuestros-logros{
+        min-height: 54vh;
+    }
+}
 @media screen and (max-width: 999px){
     .nuestros-logros{
         min-height: 50vh;
@@ -76,6 +86,11 @@
 @media screen and (max-width: 800px){
     .nuestros-logros{
         min-height: 45vh;
+    }
+}
+@media screen and (max-width: 800px) and (max-height: 1025px){
+    .nuestros-logros{
+        min-height: 57vh;
     }
 }
 @media screen and (max-width: 700px){
@@ -105,7 +120,16 @@
     .slogan{
         font-size: 30px;
     }
+    .nuestros-logros{
+        min-height: 70vh;
+    }
 }
+@media screen and (max-width: 450px) and (max-height: 820px){
+    .nuestros-logros{
+        min-height: 65vh;
+    }
+}
+
 @media screen and (max-width: 360px){
     .base{
         font-size: 45px;

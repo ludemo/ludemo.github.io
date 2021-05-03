@@ -65,7 +65,11 @@
         padding: 25px 25px;
     }
 }
-
+@media screen and (max-width: 570px) and (max-height: 320px){
+    .hora{
+        font-size: 17px;
+    }
+}
 @media screen and (max-width: 560px){
     .tabla{
         grid-template-columns: repeat(2, 1fr);
@@ -107,7 +111,7 @@
         grid-row: 3;
     }
 }
-@media screen and (max-width: 360px){
+@media screen and (max-width: 380px){
     .tabla{
         grid-gap: 0px;
         grid-row-gap: 15px;
@@ -121,7 +125,7 @@
         padding: 20px 15px;
     }
 }
-@media screen and (max-width: 320px){
+@media screen and (max-width: 355px){
     .nivel{
         width: 70%;
         font-size: 22px;

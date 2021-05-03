@@ -126,8 +126,8 @@ body{
         font-size:180px;
     }
     .titulo .img-1 img{
-       width: 650px;
-       height: 450px;
+        width: 650px;
+        height: 450px;
     }
 }
 @media screen and (max-width: 1100px){
@@ -138,8 +138,8 @@ body{
         font-size:180px;
     }
     .titulo .img-1 img{
-       width: 550px;
-       height: 400px;
+        width: 550px;
+        height: 400px;
     }
 }
 @media screen and (max-width: 1025px){
@@ -154,10 +154,10 @@ body{
         margin:0;
         position: relative;
     }
-     .titulo .img-1{
+    .titulo .img-1{
         display: none;
-     }
-     .titulo .img-2{
+    }
+    .titulo .img-2{
         position: relative; 
         display: flex;
         align-items: flex-end;
@@ -167,11 +167,11 @@ body{
         width: 500px;
         top:-70px;
     }
-     .titulo .text .subtitle2{
-         text-align: end;
-     }
+    .titulo .text .subtitle2{
+        text-align: end;
+    }
 
-     .titulo .division{
+    .titulo .division{
         position:absolute;
         width: 100%;
         height: 5px;
@@ -199,14 +199,14 @@ body{
         border-radius: 50%;
         background:rgb(255, 255, 255);
     }
- }
- @media screen and (min-width: 1600px){
+}
+@media screen and (min-width: 1600px){
     .container-video{
         margin-bottom: 100px;
     }
- }
+}
 
- @media screen and (max-width: 768px){
+@media screen and (max-width: 768px){
     body{
         background-image:url(../img/fondo-suficiencia-cel.jpg);
     }
@@ -224,14 +224,13 @@ body{
         width: 400px;
     }
     .matriculas .barra-matricula{
-       bottom:100px; 
-       height: 55px;
-       font-size:35px;
+        bottom:100px; 
+        height: 55px;
+        font-size:35px;
     }
     
- }
- @media screen and (max-width: 500px){
-  
+}
+@media screen and (max-width: 500px){
     .titulo .text .subtitle1{
         font-size: 80px;
     }
@@ -257,8 +256,8 @@ body{
     }
     .matriculas .barra-matricula{
         bottom:75px; 
-     }
- }
+    }
+}
 @media screen and (max-width: 450px){
     .titulo .text .subtitle1{
         font-size:70px;
