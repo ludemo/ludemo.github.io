@@ -19,7 +19,7 @@
     position: relative;
     flex-wrap: wrap;
     justify-content: center;
-    width:350px;
+    
     color:#fff;
     font-family: "PoiretOne";
     text-align: center;
@@ -46,6 +46,7 @@
 @media screen and (max-width: 400px){
     .brochure-box{
         font-size: 19px;
+        width:350px;
     }
     .brochure-box .descarga{
         background-color: #013B3B;
@@ -62,5 +63,6 @@
     }
     .brochure-box{
         margin: 0px 5px;
+        font-size: 18px;
     }
 }

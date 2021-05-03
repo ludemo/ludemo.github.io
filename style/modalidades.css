@@ -190,6 +190,11 @@
         visibility: hidden;
     }
 }
+@media screen and (max-width: 420px){
+    .modalidades ul{
+        padding-right: 0px;
+    }
+}
 @media screen and (max-width: 320px){
     .modalidades li{
         font-size: 18px;
