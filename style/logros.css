@@ -59,6 +59,10 @@
 .glide__slides{
     overflow: visible;
 }
+.glide i.fas{
+    font-size:32px;
+}
+
 @media screen and (max-width: 1200px){
     .nuestros-logros{
         min-height: 65vh;
