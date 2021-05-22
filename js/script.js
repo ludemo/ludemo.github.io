@@ -8,3 +8,6 @@ if(media.matches){
         servicio[i].className += " page";
     }
 }
+//----------------
+let muestra= getComputedStyle(document.querySelector('.bloque1')).getPropertyValue('transform')
+console.log(muestra)

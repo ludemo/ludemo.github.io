@@ -37,7 +37,10 @@
     width: 60%;
     height: 30%;
     margin:30px;
+    top:-400px;
+    transition: all ease-out .6s;
 }
+
 .servicio .text h2{
     background-color: rgb(0, 0, );
     text-align: start;
@@ -183,13 +186,7 @@
         animation-duration: .6s;
         animation-timing-function:cubic-bezier(.88,.23,.41,.69);
     } 
-    .servicio .text .box{
-        animation-name:boton;
-        animation-iteration-count: infinite;
-        animation-direction: alternate;
-        animation-duration: 1.4s;
-        animation-timing-function:cubic-bezier(.69,.41,.23,.88);
-    }
+
     .servicio .flecha2{
         animation-name:indicador2;
         animation-iteration-count: infinite;
@@ -210,11 +207,7 @@
             opacity: 0;
         }
     }
-    @keyframes boton{
-        100%{
-            opacity: 0;
-        }
-    }
+
 }
 @media (orientation:landscape){
     .servicio .fondo-web{
