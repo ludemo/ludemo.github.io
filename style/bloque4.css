@@ -126,6 +126,8 @@ body{
 
 	.footer .imgBox{
 		padding:10px;
+		height: 55px;
+		width: 290px;
 	}
 	.footer{
 		align-items: center;
@@ -152,7 +154,14 @@ body{
         letter-spacing: 2.5px;
 		margin-left: 0;
     }  
+	.footer h3{
+		font-size: 27px;
+	}
+	.footer .Redes .icono{
+		height: 70px;
+	}
 }
+
 @media screen and (max-height:380px){
 	.footer .imgBox{
 		height:35px;
@@ -165,11 +174,32 @@ body{
 		height: 40px;
 		padding:10px;
 	}
+	.footer h3{
+		font-size:17px;
+	}
 }
+@media screen and (max-height:270px){
+	.footer h3{
+		display: none;
+	}
+
+}
+@media screen and (max-height:230px){
+	.bloque4 .footer .Redes .icono{
+		height: 30px;
+	}
+	.footer .imgBox{
+		height:25px;
+		padding:0;
+		width: 140px;
+	}
+}
+
 @media screen and (max-width: 700px) and (min-width: 440px){
 	.footer .box p,.footer .box ul{
 		display: none;
 	}
+
 	.footer .imgBox{
 		padding:3px;
 	}
@@ -179,8 +209,9 @@ body{
 		justify-content: space-between;
 	}
 	.footer .Redes .icono{
-		height: 50px;
+		height: 70px;
 	}
+
 	.footer .explore a{
 		margin-left: 0;
 		font-size:1.8em;

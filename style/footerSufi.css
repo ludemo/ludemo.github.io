@@ -1,60 +1,6 @@
-@media screen and (max-width: 1370px) and (max-height: 1200px){
-	.footer{
-		min-height: 20vh;
-	}
-	.mapa{
-		min-height: 70%;
-	}
-}
-@media screen and (max-width: 1200px) and (max-height: 1370px){
-	.footer{
-		min-height: 20vh;
-	}
-	.mapa{
-		min-height: 75%;
-	}
-}
-@media screen and (max-width: 1200px) and (max-height: 800px){
-	.mapa{
-		min-height: 60%;
-	}
-}
-@media screen and (max-width: 768px) and (max-height: 1025px){
-	.footer{
-		min-height: 20vh;
-	}
-	.footer h3{
-		font-size: 30px;
-	}
-	.mapa{
-		min-height: 70%;
-	}
-}
-@media screen and (max-width: 768px) and (max-height: 550px){
-	.mapa{
-		min-height: 50%;
-	}
-}
-@media screen and (max-width: 850px) and (max-height: 425px){
-	.footer h3{
-		font-size: 20px;
-	}
-	.mapa{
-		min-height: 45%;
-	}
-}
-@media screen and (max-width: 550px) and (max-height: 768px){
-	.mapa{
-		min-height: 65%;
-	}
-}
-@media screen and (max-width: 440px) and (max-height: 825px){
-	.mapa{
-		min-height: 64%;
-	}
-}
-@media screen and (max-width: 440px) and (max-height: 720px){
-	.mapa{
-		min-height: 55%;
+@media screen and (max-height:380px){
+	.footer .imgBox{
+		height:70px;
+		width:340px;
 	}
 }
