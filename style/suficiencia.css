@@ -9,7 +9,7 @@
 
 body{
     background-image:url(../img/fondo-pc.jpg);
-    background-size: auto;
+    background-size: 80%;
     background-repeat: repeat;
     color: white;
 }
