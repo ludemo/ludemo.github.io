@@ -165,15 +165,17 @@ const WholePageSlider = class {
     this.height = 100
     
     // Animate/translate sections
-    let caja =document.getElementById("textBox");
+    let caja = document.getElementsByClassName("textBox");
     for (let index = 0; index < this.sections.length; index++) {
       this.sections[index].style.transform = `translateY(${this.translate.section}%)`;
       if(`${this.translate.section}`==-100){
         console.log("entro")
-        caja.style.top = 0;
+        for(let i = 0 ;i < caja.length ; i++){
+          caja[i].style.top=0;
+      }
       }
     }
-
+    
     // Complete previous animation before calling next
     setTimeout(() => {
       this.waitAnimation = false
