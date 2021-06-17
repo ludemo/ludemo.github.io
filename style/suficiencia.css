@@ -95,7 +95,46 @@ body{
     justify-content: center;
     align-items: center;
     z-index: 10px;
+    line-height: 50px;
 }
+.matriculas .barra-matricula a{
+    text-decoration: none;
+    color: #FFF;
+}
+.matriculas .boxMatriculasText{
+    position: relative;
+    padding-left: 11px;
+    padding-right: 11px;
+}
+.matriculas .barra-matricula a::before,
+.matriculas .barra-matricula a::after{
+    position:absolute;
+    width: 2px;
+    height: 100%;
+    top: 0px;
+    content: '';
+    background: #FFF;
+    opacity:1;
+    transition: all 0.3s;
+    transition: opacity 0;
+}
+
+.matriculas .barra-matricula a:before
+{
+    left: 0px;
+} 
+
+.matriculas .barra-matricula a:after
+{
+    right: 0px;
+}
+
+.matriculas .barra-matricula a:hover:before, .matriculas .barra-matricula a:hover:after
+{
+    width: 100%;
+    opacity: 0.3;
+}
+
 /*fondo del footer*/
 .fondo-footer{
     background-color: #011D23;
@@ -228,7 +267,9 @@ body{
         height: 55px;
         font-size:35px;
     }
-    
+    .matriculas .barra-matricula{
+        line-height: 40px;
+    }
 }
 @media screen and (max-width: 500px){
     .titulo .text .subtitle1{
