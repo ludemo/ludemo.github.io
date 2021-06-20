@@ -32,6 +32,9 @@ body{
     margin-left: 120px;
     grid-row: 1/7;
 }
+img{
+    user-select: none;
+}
 .titulo .text [class^="subtitle"]{
     position: relative;
     color:#ffffff;
