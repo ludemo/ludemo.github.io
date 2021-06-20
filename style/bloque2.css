@@ -142,7 +142,7 @@
     }
 }
 /*Entra a la parte movil */
-@media screen and (max-width:700px){
+@media screen and (max-width:700px) , (orientation:landscape) and (max-width:700px){
     img{
         user-select: none;
     }
