@@ -27,21 +27,24 @@ body{
     position:relative;
 	box-sizing: border-box;
 	display: grid;
-	grid-template-rows: repeat(4,1fr);
+	grid-template-rows: repeat(3,1fr);
 }
+
 .footer > *{
 	margin-left:auto;
 	margin-right: auto;
 }
 .imgBox{
 	position: relative;
-	width: 248px;
-	height: 46.66px;
 	padding:10px;
-	margin-left: auto;
-	margin-right: auto;
-	bottom: 0;
 	margin-top: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.imgBox img{
+	height: 60px;
+	width: 320px;
 }
 .letras{ /* logo solo letras xd*/
 	height: 100%;
@@ -67,7 +70,7 @@ body{
 
 }
 .footer h3{
-	font-size: 23px;
+	font-size: 27px;
 	font-family: PoiretOne;
 	color: white;
 	margin: 0px;
@@ -126,8 +129,11 @@ body{
 /*Terminamos contenido*/
 @media screen and (max-width: 440px){
 
-	.footer .imgBox{
+	.footer .imgBox  {
 		padding:10px;
+	
+	}
+	.imgBox img{
 		height: 55px;
 		width: 290px;
 	}
@@ -165,9 +171,10 @@ body{
 }
 
 @media screen and (max-height:380px){
-	.footer .imgBox{
+
+	.imgBox img{
 		height:35px;
-		width: 170px;
+		width: 170px
 	}
 	.footer .explore a.EfectoCool{
 		font-size:1.4em;
@@ -241,5 +248,14 @@ body{
 	}
 	.footer .Redes img{
 		height: 50px;
+	}
+}
+@media screen and (min-width: 1300px){
+	.imgBox img{
+		height: 70px;
+		width: 380px;
+	}
+	.footer h3{
+		font-size: 33px;
 	}
 }
