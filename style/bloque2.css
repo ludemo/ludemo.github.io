@@ -177,6 +177,9 @@
         padding-left: 20px;
         padding-right: 20px;
     }
+    .servicio .text .box:hover{
+        background-color: rgba(255, 255, 255, 0.28);
+    }
 
     .servicio .text .box [class^="subtitle"]{
         text-align: center;
