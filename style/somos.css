@@ -4,6 +4,9 @@
     display: flex;
     margin-left: auto;
     margin-right: auto;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
 } 
 .somos  .text{
     font-size:30px;
@@ -13,27 +16,29 @@
 .logo-somos{
     width: 350px;
     padding:20px;
-    margin-left: 120px;
+
 }
 .somos-text{
     width: 100%;
     position: relative;
     display: flex;
     justify-content: flex-end;
+    margin-left: auto;
+    margin-right: auto;
 }
 .quienes-text span{
-    font-size:60px;
+    font-size:90px;
     font-family:"BebasNeue";
 }
 .quienes-text img{
-    height: 45px;
+    height: 75px;
 }
 .somos-text span{
-    font-size:80px;
+    font-size:110px;
     font-family:"BebasNeue";
 }
 .somos-text img{
-    height: 60px;
+    height: 90px;
 }
 /*Fin quienes somos*/
 @media screen and (max-width: 900px){
@@ -41,13 +46,8 @@
         margin:0;
         padding:0;
     }
-    .somos{
-        justify-content: center;
-        flex-wrap: wrap;
-    }
     .somos .text{
         padding:0 50px;
-        text-align: center;
     }
     .somos .text p {
         margin-top: 20px;
