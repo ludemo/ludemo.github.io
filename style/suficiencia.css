@@ -109,8 +109,12 @@ img{
     padding-left: 11px;
     padding-right: 11px;
 }
-.matriculas .barra-matricula a::before,
-.matriculas .barra-matricula a::after{
+.matriculas .boxMatriculasText > *{
+    margin:0 10px;
+}
+
+.matriculas .boxMatriculasText::before,
+.matriculas .boxMatriculasText::after{
     position:absolute;
     width: 2px;
     height: 100%;
@@ -122,17 +126,17 @@ img{
     transition: opacity 0;
 }
 
-.matriculas .barra-matricula a:before
+.matriculas .boxMatriculasText:before
 {
     left: 0px;
 } 
 
-.matriculas .barra-matricula a:after
+.matriculas .boxMatriculasText:after
 {
     right: 0px;
 }
 
-.matriculas .barra-matricula a:hover:before, .matriculas .barra-matricula a:hover:after
+.matriculas .boxMatriculasText:hover:before, .matriculas .boxMatriculasText:hover:after
 {
     width: 100%;
     opacity: 0.3;
@@ -311,9 +315,6 @@ img{
     }
     .matriculas img{
         height: 450px;
-    }
-    .barra-matricula.titulos{
-
     }
     .titulo .img-2 img{
         width: 300px;
