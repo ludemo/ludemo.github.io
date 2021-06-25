@@ -26,18 +26,18 @@
     margin-right: auto;
 }
 .quienes-text span{
-    font-size:90px;
+    font-size:100px;
     font-family:"BebasNeue";
 }
 .quienes-text img{
-    height: 75px;
+    height: 85px;
 }
 .somos-text span{
-    font-size:110px;
+    font-size:120px;
     font-family:"BebasNeue";
 }
 .somos-text img{
-    height: 90px;
+    height: 100px;
 }
 /*Fin quienes somos*/
 @media screen and (max-width: 900px){
@@ -54,19 +54,19 @@
 }
 @media screen and (max-width: 450px){
     .quienes-text span{
-        font-size:50px;
+        font-size:60px;
     }
     .quienes-text img{
-        height: 40px;
+        height: 50px;
     }
     .somos-text{
         align-items: center;    
     }
     .somos-text span{
-        font-size:60px;
+        font-size:70px;
     }
     .somos-text img{
-        height: 50px;
+        height: 60px;
         position:relative;
         bottom:0;
     }
@@ -85,7 +85,4 @@
         padding: 10px;
         text-align: center;
     }
-}
-@media screen and (max-width: 399px){
-
 }
