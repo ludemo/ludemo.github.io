@@ -22,7 +22,7 @@ body{
 	min-height: 50vh;
 }
 .footer{ /*div general del footer*/
-	min-height: 50vh;
+	height: 50vh;
 	width: 100%;
     position:relative;
 	box-sizing: border-box;
@@ -121,6 +121,7 @@ body{
 	align-items: center;
 	justify-content: center;
 	text-decoration: none;
+	color: #fff;
 }
 .Red ul{
 	padding-left: 0;

@@ -53,6 +53,9 @@
     }
 }
 @media screen and (max-width: 450px){
+    .quienes-text{
+        width: 205px;
+    }
     .quienes-text span{
         font-size:60px;
     }
