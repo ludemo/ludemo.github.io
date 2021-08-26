@@ -3,171 +3,141 @@
     src: url('../fonts/BebasNeue-Regular.ttf')
 }
 .bloque2{
-    display:flex;
+    display: flex;
 }
 .servicio:hover{
-    flex-grow:2;
-    cursor:pointer;
+    flex-grow: 2;
+    cursor: pointer;
 }
 .servicio{
     position: relative;
     flex-grow: 1;
-    height:100vh;
+    height: 100vh;
     color:rgb(255, 255, 255);
     transition: flex-grow 0.6s cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
     font-family: BebasNeue;
     font-weight: 400;
 }
-.servicio a{
-    color:#ffff;
-}
-.servicio .text{
-    position:absolute;
-    width:100%;
-    height:100%;
+.servicio__textos{
+    position: absolute;
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     z-index: 10;
     align-items: flex-end;
 }
-.bloque2 .box{
+.servicio__enlace{
+    color:#ffff;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    user-select: none;
+}  
+.caja{
     transition: width 1s ease;
-    position:relative;
+    position: relative;
     width: 60%;
     height: 30%;
-    margin:30px;
-    top:-400px;
+    margin: 30px;
+    top: -400px;
     transition: all ease-out .6s;
 }
-
-.servicio .text h2{
+.caja__subtitulo1, .caja__subtitulo2{
     background-color: rgb(0, 0, );
     text-align: start;
     display: block;
-    font-size:3.5em;
-    margin:0;
+    font-size: 3.5em;
+    margin: 0;
 }
-.servicio .text h2.subtitle2{
-    font-size:4em;
+.caja__subtitulo2{
+    font-size: 4em;
     text-align: end;
 }
-.servicio:nth-child(3) .box{
+.caja:nth-child(3){
     width: 70%;
 }
-.servicio:hover .box{
-    width:50%;
+.servicio:hover .caja{
+    width: 50%;
 }
-.servicio:nth-child(3) .text .subtitle1{
-    font-size:4em;
-}
-.servicio:nth-child(3) .text .subtitle2{
-    font-size:3.5em;
-}
-.servicio .fondo{
-    position:absolute;
+
+.fondo{
+    position: absolute;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.servicio .fondo-movil{
+.fondo--movil{
     display: none;
 }
 
-.servicio .primero{
-    justify-content: flex-end;
-}
-
-.servicio .text .division{
-    position:absolute;
+.caja__division{
+    position: absolute;
     width: 100%;
     height: 2px;
     background-color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
 }
-.servicio .text .division::after{
-    content:"";
-    display:inline-block;
-    position:absolute;
-    left:0;
+.caja__division::after, .caja__division::before{
+    content: "";
+    display: inline-block;
+    position: absolute;
     height: 10px;
     width: 10px;
     border-radius: 50%;
     background:rgb(255, 255, 255);
 }
-.servicio .text .division::before{
-    content:"";
-    display:inline-block;
-    position:absolute;
-    right:0;
-    height: 10px;
-    width: 10px;
-    border-radius: 50%;
-    background:rgb(255, 255, 255);
+.caja__division::after{
+    left: 0;
 }
-.servicio a{
-    position:absolute;
-    width:100%;
-    height:100%;
-    user-select: none;
-}   
+.caja__division::before{
+    right: 0;
+} 
+
 /*Mediaquery*/
 @media screen and (max-width: 900px){
-    .servicio .text h2{
-        font-size:2.8em;
+    .caja__subtitulo1{
+        font-size: 2.8em;
     }
-    .servicio .text h2.subtitle2{
-        font-size:3.2em;
-    }
-    .servicio:nth-child(3) .text .subtitle1{
-        font-size:3.2em;
-    }
-    .servicio:nth-child(3) .text .subtitle2{
-        font-size:2.8em;
+    .caja__subtitulo2{
+        font-size: 3.2em;
     }
 }
 @media screen and (max-width:720px) {
-    .servicio .text h2{
+    .caja__subtitulo1{
         font-size:2.5em;
     }
-    .servicio .text h2.subtitle2{
+    .caja__subtitulo2{
         font-size:3em;
-    }
-    .servicio:nth-child(3) .text .subtitle1{
-        font-size:3em;
-    }
-    .servicio:nth-child(3) .text .subtitle2{
-        font-size:2.5em;
     }
 }
 /*Entra a la parte movil */
-@media screen and (max-width:700px) , (orientation:landscape) and (max-width:700px){
+@media screen and (max-width:700px), (orientation:landscape) and (max-width:700px){
     img{
         user-select: none;
     }
-    .servicio > a { 
+    .servicio__enlace{ 
         outline: none;
         -webkit-tap-highlight-color: transparent;
     }
-    .servicio .textBox a {
-        position: absolute;
-    }
-    .servicio .fondo-web{
+    .fondo--web{
         display: none;
     }
-    .servicio .fondo-movil{
+    .fondo--movil{
         display: block;
         position:absolute;
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
-    .servicio .textBox .division{
+    .caja__division{
         display: none;
     }
-    .servicio .text .box{
+    .caja{
         width: initial;
+        /*height: 17%;*/
         position: relative;
         margin-bottom: 60px;
         padding: 10px;
@@ -177,40 +147,36 @@
         padding-left: 20px;
         padding-right: 20px;
     }
-    .servicio .text .box:hover{
+    .caja:hover{
         background-color: rgba(255, 255, 255, 0.28);
     }
 
-    .servicio .text .box [class^="subtitle"]{
+    .caja__subtitulo1, .caja__subtitulo2{
         text-align: center;
     }
-    .servicio .text .box h2.subtitle1{
-        font-size:4em;
+    .caja__subtitulo1{
+        font-size: 4em;
     }
-    .servicio .text .box h2.subtitle2{
-        font-size:3.5em;
+    .caja__subtitulo2{
+        font-size: 3.5em;
     }
 }
 @media screen and (max-width:400px){
-    .servicio .text .box{
+    .caja{
         width: 60%;
     }
-    .servicio .text .box h2.subtitle1{
-        font-size:3.5em;
+    .caja__subtitulo1{
+        font-size: 3.5em;
     }
-    .servicio .text .box h2.subtitle2{
-        font-size:3em;
+    .caja__subtitulo2{
+        font-size: 3em;
     }
 }
-@media (orientation:landscape){
-    .servicio .fondo-web{
+@media (orientation: landscape){
+    .fondo--web{
         display: block;
     }     
-    .servicio .fondo-movil{
+    .fondo--movil{
         display: none;
     } 
 }
-
-
- 
- 

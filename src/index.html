@@ -13,7 +13,6 @@
   <link rel="shorcut icon" href="img/icono web lampara.png">
   <link rel="stylesheet" href="style/style.css">
   <link rel="stylesheet" href="style/bloque2.css">
-  <link rel="stylesheet" href="style/bloque3.css">
   <link rel="stylesheet" href="style/bloque4.css">
   <link rel="stylesheet" href="style/normalize.css">
   <link rel="stylesheet" href="style/slider.css">
@@ -21,93 +20,87 @@
 <body>
 <!-- partial:index.partial.html -->
 
-<div id="wholepage">
-	<section class=" section bloque1" id="b1">
-    <img src="img/portada-movil.webp" alt="">
+<div id="wholepage" class="index">
+	<section class="section bloque1" id="b1">
+    <img src="img/portada-movil.webp" class="bloque1__imagen" alt="">
   </section>
-	<div class="section bloque2"  id="b2"> 
-    <div class="servicio" style="height: 100vh;" id="servicio">
-      <a href="suficiencia.html">
-        <div class="text">
-          <div class="textBox box">
-            <h2 class="subtitle1">Suficiencia</h2>
-            <div class="division"></div>
-            <h2 class="subtitle2">Unsa</h2>
-          </div>
-        </div>
-      </a>
-      <img class ="fondo fondo-web" src="img/suficiencia.jpg" alt="suficiencia">
-      <img class ="fondo fondo-movil" src="img/suficiencia-cel.webp" alt="suficiencia">
-      <div class="siguiente primero">
-        <img class="flecha2" src="img/proximo-2.png" alt="">
-      </div>
-    </div>
-    <div class="servicio" style="height: 100vh;" id="servicio">
-    <a href="talleres.html">
-      <div class="text">
-        <div  class="textBox box">
-          <h2 class="subtitle1">Nuestros</h2>
-          <div class="division"></div>
-          <h2 class="subtitle2">Talleres</h2>
-        </div>
-      </div>
-    </a>
-      <img class ="fondo fondo-web" src="img/talleres.jpg" alt="talleres">
-      <img class ="fondo fondo-movil" src="img/talleres-cel.webp" alt="suficiencia">
 
-    </div>
-    <div class="servicio" style="height: 100vh;" id="servicio">
-      <a href="talleres.html">
-        <div class="text">
-          <div  class="textBox box ">
-            <h2 class="subtitle1">estudio</h2>
-            <div class="division"></div>
-            <h2 class="subtitle2">arquitectura</h2>
+	<div class="section bloque2"  id="b2"> 
+    <div class="servicio" id="servicio" style="height: 100vh;">
+      <a href="suficiencia.html" class="servicio__enlace">
+        <div class="servicio__textos">
+          <div class="caja">
+            <h2 class="caja__subtitulo1">Suficiencia</h2>
+            <div class="caja__division"></div>
+            <h2 class="caja__subtitulo2">Unsa</h2>
           </div>
         </div>
       </a>
-        <img class ="fondo fondo-web" src="img/estudio.jpg" alt="estudio">
-        <img class ="fondo fondo-movil" src="img/estudio-cel.webp" alt="suficiencia">
+      <img class="fondo fondo--web" src="img/suficiencia.jpg" alt="suficiencia">
+      <img class="fondo fondo--movil" src="img/suficiencia-cel.webp" alt="suficiencia">
+    </div>
+
+    <div class="servicio" id="servicio" style="height: 100vh;">
+      <a class="servicio__enlace" href="talleres.html">
+        <div class="servicio__textos">
+          <div  class="caja">
+            <h2 class="caja__subtitulo1">Nuestros</h2>
+            <div class="caja__division"></div>
+            <h2 class="caja__subtitulo2">Talleres</h2>
+          </div>
+        </div>
+      </a>
+      <img class ="fondo fondo--web" src="img/talleres.jpg" alt="talleres">
+      <img class ="fondo fondo--movil" src="img/talleres-cel.webp" alt="suficiencia">
+    </div>
+
+    <div class="servicio" id="servicio" style="height: 100vh;">
+      <a class="servicio__enlace" href="talleres.html">
+        <div class="servicio__textos">
+          <div  class="caja">
+            <h2 class="caja__subtitulo1">estudio</h2>
+            <div class="caja__division"></div>
+            <h2 class="caja__subtitulo2">arquitectura</h2>
+          </div>
+        </div>
+      </a>
+      <img class ="fondo fondo--web" src="img/estudio.jpg" alt="estudio">
+      <img class ="fondo fondo--movil" src="img/estudio-cel.webp" alt="suficiencia">
     </div>
   </div>
 
   <section class="section bloque4" style="height: 100vh;" id="b3">
     <div class="mapa">
-      <iframe title="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d956.8867425860011!2d-71.53440177083614!3d-16.397024312732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91424a50dffcf135%3A0x3721a24f73a5595e!2sCalle%20Sta.%20Marta%20104%2C%20Arequipa%2004001!5e0!3m2!1ses!2spe!4v1611701161938!5m2!1ses!2spe" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      <iframe title="mapa" class="mapa__frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d956.8867425860011!2d-71.53440177083614!3d-16.397024312732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91424a50dffcf135%3A0x3721a24f73a5595e!2sCalle%20Sta.%20Marta%20104%2C%20Arequipa%2004001!5e0!3m2!1ses!2spe!4v1611701161938!5m2!1ses!2spe" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     </div> 
     <div class="footer">
-      <div class="imgBox">
-        <img srcset="img/Skala-Letras.png 473w" class="letras" alt="skala-logo">
+      <div class="footer__logo">
+        <img class="footer__logo-img" srcset="img/Skala-Letras.png 473w" alt="skala-logo">
       </div>
-      <h3>CONTÁCTANOS</h3>
-
-      <div class="Redes">
+      <h3 class="footer__texto">CONTÁCTANOS</h3>
+      <div class="footer__redes">
           <!--Facebook-->
-          <div class="box">
-              <a href="https://www.facebook.com/studioskala" class="Red">
-                <img class="icono" src="img/Facebook.png" alt="facebook">
-                <p>/StudioSkala</p>
+          <div class="red">
+              <a class="red__enlace" href="https://www.facebook.com/studioskala">
+                <img class="red__icono" src="img/Facebook.png" alt="facebook">
+                <p class="red__texto">/StudioSkala</p>
               </a>
           </div>
           <!--Instagram-->
-          <div class="box">
-              <a href="https://www.instagram.com/skalastudio_arquitectura/" class="Red">
-                <img class="icono" src="img/Instagram.png" alt="instagram">  
-                <p>/SkalaStudio</p>
+          <div class="red">
+              <a class="red__enlace" href="https://www.instagram.com/skalastudio_arquitectura/">
+                <img class="red__icono" src="img/Instagram.png" alt="instagram">  
+                <p class="red__texto">/SkalaStudio</p>
               </a>
           </div>
           <!--WhatsApp-->
-          <div class="box" >
-            <a class="Red" href="https://wa.link/v2cid0">
-              <img class="icono" src="img/WTSPAverQuePedo.png" alt="whatsapp"/>
-              <div style="margin-left: 7px;">
-                <ul>- 959 853 167</ul>
-                <ul>- 982 069 132</ul>
-              </div>
+          <div class="red" >
+            <a class="red__enlace" href="https://wa.link/v2cid0">
+              <img class="red__icono" src="img/WTSPAverQuePedo.png" alt="whatsapp"/>
+              <p class="red__texto">942 732 102</p>
             </a>
           </div>
       </div>
-      
     </div>
   </section>
 </div>

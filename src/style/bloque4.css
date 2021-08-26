@@ -18,58 +18,37 @@ body{
 	width: 100%;
 	position: relative;
 }
-.mapa iframe{
+.mapa__frame{
 	min-height: 50vh;
 }
+
 .footer{ /*div general del footer*/
 	height: 50vh;
 	width: 100%;
-    position:relative;
+    position: relative;
 	box-sizing: border-box;
 	display: grid;
 	grid-template-rows: repeat(3,1fr);
 }
-
 .footer > *{
-	margin-left:auto;
+	margin-left: auto;
 	margin-right: auto;
 }
-.imgBox{
+
+.footer__logo{
 	position: relative;
-	padding:10px;
+	padding: 10px;
 	margin-top: 10px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
-.imgBox img{
+.footer__logo-img{
 	height: 60px;
 	width: 320px;
 }
-.letras{ /* logo solo letras xd*/
-	height: 100%;
-	width: 100%;
-}
-.explore{ /*SUFI TALLERES STUDIO*/
-	margin-top:5px;
-	position:relative;
-	width: 90vw;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
 
-}
-.explore a{
-	font-size: 2em;
-	text-decoration: none;
-	color: white;
-	position: relative;
-	display: inline-block;
-	text-align: center;
-	padding: 6px 0px;
-
-}
-.footer h3{
+.footer__texto{
 	font-size: 27px;
 	font-family: PoiretOne;
 	color: white;
@@ -79,22 +58,7 @@ body{
 	align-items: center;
 }
 
-.EfectoCool::after{
-	content: '';
-	display: block;
-	width: 0;
-	position:absolute;
-	height: 1px;
-	background: #fff;
-	transition: width .3s;
-}
-.EfectoCool:hover::after{
-	width: 100%;
-	height: 1.5px;
-	transition: width .4s;
-}
-
-.Redes{ /*la recta de las redes*/
+.footer__redes{ /*la recta de las redes*/
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
@@ -104,18 +68,7 @@ body{
 	position: relative;
 	width: 70%;
 }
-
-.Redes p{
-	color: white;
-	text-align: center;
-	margin-left: 7px; 
-	font-size: 1.5em;
-}
-.icono{ /* iconos de redes*/
-	height: 60px;
-}
-
-.Red{ 
+.red__enlace{ 
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -123,140 +76,117 @@ body{
 	text-decoration: none;
 	color: #fff;
 }
-.Red ul{
+.red__icono{ 
+	height: 60px;
+}
+.red__texto{
+	color: white;
+	text-align: center;
+	margin-left: 7px; 
+	font-size: 1.5em;
+}
+.red__lista{
+	margin-left: 7px; 
+}
+.red__item{
 	padding-left: 0;
 }
 
 /*Terminamos contenido*/
 @media screen and (max-width: 440px){
-
-	.footer .imgBox  {
+	.footer__logo{
 		padding:10px;
-	
 	}
-	.imgBox img{
+	.footer__logo-img{
 		height: 55px;
 		width: 290px;
 	}
 	.footer{
 		align-items: center;
 	}
-	.footer .box p,.footer .box ul{
+	.red__texto, .red__item{
 		display: none;
 	}
-	.footer .explore{
-		flex-direction: column;
-	}
-	.footer .Redes{
+	.footer__redes{
 		display: flex;
 		align-items: center;
 	}
-    .footer .Redes img{
-        height: 3em;
-		
-    }
-	.footer .derechos p{
-		margin:5px;
+
+	.footer__copy{
+		margin: 5px;
 	}
-    .footer .explore a{
-        font-size:1.5em;
-        letter-spacing: 2.5px;
-		margin-left: 0;
-    }  
-	.footer h3{
+	.footer__texto{
 		font-size: 27px;
 	}
-	.footer .Redes .icono{
+	.red__icono{
 		height: 70px;
 	}
 }
 
 @media screen and (max-height:380px){
-
-	.imgBox img{
+	.footer__logo-img{
 		height:35px;
 		width: 170px
 	}
-	.footer .explore a.EfectoCool{
-		font-size:1.4em;
-	}
-	.bloque4 .footer .Redes .icono{
+	.red__icono{
 		height: 40px;
-		padding:10px;
+		padding: 10px;
 	}
-	.footer h3{
-		font-size:17px;
+	.footer__texto{
+		font-size: 17px;
 	}
 }
+
 @media screen and (max-height:270px){
-	.footer h3{
+	.footer__texto{
 		display: none;
 	}
-
 }
+
 @media screen and (max-height:230px){
-	.bloque4 .footer .Redes .icono{
+	.red__icono{
 		height: 30px;
 	}
-	.footer .imgBox{
-		height:25px;
-		padding:0;
+	.footer__logo{
+		height: 25px;
+		padding: 0;
 		width: 140px;
 	}
 }
 
 @media screen and (max-width: 700px) and (min-width: 440px){
-	.footer .box p,.footer .box ul{
+	.red__texto, .red__item{
 		display: none;
 	}
-
-	.footer .imgBox{
-		padding:3px;
+	.footer__logo{
+		padding: 3px;
 	}
-
-	.footer .explore{
-		display:flex;
-		justify-content: space-between;
-	}
-	.footer .Redes .icono{
+	.red__icono{
 		height: 70px;
 	}
+}
 
-	.footer .explore a{
-		margin-left: 0;
-		font-size:1.8em;
-	}
-	/*Fin del footer*/
-	}
-	.Red{
-		align-items: flex-start;
-	}
-	
-    /*Parte final del responsive*/
 @media screen and (max-width: 850px)  and (min-width: 700px), (max-height:540px){
-	.footer .explore{
-		font-size:.9em;
-	}
-	.footer .Redes{
+	.footer__redes{
 		font-size:.8em;
 	}
-	.footer .derechos{
+	.footer__derechos{
 		display: flex;
 		align-items: center;
 	}
-	.footer .derechos p{
-		margin:0;
+	.footer__copy{
+		margin: 0;
 	}
-	.footer .Redes img{
+	.red__icono{
 		height: 50px;
 	}
 }
 @media screen and (min-width: 1300px){
-	.imgBox img{
+	.footer__logo-img{
 		height: 70px;
 		width: 380px;
 	}
-	.footer h3{
+	.footer__texto{
 		font-size: 33px;
 	}
 }

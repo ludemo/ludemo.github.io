@@ -165,7 +165,7 @@ const WholePageSlider = class {
     this.height = 100
     
     // Animate/translate sections
-    let caja = document.getElementsByClassName("textBox");
+    let caja = document.getElementsByClassName("caja");
     for (let index = 0; index < this.sections.length; index++) {
       this.sections[index].style.transform = `translateY(${this.translate.section}%)`;
       if(`${this.translate.section}`==-100){

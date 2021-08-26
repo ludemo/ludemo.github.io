@@ -1,28 +1,25 @@
-
 body {
 	margin: 0;
+    background-color: #011D23;
 }
 .bloque1{
     background-image: url(../img/portada.jpg);
     background-size: cover;
-    background-position:center;
-    position:relative;
+    background-position: center;
+    position: relative;
     background-repeat: no-repeat;
 }
-.bloque1 img{
+.bloque1__imagen{
     display: none;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-body{
-    background-color: #011D23;
-}
+
 /*---------Bloque de bolitas--------------*/
 
-
 @media screen and (max-width: 440px){
-    .bloque1 img{
+    .bloque1__imagen{
         display: block;
     }
     
@@ -31,4 +28,4 @@ body{
     }
 }
 
-/*---------Fin del bloque de bolitas--------------*/
+/*--------Fin del bloque de bolitas--------*/
