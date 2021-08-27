@@ -1,6 +1,6 @@
 @media screen and (max-height:380px){
-	.footer .imgBox{
-		height:70px;
-		width:340px;
+	.footer__logo{
+		height: 70px;
+		width: 340px;
 	}
 }

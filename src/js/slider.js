@@ -159,7 +159,7 @@ const WholePageSlider = class {
     if (button) {
       button.checked = true
     }
-   
+
     // Reset settings after swipe, drag or click ended
     this.isDragging = false
     this.height = 100

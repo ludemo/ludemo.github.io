@@ -1,5 +1,5 @@
 /*--Quienes somos--*/
-.somos{
+.descripcion{
     max-width: 1200px;
     display: flex;
     margin-left: auto;
@@ -8,16 +8,16 @@
     text-align: center;
     flex-wrap: wrap;
 } 
-.somos  .text{
-    font-size:30px;
-    padding:0 80px 0 20px;
-    font-family:"PoiretOne";
+.descripcion__texto{
+    font-size: 30px;
+    padding: 0 80px 0 20px;
+    font-family: "PoiretOne";
 }
-.logo-somos{
+.descripcion__titulo{
     width: 350px;
     padding:20px;
 }
-.somos-text{
+.descripcion__subtitulo2, .descripcion__subtitulo1{
     width: 100%;
     position: relative;
     display: flex;
@@ -25,66 +25,66 @@
     margin-left: auto;
     margin-right: auto;
 }
-.quienes-text span{
-    font-size:100px;
-    font-family:"BebasNeue";
+.subtitulo1{
+    font-size: 100px;
+    font-family: "BebasNeue";
 }
-.quienes-text img{
+.subtitulo1__img{
     height: 85px;
 }
-.somos-text span{
-    font-size:120px;
-    font-family:"BebasNeue";
+.subtitulo2{
+    font-size: 120px;
+    font-family: "BebasNeue";
 }
-.somos-text img{
+.subtitulo2__img{
     height: 100px;
 }
 /*Fin quienes somos*/
 @media screen and (max-width: 900px){
-    .logo-somos{
-        margin:0;
-        padding:0;
+    .descripcion__titulo{
+        margin: 0;
+        padding: 0;
     }
-    .somos .text{
-        padding:0 50px;
+    .descripcion__texto{
+        padding: 0 50px;
     }
-    .somos .text p {
+    .descripcion__parrafo{
         margin-top: 20px;
     }
 }
 @media screen and (max-width: 450px){
-    .quienes-text{
+    .descripcion__subtitulo1{
         width: 205px;
     }
-    .quienes-text span{
-        font-size:60px;
+    .subtitulo1{
+        font-size: 60px;
     }
-    .quienes-text img{
+    .subtitulo1__img{
         height: 50px;
     }
-    .somos-text{
+    .descripcion__subtitulo2{
         align-items: center;    
     }
-    .somos-text span{
-        font-size:70px;
+    .subtitulo2{
+        font-size: 70px;
     }
-    .somos-text img{
+    .subtitulo2__img{
         height: 60px;
-        position:relative;
-        bottom:0;
+        position: relative;
+        bottom: 0;
     }
-    .somos{
+    .descripcion{
         flex-direction: column;
         min-width: 320px;
     }
-    .logo-somos{
+    .descripcion__titulo{
         width: 200px;
         position: relative;
         margin-left: auto;
         margin-right: auto;
     }
-    .somos  .text{
-        font-size:20px;
+    .descripcion__texto{
+        font-size: 20px;
         padding: 10px;
         text-align: center;
     }

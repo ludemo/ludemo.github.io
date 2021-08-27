@@ -1,4 +1,4 @@
-.nuestros-logros{
+.logros{
     margin: 0;
     padding: 0;
     display: flex;
@@ -7,7 +7,7 @@
     justify-content: center;
     margin: 10px 0px;
 }
-.base{
+.subtitulo{
     font-family: BebasNeue;
     font-style: normal;
     font-weight: normal;
@@ -16,17 +16,17 @@
     text-align: center;
     margin: 0px;
 }
-.resalto{
+.subtitulo--grande{
     font-size: 80px;
     margin-left: 15px;
 }
-.slogan{
+.subtitulo--peque{
     font-size: 40px;
     color: #E2DCDC;
     line-height: 50px;
     margin-bottom: 20px;
 }
-.logro-titulo{
+.logros__titulo{
     display: flex;
     flex-direction: row;
     align-items: baseline;
@@ -39,135 +39,132 @@
     justify-content: center;
     align-items: center;
 }
-
-.glide__slide img{
-    width: 100%;
-    border-radius: 15px;
+.glide__slides{
+    overflow: visible;
 }
-
 .glide__slide{
     opacity: .7;
     transition: .1s linear;
 }
-
+.glide__slide-img{
+    width: 100%;
+    border-radius: 15px;
+}
 .glide__slide--active{
     opacity: 1;
     filter: none;
     /*transform: scale(1.1);*/
 }
-
-.glide__slides{
-    overflow: visible;
-}
 .glide i.fas{
-    font-size:32px;
+    font-size: 32px;
 }
+
 @media screen and (min-width: 1370px){
-    .nuestros-logros{
+    .logros{
         min-height: 950px;
     }
 }
 @media screen and (max-width: 1200px){
-    .nuestros-logros{
+    .logros{
         min-height: 65vh;
     }
-    .glide__slide img{
+    .glide__slide-img{
         width: 100%;
     }
 }
 @media screen and (max-width: 1370px) and (max-height: 1200px){
-    .nuestros-logros{
+    .logros{
         min-height: 80vh;
     }
 }
 @media screen and (max-width: 1370px) and (max-height: 800px){
-    .nuestros-logros{
+    .logros{
         min-height: 100vh;
         margin-top: 20px;
         margin-bottom: 0px;
     }
 }
 @media screen and (max-width: 1370px) and (max-height: 1370px){
-    .nuestros-logros{
+    .logros{
         min-height: 60vh;
     }
 }
 @media screen and (max-width: 1200px) and (max-height: 1370px){
-    .nuestros-logros{
+    .logros{
         min-height: 50vh;
     }
 }
 @media screen and (max-width: 999px){
-    .nuestros-logros{
+    .logros{
         min-height: 50vh;
     }
 }
 @media screen and (max-width: 800px){
-    .nuestros-logros{
+    .logros{
         min-height: 45vh;
     }
 }
 @media screen and (max-width: 800px) and (max-height: 1025px){
-    .nuestros-logros{
+    .logros{
         min-height: 57vh;
     }
 }
 @media screen and (max-width: 700px){
-    .base{
+    .subtitulo{
         font-size: 55px;
     }
-    .resalto{
+    .subtitulo--grande{
         font-size: 70px;
     }
-    .slogan{
+    .subtitulo--peque{
         font-size: 35px;
     }
     .glide{
         max-width: 70%;
     }
-    .nuestros-logros{
+    .logros{
         min-height: 40vh;
     }
 }
 @media screen and (max-width: 450px){
-    .base{
+    .subtitulo{
         font-size: 50px;
     }
-    .resalto{
+    .subtitulo--grande{
         font-size: 65px;
     }
-    .slogan{
+    .subtitulo--peque{
         font-size: 30px;
     }
-    .nuestros-logros{
+    .logros{
         min-height: 70vh;
     }
 }
 @media screen and (max-width: 450px) and (max-height: 820px){
-    .nuestros-logros{
+    .logros{
         min-height: 65vh;
     }
 }
 
 @media screen and (max-width: 360px){
-    .base{
+    .subtitulo{
         font-size: 45px;
     }
-    .resalto{
+    .subtitulo--grande{
         font-size: 60px;
     }
-    .slogan{
+    .subtitulo--peque{
         font-size: 28px;
     }
 }
 @media screen and (max-width: 320px){
-    .base{
+    .subtitulo{
         font-size: 40px;
     }
-    .resalto{
+    .subtitulo--grande{
         font-size: 55px;
     }
-    .slogan{
+    .subtitulo--peque{
         font-size: 28px;
     }
 }

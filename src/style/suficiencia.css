@@ -25,7 +25,7 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
-.titulo .text{
+.titulo__texto{
     top: -20px;
     position: absolute;
     letter-spacing: 5px;
@@ -35,7 +35,7 @@ body{
 img{
     user-select: none;
 }
-.titulo .text [class^="subtitle"]{
+.titulo__subtitulo1, .titulo__subtitulo2{
     position: relative;
     color:#ffffff;
     margin: 0;
@@ -45,16 +45,16 @@ img{
     user-select: none; 
     font-family: BebasNeue;
 }
-.titulo .text .subtitle1{
+.titulo__subtitulo1{
     font-size: 140px;
 }
-.titulo .text .subtitle2{
+.titulo__subtitulo2{
     font-size: 210px;
 }
-.titulo .img-2{
+.titulo__img2{
     display: none;
 }
-.titulo .img-1{
+.titulo__img1{
     transform: rotateY(180deg);
     bottom: 0;
     right: 0;
@@ -63,7 +63,7 @@ img{
     width: 100%;
     height: 450px;
 }
-.titulo img{
+.titulo__img1--web, .titulo__img2--movil{
     position: relative;
     width: 100%;
     height: 100%;
@@ -74,19 +74,15 @@ img{
 .matriculas{
     position: relative;
 }
-.matriculas img{
+.matricula__img{
+    display: flex;
+    margin: 0px;
     margin-left: auto;
     margin-right: auto;
-}
-.matricula{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     z-index: 5px;
     height: 800px;
-    margin: 0px;
 }
-.matriculas .barra-matricula{
+.matricula__barra{
     background-color: rgba(0, 76, 79, 0.452);
     font-family: BebasNeue;
     position: absolute;
@@ -100,21 +96,18 @@ img{
     z-index: 10px;
     line-height: 50px;
 }
-.matriculas .barra-matricula a{
-    text-decoration: none;
-    color: #FFF;
-}
-.matriculas .boxMatriculasText{
+
+.matricula__boton{
     position: relative;
     padding-left: 11px;
     padding-right: 11px;
 }
-.matriculas .boxMatriculasText > *{
+.matricula__boton > *{
     margin: 0 10px;
 }
 
-.matriculas .boxMatriculasText::before,
-.matriculas .boxMatriculasText::after{
+.matricula__boton::before,
+.matricula__boton::after{
     position: absolute;
     width: 2px;
     height: 100%;
@@ -126,38 +119,31 @@ img{
     transition: opacity 0;
 }
 
-.matriculas .boxMatriculasText:before
-{
+.matricula__boton:before{
     left: 0px;
 } 
 
-.matriculas .boxMatriculasText:after
-{
+.matricula__boton:after{
     right: 0px;
 }
 
-.matriculas .boxMatriculasText:hover:before, .matriculas .boxMatriculasText:hover:after
-{
+.matricula__boton:hover:before, .matricula__boton:hover:after{
     width: 100%;
     opacity: 0.3;
 }
 
-/*fondo del footer*/
-.fondo-footer{
-    background-color: #011D23;
-}
-.container-video{
+.video{
     max-height: 755px;
     max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
 }
-.video{
+.video__contenedor{
     height : 0;
 	padding-bottom: 56.25%;
 	position: relative;
 }
-.video iframe{
+.video__frame{
     border: 0;
     position: absolute;
     width: 100%;
@@ -165,25 +151,25 @@ img{
 }
 
 @media screen and (max-width: 1300px){
-    .titulo .text .subtitle1{
+    .titulo__subtitulo1{
         font-size: 130px;
     }
-    .titulo .text .subtitle2{
+    .titulo__subtitulo2{
         font-size: 180px;
     }
-    .titulo .img-1 img{
+    .titulo__img1--web{
         width: 650px;
         height: 450px;
     }
 }
 @media screen and (max-width: 1100px){
-    .titulo .text .subtitle1{
+    .titulo__subtitulo1{
         font-size: 130px;
     }
-    .titulo .text .subtitle2{
+    .titulo__subtitulo2{
         font-size: 180px;
     }
-    .titulo .img-1 img{
+    .titulo__img1--web{
         width: 550px;
         height: 400px;
     }
@@ -196,28 +182,28 @@ img{
         flex-wrap: wrap;
         gap: 0;
     }
-    .titulo .text{
+    .titulo__texto{
         margin: 0;
         position: relative;
     }
-    .titulo .img-1{
+    .titulo__img1{
         display: none;
     }
-    .titulo .img-2{
+    .titulo__img2{
         position: relative; 
         display: flex;
         align-items: flex-end;
     }
-    .titulo .img-2 img{
+    .titulo__img2--movil{
         object-fit: cover;
         width: 500px;
         top: -70px;
     }
-    .titulo .text .subtitle2{
+    .titulo__subtitulo2{
         text-align: end;
     }
 
-    .titulo .division{
+    .titulo__division{
         position: absolute;
         width: 100%;
         height: 5px;
@@ -225,29 +211,24 @@ img{
         display: flex;
         align-items: center;
     }
-    .titulo .division::after{
+    .titulo__division::after, .titulo__division::before{
         content: "";
         display: inline-block;
         position: absolute;
-        left: 0;
         height: 20px;
         width: 20px;
         border-radius: 50%;
         background:rgb(255, 255, 255);
     }
-    .titulo .division::before{
-        content: "";
-        display: inline-block;
-        position: absolute;
+    .titulo__division::before{
         right: 0;
-        height: 20px;
-        width: 20px;
-        border-radius: 50%;
-        background:rgb(255, 255, 255);
+    }
+    .titulo__division::after{
+        left: 0;
     }
 }
 @media screen and (min-width: 1600px){
-    .container-video{
+    .video{
         margin-bottom: 100px;
     }
 }
@@ -257,66 +238,60 @@ img{
         background-image:url(../img/fondo-suficiencia-cel.jpg);
     }
     
-    .titulo .text .subtitle1{
+    .titulo__subtitulo1{
         font-size: 100px;
     }
-    .matriculas img{
-        height: 600px;
-    }
-    .titulo .text .subtitle2{
+    .titulo__subtitulo2{
         font-size: 150px;
     }
-    .titulo .img-2 img{
+    .titulo__img2--movil{
         width: 400px;
     }
-    .matriculas .barra-matricula{
+    .matricula__img{
+        height: 600px;
+    }
+    .matricula__barra{
         bottom: 100px; 
         height: 55px;
         font-size: 35px;
-    }
-    .matriculas .barra-matricula{
         line-height: 40px;
     }
 }
 @media screen and (max-width: 500px){
-    .titulo .text .subtitle1{
+    .titulo__subtitulo1{
         font-size: 80px;
     }
-    .titulo .text .subtitle2{
+    .titulo__subtitulo2{
         font-size: 130px;
     }
-    .titulo .img-2 img{
+    .titulo__img2--movil{
         width: 350px;
     }
-    .titulo .division{
+    .titulo__division{
         height: 3px;
     }
-    .titulo .division::after{
+    .titulo__division::after, .titulo__division::before{
         height: 15px;
         width: 15px;
     }
-    .titulo .division::before{
-        height: 15px;
-        width: 15px;
-    }
-    .matriculas img{
+    .matricula__img{
         height: 500px;
     }
-    .matriculas .barra-matricula{
+    .matricula__barra{
         bottom: 75px; 
     }
 }
 @media screen and (max-width: 450px){
-    .titulo .text .subtitle1{
+    .titulo__subtitulo1{
         font-size: 70px;
     }
-    .titulo .text .subtitle2{
+    .titulo__subtitulo2{
         font-size: 90px;
     }
-    .matriculas img{
+    .matricula__img{
         height: 450px;
     }
-    .titulo .img-2 img{
+    .titulo__img2--movil{
         width: 300px;
         top: -50px;
     }

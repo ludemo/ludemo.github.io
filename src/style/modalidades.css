@@ -1,10 +1,10 @@
-/* BLOQUE MODALIDADES*/
+/* BLOQUE MODALIDADES */
 .modalidades{
     width: 100%;
     min-height: 660px;
     max-height: 100vh;
 }
-.titulos{
+.seccion__titulo{
     font-family: BebasNeue;
     font-style: normal;
     font-weight: normal;
@@ -13,13 +13,13 @@
     text-align: center;
 }
 
-.conte{
+.modalidades__contenedor{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
-.clásica, .plus{
+.modalidad__clasica, .modalidad__plus{
     width: 30%;
     height: 460px;
     margin: 0px;
@@ -28,21 +28,13 @@
     align-items: center;
     justify-content: center;
 }
-.clásica{
+.modalidad__clasica{
     color:#E2D8D8;
 }
-.plus{
+.modalidad__plus{
     margin-left: 3%;
 }
-.modalidades ul{
-    padding-left: 30px;
-}
-
-.clásica p, .plus p{
-    margin: 0px;
-    margin-left: 15px;
-}
-.montos{
+.modalidad__subtitulo{
     font-family: BebasNeue;
     font-size: 50px;
     font-style: normal;
@@ -50,13 +42,21 @@
     margin: 0px;
     margin-bottom: 20px;
 }
+.modalidad__lista{
+    padding-left: 30px;
+}
 
-.raya{
+.item__texto{
+    margin: 0px;
+    margin-left: 15px;
+}
+
+.modalidades__raya{
     visibility: hidden;
     width: 0px;
     height: 0px;
 }
-.modalidades li{
+.modalidad__item{
     font-family: PoiretOne;
     font-style: normal;
     font-weight: normal;
@@ -67,74 +67,74 @@
     align-items: center;
     margin: 28px 0px;
 }
-.modalidades li:nth-child(1){
+.modalidad__item:nth-child(1){
     margin-top: 0px;
 }
-.modalidades li:nth-child(5){
+.modalidad__item:nth-child(5){
     margin-bottom: 0px;
     align-items: flex-start;
 }
-.modalidades li p:nth-child(5){
+.item__texto:nth-child(5){
     align-items: flex-start;
 }
-.chica-modalidades{
+.modalidades__img{
     width: 467px;
     margin-top: 1.5%;
 }
 
 /*MODALIDADES RESPONSIVE*/
 @media screen and (max-width: 1200px){
-    .clásica, .plus{
+    .modalidad__clasica, .modalidad__plus{
         width: 80%;
     }
-    .montos{
+    .modalidad__subtitulo{
         font-size: 41px;
     }
     .modalidades{
         height: 100%;
         min-height: 605px;
     }
-    .modalidades li{
+    .modalidad__item{
         font-size: 25px;
     }
-    .chica-modalidades{
+    .modalidades__img{
         width: 350px;
         height: 386.17px;
         margin-top: 11%;
     }
 }
 @media screen and (max-width: 1050px){
-    .chica-modalidades{
+    .modalidades__img{
         width: 300px;
         height: 331px;
         margin-top: 19%;
     }
-    .modalidades li{
+    .modalidad__item{
         font-size: 23px;
     }
-    .titulos{
+    .seccion__titulo{
         font-size: 50px;
         line-height: 50px;
     }
 }
-@media screen and (max-width: 900px){
 
-    .clásica, .plus{
+@media screen and (max-width: 900px){
+    .modalidad__clasica, .modalidad__plus{
         width: 80%;
     }
-    .montos{
+    .modalidad__subtitulo{
         font-size: 40px;
     }
     .modalidades{
         max-height: 160vh;
     }
-    .modalidades ul{
+    .modalidad__lista{
         padding-right: 30px;
     }
-    .modalidades li{
+    .modalidad__item{
         font-size: 23px;
     }
-    .chica-modalidades{
+    .modalidades__img{
         width: 0px;
     }
 }
@@ -149,28 +149,28 @@
     }
 }
 @media screen and (max-width: 540px){
-    .titulos{
+    .seccion__titulo{
         font-size: 42px;
         line-height: 42px;
     }
-    .conte{
+    .modalidades__contenedor{
         flex-direction: column;
         margin-bottom: 0px;
     }
-    .clásica, .plus{
+    .modalidad__clasica, .modalidad__plus{
         width: 80%;
     }
-    .plus{
+    .modalidad__plus{
         margin-left: 0px;
         margin-top: 30px;
     }
-    .clásica{
+    .modalidad__clasica{
         margin-bottom: 30px;
     }
-    .montos{
+    .modalidad__subtitulo{
         font-size: 40px;
     }
-    .raya{
+    .modalidades__raya{
         visibility: visible;
         width: 100%;
         border: 2px solid transparent; 
@@ -182,13 +182,13 @@
     .modalidades{
         max-height: 200vh;
     }
-    .modalidades ul{
+    .modalidad__lista{
         padding-right: 20px;
     }
-    .modalidades li{
+    .modalidad__item{
         font-size: 20px;
     }
-    .chica-modalidades{
+    .modalidades__img{
         width: 0px;
         height: 0px;
         margin: 0px;
@@ -196,18 +196,18 @@
     }
 }
 @media screen and (max-width: 420px){
-    .modalidades ul{
+    .modalidad__lista{
         padding-right: 0px;
     }
 }
 @media screen and (max-width: 320px){
-    .modalidades li{
+    .modalidad__item{
         font-size: 18px;
     }
-    .montos{
+    .modalidad__subtitulo{
         font-size: 35px;
     }
-    .titulos{
+    .seccion__titulo{
         font-size: 38px;
     }
 }
