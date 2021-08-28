@@ -7,20 +7,13 @@
     justify-content: center;
     margin: 10px 0px;
 }
-.subtitulo{
-    font-family: BebasNeue;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 60px;
-    line-height: 86px;
-    text-align: center;
-    margin: 0px;
-}
 .subtitulo--grande{
+    margin: 0px;
     font-size: 80px;
     margin-left: 15px;
 }
 .subtitulo--peque{
+    margin: 0px;
     font-size: 40px;
     color: #E2DCDC;
     line-height: 50px;

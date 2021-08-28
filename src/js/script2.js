@@ -24,14 +24,11 @@ new Glide(".images",{
 const open = document.getElementById('open');
 const close = document.getElementById("close");
 const container = document.getElementById("conteiner");
-console.log("El js funciona")
 open.addEventListener('click',() =>{
-    console.log("hizo clickk");
-    container.classList.add('emergente-active');
+    container.classList.add('ventana--activa');
 });
 
 close.addEventListener('click',() =>{
-	console.log("Tambien hizo click")
-    container.classList.remove('emergente-active');
+    container.classList.remove('ventana--activa');
 });
 

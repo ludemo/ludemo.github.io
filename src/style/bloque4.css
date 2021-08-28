@@ -121,7 +121,7 @@ body{
 
 @media screen and (max-height:380px){
 	.footer__logo-img{
-		height:35px;
+		height: 35px;
 		width: 170px
 	}
 	.footer__texto{

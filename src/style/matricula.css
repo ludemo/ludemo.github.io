@@ -11,7 +11,7 @@ body{
     z-index: 10000;
     display: none;
 }
-.emergente-active{
+.ventana--activa{
     display: flex;
 }
 .ventana__img--movil{
