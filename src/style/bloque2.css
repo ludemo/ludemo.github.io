@@ -45,7 +45,6 @@
     transition: all ease-out .6s;
 }
 .caja__subtitulo1, .caja__subtitulo2{
-    background-color: rgb(0, 0, );
     text-align: start;
     display: block;
     font-size: 3.5em;
@@ -115,9 +114,6 @@
 }
 /*Entra a la parte movil */
 @media screen and (max-width:700px), (orientation:landscape) and (max-width:700px){
-    img{
-        user-select: none;
-    }
     .servicio__enlace{ 
         outline: none;
         -webkit-tap-highlight-color: transparent;

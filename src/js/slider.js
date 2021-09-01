@@ -163,7 +163,14 @@ const WholePageSlider = class {
     // Reset settings after swipe, drag or click ended
     this.isDragging = false
     this.height = 100
-    
+    //función deleay
+    function syncDelay(milliseconds){
+      var start = new Date().getTime();
+      var end=0;
+      while( (end-start) < milliseconds){
+          end = new Date().getTime();
+      }
+     }
     // Animate/translate sections
     let caja = document.getElementsByClassName("caja");
     for (let index = 0; index < this.sections.length; index++) {
@@ -171,8 +178,9 @@ const WholePageSlider = class {
       if(`${this.translate.section}`==-100){
         console.log("entro")
         for(let i = 0 ;i < caja.length ; i++){
-          caja[i].style.top=0;
-      }
+          caja[i].style.top=0;    
+          caja[i].style.opacity=1;
+        }
       }
     }
     
