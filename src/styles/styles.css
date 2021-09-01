@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "BebasNeue";
   src: url("../fonts/BebasNeue-Regular.ttf");
@@ -143,11 +144,19 @@ h2 {
 /*Mediaquery*/
 /*Entra a la parte movil */
 @media screen and (max-width: 700px), (orientation: landscape) and (max-width: 700px) {
+  .servicio {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
   .servicio__enlace {
     outline: none;
     -webkit-tap-highlight-color: transparent;
     height: 30%;
     bottom: 10%;
+    z-index: 100;
   }
   .servicio:hover .caja {
     width: auto;
@@ -222,8 +231,8 @@ body {
   min-height: 50vh;
 }
 
+/*div general del footer*/
 .footer {
-  /*div general del footer*/
   height: 50vh;
   width: 100%;
   position: relative;
@@ -231,7 +240,6 @@ body {
           box-sizing: border-box;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: (1fr);
       grid-template-rows: repeat(3, 1fr);
 }
 
@@ -257,15 +265,21 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 50%;
+  max-width: 600px;
+  min-width: 270px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer__logo-img {
-  height: 60px;
-  width: 320px;
+  max-width: 100%;
+  height: auto;
+  /*Esto no debería ser necesario pero porsiacaso */
 }
 
 .footer__texto {
-  font-size: 27px;
+  font-size: 4vh;
   font-family: PoiretOne;
   color: white;
   margin: 0px;
@@ -325,115 +339,46 @@ body {
   color: white;
   text-align: center;
   margin-left: 7px;
-  font-size: 1.5em;
+  font-size: 3vh;
 }
 
 /*Terminamos contenido*/
-@media screen and (max-width: 440px) {
-  .footer {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+@media (orientation: landscape) {
+  .red__texto, .red__item {
+    display: block;
   }
   .footer__logo {
-    padding: 10px;
+    width: 30%;
   }
-  .footer__logo-img {
-    height: 55px;
-    width: 290px;
-  }
-  .footer__texto {
-    font-size: 27px;
-  }
-  .footer__redes {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
+}
+
+@media screen and (max-width: 700px) {
   .red__texto, .red__item {
     display: none;
   }
   .red__icono {
     height: 70px;
   }
-  .footer__copy {
-    margin: 5px;
-  }
 }
 
-@media screen and (max-height: 380px) {
-  .footer__logo-img {
-    height: 35px;
-    width: 170px;
-  }
-  .footer__texto {
-    font-size: 17px;
-  }
+@media screen and (max-width: 850px) and (min-width: 700px), (max-height: 540px) {
+  /* .footer{
+        &__derechos{
+            display: flex;
+            align-items: center;
+        }
+        &__copy{
+            margin: 0;
+        }
+    } */
   .red__icono {
-    height: 40px;
-    padding: 10px;
+    height: 50px;
   }
 }
 
 @media screen and (max-height: 270px) {
   .footer__texto {
     display: none;
-  }
-}
-
-@media screen and (max-height: 230px) {
-  .footer__logo {
-    height: 25px;
-    padding: 0;
-    width: 140px;
-  }
-  .red__icono {
-    height: 30px;
-  }
-}
-
-@media screen and (max-width: 700px) and (min-width: 440px) {
-  .red__texto, .red__item {
-    display: none;
-  }
-  .red__icono {
-    height: 70px;
-  }
-  .footer__logo {
-    padding: 3px;
-  }
-}
-
-@media screen and (max-width: 850px) and (min-width: 700px), (max-height: 540px) {
-  .footer__redes {
-    font-size: .8em;
-  }
-  .red__icono {
-    height: 50px;
-  }
-  .footer__derechos {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .footer__copy {
-    margin: 0;
-  }
-}
-
-@media screen and (min-width: 1300px) {
-  .footer__logo-img {
-    height: 70px;
-    width: 380px;
-  }
-  .footer__texto {
-    font-size: 33px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
