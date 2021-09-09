@@ -1,6 +1,7 @@
 .bloque2{
     display: flex;
 }
+
 .servicio{
     position: relative;
     flex-grow: 1;
@@ -97,11 +98,14 @@
 /*Entra a la parte movil */
 @media screen and (max-width:700px), (orientation:landscape) and (max-width:700px){
     .servicio{
+        -webkit-tap-highlight-color: transparent;
+        user-select: none;
         &__enlace{ 
             outline: none;
             -webkit-tap-highlight-color: transparent;
             height: 30%;
-            bottom: 10%;    
+            bottom: 10%;
+            z-index: 100;    
         }
         &:hover .caja{
             width: auto;
