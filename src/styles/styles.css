@@ -685,7 +685,7 @@ body {
 }
 
 /*Terminamos contenido*/
-@media screen and (min-width: 1370px) {
+@media screen and (min-width: 1450px) {
   .footer--suficiencia {
     min-height: 750px;
   }
@@ -1164,7 +1164,7 @@ img {
 
 .descripcion__texto {
   font-size: 30px;
-  padding: 0 80px 0 20px;
+  padding: 0 45px;
   font-family: "PoiretOne";
 }
 
