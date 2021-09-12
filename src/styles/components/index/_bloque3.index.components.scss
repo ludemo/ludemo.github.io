@@ -24,13 +24,16 @@ body{
 
 /*div general del footer*/
 .footer{
-    height: 50vh;
-	width: 100%;
+    width: 100%;
 	display: flex;
     justify-content: space-between;
     flex-direction: column;
     &--suficiencia{
         background-color: #011D23;
+        min-height: 50vh;
+    }
+    &--index{
+        height: 50vh;
     }
     &> *{
         margin-left: auto;
@@ -99,7 +102,11 @@ body{
 }
 
 /*Terminamos contenido*/
-
+@media screen and (min-width: 1370px){
+    .footer--suficiencia{
+        min-height: 750px;
+    }
+}
 @media (orientation: landscape){
     .red{
         &__texto, &__item{

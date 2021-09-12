@@ -559,7 +559,6 @@ body {
 
 /*div general del footer*/
 .footer {
-  height: 50vh;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -576,6 +575,11 @@ body {
 
 .footer--suficiencia {
   background-color: #011D23;
+  min-height: 50vh;
+}
+
+.footer--index {
+  height: 50vh;
 }
 
 .footer > * {
@@ -681,6 +685,12 @@ body {
 }
 
 /*Terminamos contenido*/
+@media screen and (min-width: 1370px) {
+  .footer--suficiencia {
+    min-height: 750px;
+  }
+}
+
 @media (orientation: landscape) {
   .red__texto, .red__item {
     display: block;
