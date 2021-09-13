@@ -204,7 +204,7 @@ body {
 }
 
 .bloque1 {
-  background-image: url(../img/portada-para-tablet.jpg);
+  background-image: url(../img/portada.webp);
   background-size: cover;
   background-position: center;
   position: relative;
@@ -1769,11 +1769,11 @@ body {
     background-image: url(../img/fondo-suficiencia-cel.jpg);
     max-width: 300px;
   }
-  .ventana__img .ventana--movil {
+  .ventana__img--movil {
     display: block;
     max-height: 75vh;
   }
-  .ventana--web {
+  .ventana__img--web {
     display: none;
   }
 }
@@ -2157,6 +2157,21 @@ body {
 @media screen and (max-width: 320px) {
   .brochure__contenedor {
     font-size: 18px;
+  }
+}
+
+.mantenimiento {
+  background-image: url("../img/mantenimientopc.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+@media screen and (max-width: 650px) {
+  .mantenimiento {
+    background-image: url("../img/mantenimiento-cel.webp");
   }
 }
 /*# sourceMappingURL=styles.css.map */

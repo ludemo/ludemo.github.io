@@ -136,15 +136,17 @@ body{
         background-image: url(../img/fondo-suficiencia-cel.jpg);
         max-width: 300px;
 
-        &__img
+        &__img{
+
             &--movil{
                 display: block;
                 max-height: 75vh;
             }
-
+            
             &--web{
                 display: none;
             }
+        }
     }
 }
 @media screen and (max-width: 768px){
