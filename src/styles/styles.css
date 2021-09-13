@@ -559,7 +559,6 @@ body {
 
 /*div general del footer*/
 .footer {
-  height: 50vh;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -576,6 +575,11 @@ body {
 
 .footer--suficiencia {
   background-color: #011D23;
+  min-height: 50vh;
+}
+
+.footer--index {
+  height: 50vh;
 }
 
 .footer > * {
@@ -681,6 +685,12 @@ body {
 }
 
 /*Terminamos contenido*/
+@media screen and (min-width: 1930px) {
+  .footer--suficiencia {
+    min-height: 750px;
+  }
+}
+
 @media (orientation: landscape) {
   .red__texto, .red__item {
     display: block;
@@ -1154,7 +1164,7 @@ img {
 
 .descripcion__texto {
   font-size: 30px;
-  padding: 0 80px 0 20px;
+  padding: 0 45px;
   font-family: "PoiretOne";
 }
 
@@ -1340,15 +1350,15 @@ img {
 @media screen and (min-width: 1370px) {
   .logros {
     min-height: 950px;
+    max-width: 1900px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 @media screen and (max-width: 1200px) {
   .logros {
     min-height: 65vh;
-  }
-  .glide__slide-img {
-    width: 100%;
   }
 }
 
@@ -1461,6 +1471,9 @@ img {
 
 .inicio {
   margin-top: 80px;
+  max-width: 1800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .inicio__texto {
@@ -1810,6 +1823,9 @@ body {
   width: 100%;
   min-height: 660px;
   max-height: 100vh;
+  max-width: 1800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .modalidades__contenedor {
