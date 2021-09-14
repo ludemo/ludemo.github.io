@@ -194,6 +194,21 @@
   }
 }
 
+::-webkit-scrollbar {
+  width: 12px;
+  /* Tamaño del scroll en vertical */
+  background-color: #ff000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #dfe2e1;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+
 h2 {
   margin: 0;
 }
