@@ -4,6 +4,11 @@
   src: url("../fonts/BebasNeue-Regular.ttf");
 }
 
+@font-face {
+  font-family: "PoiretOne";
+  src: url("../fonts/PoiretOne.ttf");
+}
+
 .glide {
   position: relative;
   width: 100%;
@@ -540,11 +545,6 @@ body {
   .fondo--movil {
     display: none;
   }
-}
-
-@font-face {
-  font-family: "PoiretOne";
-  src: url("../fonts/PoiretOne.ttf");
 }
 
 body {
