@@ -1625,7 +1625,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-image: url(../img/fondo-pc.jpg);
+  background-image: url(../img/fondo-pc.webp);
   background-size: cover;
   background-repeat: repeat;
   font-family: Arial, Helvetica, sans-serif;
