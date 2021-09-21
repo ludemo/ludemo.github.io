@@ -656,6 +656,10 @@ body {
   font-family: PoiretOne;
 }
 
+.footer__copy {
+  font-family: PoiretOne;
+}
+
 .red {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1683,7 +1687,7 @@ body {
 
 @media screen and (max-width: 700px) {
   .ventana {
-    background-image: url(../img/fondo-suficiencia-cel.jpg);
+    background-image: url(../img/fondo-suficiencia-cel.webp);
     max-width: 300px;
   }
   .ventana__img--movil {
