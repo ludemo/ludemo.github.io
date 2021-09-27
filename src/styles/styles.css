@@ -219,6 +219,18 @@ h2 {
 }
 
 body {
+  color: #ffffff;
+}
+
+h1, h2 {
+  font-family: "BebasNeue";
+}
+
+p {
+  font-family: "PoiretOne";
+}
+
+body {
   margin: 0;
   background-color: #011D23;
 }
@@ -368,7 +380,6 @@ body {
   transition: flex-grow 0.6s cubic-bezier(0.4, 0, 0.2, 1) 0.2s, -webkit-box-flex 0.6s cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
   transition: flex-grow 0.6s cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
   transition: flex-grow 0.6s cubic-bezier(0.4, 0, 0.2, 1) 0.2s, -webkit-box-flex 0.6s cubic-bezier(0.4, 0, 0.2, 1) 0.2s, -ms-flex-positive 0.6s cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
-  font-family: BebasNeue;
   font-weight: 400;
 }
 
@@ -484,8 +495,6 @@ body {
   display: none;
 }
 
-/*Mediaquery*/
-/*Entra a la parte movil */
 @media screen and (max-width: 700px), (orientation: landscape) and (max-width: 700px) {
   .servicio {
     -webkit-tap-highlight-color: transparent;
@@ -631,7 +640,6 @@ body {
 .footer__texto {
   font-size: 4vh;
   font-family: PoiretOne;
-  color: white;
   margin: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -652,12 +660,6 @@ body {
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  color: white;
-  font-family: PoiretOne;
-}
-
-.footer__copy {
-  font-family: PoiretOne;
 }
 
 .red {
@@ -685,7 +687,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   text-decoration: none;
-  color: #fff;
+  color: #ffffff;
 }
 
 .red__icono {
@@ -697,7 +699,6 @@ body {
 }
 
 .red__texto {
-  color: white;
   text-align: center;
   margin-left: 7px;
   font-size: 3vh;
@@ -731,21 +732,10 @@ body {
   }
 }
 
-@font-face {
-  font-family: "BebasNeue";
-  src: url("../fonts/BebasNeue-Regular.ttf");
-}
-
-@font-face {
-  font-family: "PoiretOne";
-  src: url("../fonts/PoiretOne.ttf");
-}
-
 body {
   background-image: url(../img/fondo-pc.webp);
   background-size: 80%;
   background-repeat: repeat;
-  color: white;
 }
 
 .titulo {
@@ -782,13 +772,11 @@ img {
 
 .titulo__subtitulo1, .titulo__subtitulo2 {
   position: relative;
-  color: #ffffff;
   margin: 0;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  font-family: BebasNeue;
 }
 
 .titulo__subtitulo1 {
@@ -890,7 +878,7 @@ img {
     position: absolute;
     width: 100%;
     height: 5px;
-    background-color: white;
+    background-color: #ffffff;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -905,7 +893,7 @@ img {
     height: 20px;
     width: 20px;
     border-radius: 50%;
-    background: white;
+    background: #ffffff;
   }
   .titulo__division::before {
     right: 0;
@@ -1055,7 +1043,6 @@ img {
 }
 
 .horarios__hora {
-  font-family: PoiretOne;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1184,7 +1171,6 @@ img {
 .descripcion__texto {
   font-size: 30px;
   padding: 0 45px;
-  font-family: "PoiretOne";
 }
 
 .descripcion__titulo {
@@ -1207,7 +1193,6 @@ img {
 
 .subtitulo1 {
   font-size: 100px;
-  font-family: "BebasNeue";
 }
 
 .subtitulo1__img {
@@ -1216,7 +1201,6 @@ img {
 
 .subtitulo2 {
   font-size: 120px;
-  font-family: "BebasNeue";
 }
 
 .subtitulo2__img {
@@ -1740,10 +1724,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1764,7 +1744,6 @@ body {
 }
 
 .seccion__titulo {
-  font-family: BebasNeue;
   font-style: normal;
   font-weight: normal;
   font-size: 60px;
@@ -1985,11 +1964,6 @@ body {
   .seccion__titulo {
     font-size: 38px;
   }
-}
-
-@font-face {
-  font-family: "PoiretOne";
-  src: url("../fonts/PoiretOne.ttf");
 }
 
 .brochure {

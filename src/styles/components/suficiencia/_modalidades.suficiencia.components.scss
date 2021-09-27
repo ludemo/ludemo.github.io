@@ -8,7 +8,6 @@
     margin-right: auto;
     &__contenedor{
         display: flex;
-        flex-direction: row;
         justify-content: center;
         align-items: center;
     }
@@ -26,9 +25,7 @@
     
 }
 
-
 .seccion__titulo{
-    font-family: BebasNeue;
     font-style: normal;
     font-weight: normal;
     font-size: 60px;

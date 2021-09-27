@@ -1,3 +1,13 @@
+@import '../settings/colors.settings';
 h2{
     margin: 0;
+}
+body{
+    color: $blanco;
+}
+h1, h2{
+    font-family: $titulo;
+}
+p{
+    font-family: $parrafo;
 }
