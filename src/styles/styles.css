@@ -220,6 +220,11 @@ h2 {
 
 body {
   color: #ffffff;
+  overflow-x: hidden;
+  background-image: url(../img/fondo-pc.webp);
+  background-size: 80%;
+  background-repeat: repeat;
+  position: relative;
 }
 
 h1, h2 {
@@ -230,9 +235,10 @@ p {
   font-family: "PoiretOne";
 }
 
-body {
-  margin: 0;
-  background-color: #011D23;
+@media screen and (max-width: 768px) {
+  body {
+    background-image: url(../img/fondo-suficiencia-cel.webp);
+  }
 }
 
 .bloque1 {
@@ -556,10 +562,6 @@ body {
   }
 }
 
-body {
-  overflow-x: hidden;
-}
-
 .bloque4 {
   background-image: url(../img/fondo-portada-2.webp);
   background-size: cover;
@@ -732,12 +734,6 @@ body {
   }
 }
 
-body {
-  background-image: url(../img/fondo-pc.webp);
-  background-size: 80%;
-  background-repeat: repeat;
-}
-
 .titulo {
   display: -ms-grid;
   display: grid;
@@ -904,9 +900,6 @@ img {
 }
 
 @media screen and (max-width: 768px) {
-  body {
-    background-image: url(../img/fondo-suficiencia-cel.webp);
-  }
   .titulo__subtitulo1 {
     font-size: 100px;
   }
@@ -1502,10 +1495,6 @@ img {
   max-width: 40%;
   min-width: 300px;
   margin: 10px;
-}
-
-body {
-  position: relative;
 }
 
 /*MATRICULA*/

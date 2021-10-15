@@ -3,10 +3,21 @@ h2{
 }
 body{
     color: $blanco;
+    overflow-x: hidden;
+    background-image: url(../img/fondo-pc.webp);
+    background-size: 80%;
+    background-repeat: repeat;
+    position: relative;
+
 }
 h1, h2{
     font-family: $titulo;
 }
 p{
     font-family: $parrafo;
+}
+@media screen and (max-width: 768px){
+    body{
+        background-image:url(../img/fondo-suficiencia-cel.webp);
+    }
 }
