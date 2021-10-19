@@ -16,6 +16,9 @@ h1, h2{
 p{
     font-family: $parrafo;
 }
+img{
+    user-select: none;
+}
 @media screen and (max-width: 768px){
     body{
         background-image:url(../img/fondo-suficiencia-cel.webp);
