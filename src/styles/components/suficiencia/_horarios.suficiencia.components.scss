@@ -1,9 +1,6 @@
 /* HORARIOS*/
 .horarios{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @include centrar(column);
     margin-bottom: 20px;
     margin-top: 20px;
 
@@ -19,9 +16,7 @@
         border-radius: 25px;
         font-family: BebasNeue;
         font-size: 36px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include centrar(row);
         padding: 40px 20px; 
         text-align: center;
 
@@ -39,9 +34,7 @@
         }
     }
     &__hora{
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include centrar(row); 
         font-size: 22px;
     }
 

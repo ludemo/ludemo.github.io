@@ -64,7 +64,8 @@
         justify-content: space-around;
     }
     &__copy{
-
+        color: rgb(172, 172, 172); 
+        font-size: large;
     }
 }
 .red{
@@ -72,10 +73,7 @@
     align-items: center;
     margin:10px;
     &__enlace{ 
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
+        @include centrar(row);
         text-decoration: none;
         color: $blanco;
     }
