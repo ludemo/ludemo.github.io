@@ -23,13 +23,6 @@
     
 }
 
-.seccion__titulo{
-    font-style: normal;
-    font-weight: normal;
-    font-size: 60px;
-    line-height: 86px;
-    text-align: center;
-}
 .modalidad{
 
     &__clasica, &__plus{
@@ -127,10 +120,6 @@
     .modalidad__item{
         font-size: 23px;
     }
-    .seccion__titulo{
-        font-size: 50px;
-        line-height: 50px;
-    }
 }
 
 @media screen and (max-width: 900px){
@@ -171,10 +160,6 @@
     }
 }
 @media screen and (max-width: 540px){
-    .seccion__titulo{
-        font-size: 42px;
-        line-height: 42px;
-    }
 
     .modalidad{
         &__clasica, &__plus{
@@ -240,7 +225,5 @@
     .modalidad__subtitulo{
         font-size: 35px;
     }
-    .seccion__titulo{
-        font-size: 38px;
-    }
+
 }

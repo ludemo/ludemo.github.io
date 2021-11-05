@@ -1,5 +1,6 @@
 h2{
     margin: 0;
+    font-weight: normal;
 }
 body{
     color: $blanco;
@@ -15,6 +16,7 @@ h1, h2{
 }
 p{
     font-family: $parrafo;
+    font-size:$normal-font-size;
 }
 img{
     user-select: none;

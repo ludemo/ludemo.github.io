@@ -216,6 +216,7 @@
 
 h2 {
   margin: 0;
+  font-weight: normal;
 }
 
 body {
@@ -233,6 +234,7 @@ h1, h2 {
 
 p {
   font-family: "PoiretOne";
+  font-size: 1.5625rem;
 }
 
 img {
@@ -245,6 +247,34 @@ img {
 @media screen and (max-width: 768px) {
   body {
     background-image: url(../img/fondo-suficiencia-cel.webp);
+  }
+}
+
+.seccion__titulo {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 60px;
+  line-height: 86px;
+  text-align: center;
+}
+
+@media screen and (max-width: 1050px) {
+  .seccion__titulo {
+    font-size: 50px;
+    line-height: 50px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .seccion__titulo {
+    font-size: 42px;
+    line-height: 42px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .seccion__titulo {
+    font-size: 38px;
   }
 }
 
@@ -1167,12 +1197,10 @@ img {
 }
 
 .descripcion__texto {
-  font-size: 30px;
   padding: 0 45px;
 }
 
 .descripcion__titulo {
-  width: 350px;
   padding: 20px;
 }
 
@@ -1205,45 +1233,13 @@ img {
   height: 100px;
 }
 
-@media screen and (max-width: 900px) {
-  .descripcion__titulo {
-    margin: 0;
-    padding: 0;
-  }
-  .descripcion__texto {
-    padding: 0 50px;
-  }
-  .descripcion__parrafo {
-    margin-top: 20px;
-  }
-}
-
 @media screen and (max-width: 450px) {
   .descripcion {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     min-width: 320px;
   }
-  .descripcion__subtitulo1 {
-    width: 205px;
-  }
-  .descripcion__subtitulo2 {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .descripcion__titulo {
-    width: 200px;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-  }
   .descripcion__texto {
-    font-size: 20px;
+    font-size: 1.25rem;
     padding: 10px;
-    text-align: center;
   }
   .subtitulo1 {
     font-size: 60px;
@@ -1298,14 +1294,6 @@ img {
   margin: 0px;
   font-size: 80px;
   margin-left: 15px;
-}
-
-.subtitulo--peque {
-  margin: 0px;
-  font-size: 40px;
-  color: #E2DCDC;
-  line-height: 50px;
-  margin-bottom: 20px;
 }
 
 .glide {
@@ -1748,14 +1736,6 @@ img {
   margin-top: 1.5%;
 }
 
-.seccion__titulo {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 60px;
-  line-height: 86px;
-  text-align: center;
-}
-
 .modalidad__clasica, .modalidad__plus {
   width: 30%;
   height: 460px;
@@ -1864,10 +1844,6 @@ img {
   .modalidad__item {
     font-size: 23px;
   }
-  .seccion__titulo {
-    font-size: 50px;
-    line-height: 50px;
-  }
 }
 
 @media screen and (max-width: 900px) {
@@ -1904,10 +1880,6 @@ img {
 }
 
 @media screen and (max-width: 540px) {
-  .seccion__titulo {
-    font-size: 42px;
-    line-height: 42px;
-  }
   .modalidad__clasica, .modalidad__plus {
     width: 80%;
   }
@@ -1965,9 +1937,6 @@ img {
   }
   .modalidad__subtitulo {
     font-size: 35px;
-  }
-  .seccion__titulo {
-    font-size: 38px;
   }
 }
 
