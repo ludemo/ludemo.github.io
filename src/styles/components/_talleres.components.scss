@@ -23,7 +23,7 @@
     margin: 10px;
 }
 
-.titulo--talleres{
+.titulo__texto--talleres{
     margin-left: 20px;
     letter-spacing: 0;
 }
@@ -36,18 +36,19 @@ hr{
     .portada{
         background-image: url("../img/talleres/portada-talleres-celular.png");
         height: 100vh;
+        position: relative;
     }
-
-}
-@media screen and (max-width: 929px){
     .titulo--talleres{
+        position:absolute;
+        margin-bottom: 15px;
         bottom: 0;
+        width: 100%;
+    }
+    .titulo__texto--talleres{
         text-align: center;
     }
-}
-@media screen and (max-width: 929px){
-    .titulo--talleres{
-        bottom: 0;
-        text-align: center;
+    .titulo__subtitulo1--talleres{
+        display: flex;
+        justify-content: center;
     }
 }

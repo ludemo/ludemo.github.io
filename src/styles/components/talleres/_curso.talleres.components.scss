@@ -107,6 +107,13 @@
     background-image: url("../img/talleres/mano dibujo.png");
 }
 @media screen and (max-width: 600px){
+    
+.titulo-curso{
+    p{
+        margin-left: 0;
+        text-align: left;
+    }
+}
     .contenido{
         background-image: url("../img/talleres/fondo contenido movil.jpg");
     }
