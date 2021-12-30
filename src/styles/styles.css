@@ -202,7 +202,7 @@
 ::-webkit-scrollbar {
   width: 12px;
   /* Tamaño del scroll en vertical */
-  background-color: #ff000000;
+  background-color: #011D23;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -799,6 +799,7 @@ img {
   -ms-grid-row: 1;
   -ms-grid-row-span: 6;
   grid-row: 1/7;
+  font-family: "BebasNeue";
 }
 
 .titulo__subtitulo1, .titulo__subtitulo2 {
@@ -811,11 +812,16 @@ img {
 }
 
 .titulo__subtitulo1 {
-  font-size: 140px;
+  font-size: 130px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
 .titulo__subtitulo2 {
-  font-size: 210px;
+  font-size: 180px;
 }
 
 .titulo__img--movil {
@@ -836,17 +842,17 @@ img {
 .titulo__img--web, .titulo__img--movil {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 90%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
 @media screen and (max-width: 1300px) {
   .titulo__subtitulo1 {
-    font-size: 130px;
+    font-size: 100px;
   }
   .titulo__subtitulo2 {
-    font-size: 180px;
+    font-size: 150px;
   }
   .titulo__img--web {
     width: 650px;
@@ -861,7 +867,7 @@ img {
   }
 }
 
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 929px) {
   .titulo {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2045,5 +2051,270 @@ img {
   .mantenimiento {
     background-image: url("../img/mantenimiento-cel.webp");
   }
+}
+
+.portada {
+  background-image: url("../img/talleres/portada-talleres.png");
+  background-size: cover;
+  height: 720px;
+  width: 100%;
+  margin: 0;
+}
+
+.home {
+  margin: 10px;
+}
+
+.titulo--talleres {
+  margin-left: 20px;
+}
+
+hr {
+  width: 90%;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .portada {
+    background-image: url("../img/talleres/portada-talleres-celular.png");
+  }
+}
+
+@media screen and (max-width: 929px) {
+  .titulo--talleres {
+    bottom: 0;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 929px) {
+  .titulo--talleres {
+    bottom: 0;
+    text-align: center;
+  }
+}
+
+.simbolo {
+  border-radius: 50%;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  position: relative;
+}
+
+.simbolo--maqueteria {
+  background-image: url("../img/talleres/icon-maqueteria.png");
+}
+
+.simbolo--maqueteria:hover {
+  background-image: url("../img/talleres/icon-maqueteria-hover.png");
+}
+
+.simbolo--geometria {
+  background-image: url("../img/talleres/icon-geometria.png");
+}
+
+.simbolo--geometria:hover {
+  background-image: url("../img/talleres/icon-geometria-hover.png");
+}
+
+.simbolo--dibujo {
+  background-image: url("../img/talleres/icon-dibujo.png");
+}
+
+.simbolo--dibujo:hover {
+  background-image: url("../img/talleres/icon-dibujo-hover.png");
+}
+
+.simbolo a {
+  width: 100%;
+  height: 100%;
+}
+
+.navegacion--talleres {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "PoiretOne";
+  -ms-grid-row: 7;
+  -ms-grid-row-span: 3;
+  grid-row: 7/10;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 7;
+  grid-column: 1/8;
+  margin-left: 50px;
+  margin-right: 50px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navegacion__elemento__text {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.contenido {
+  background-image: url("../img/talleres/fondo escritorio.jpg");
+  background-size: cover;
+}
+
+.contenido__curso {
+  padding: 50px 0;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contenido__curso > * {
+  margin-left: 20px;
+}
+
+.titulo-curso {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1200px;
+  font-family: "BebasNeue";
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.titulo-curso p {
+  margin-left: 20px;
+  text-align: end;
+}
+
+.titulo-curso_texto {
+  top: -20px;
+  position: absolute;
+  margin-left: 120px;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 6;
+  grid-row: 1/7;
+}
+
+.titulo-curso__subtitulo1, .titulo__subtitulo2 {
+  position: relative;
+  margin: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.titulo-curso__subtitulo1 {
+  font-size: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.titulo-curso__subtitulo1 span {
+  display: block;
+  font-size: 50px;
+}
+
+.titulo-curso__subtitulo2 {
+  font-size: 130px;
+}
+
+.info {
+  font-family: "PoiretOne";
+  font-size: 1.2rem;
+  width: 50%;
+}
+
+.temas {
+  font-family: "PoiretOne";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.subtitulo-curso {
+  font-family: "PoiretOne";
+  font-size: 1.4rem;
+}
+
+.opcion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.opcion__texto {
+  font-size: 1.1rem;
+}
+
+.opcion__numero {
+  background-color: rgba(255, 255, 255, 0.226);
+  border-radius: 50%;
+  font-family: "BebasNeue";
+  font-size: 1.7rem;
+  padding: 5px;
+  width: 25px;
+  height: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 10px;
+}
+
+/* .geometria{
+    background-image: url(../img/talleres/fondo-geometria.png);
+    background-size: cover;
+}
+.maqueteria{
+    background-image: url(../img/talleres/fondo-maqueteria.png);
+    background-size: cover;
+}
+.dibujo{
+    background-image: url(../img/talleres/fondo-dibujo.png);
+    background-size: cover;
+} */
+@media screen and (max-width: 600px) {
+  .maqueteria {
+    background-image: url("../img/talleres/fondo-maqueteria-cel.png");
+  }
+  .dibujo {
+    background-image: url("../img/talleres/fondo-dibujo-cel.png");
+  }
+  .geometria {
+    background-image: url("../img/talleres/fondo-geometria-cel.png");
+  }
+}
+
+.informacion {
+  font-family: "PoiretOne";
+}
+
+.informacion__titulo {
+  font-size: 4rem;
+  text-align: center;
+  margin: 10px 0;
+  color: rgba(255, 253, 253, 0.541);
+  letter-spacing: 3px;
 }
 /*# sourceMappingURL=styles.css.map */

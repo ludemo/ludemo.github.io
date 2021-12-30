@@ -1,0 +1,117 @@
+.contenido{
+    background-image: url("../img/talleres/fondo escritorio.jpg");
+    background-size:cover ;
+    &__curso{        
+        padding:50px 0;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        >*{
+            margin-left: 20px;
+        }
+    }
+}
+
+.titulo-curso{
+    position: relative;
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    font-family: $title-font;
+    flex-wrap: wrap;
+    p{
+        margin-left: 20px;
+        text-align: end;
+    }
+}
+.titulo-curso_texto{
+    top: -20px;
+    position: absolute;
+    margin-left: 120px;
+    grid-row: 1/7;
+}
+.titulo-curso__subtitulo1, .titulo__subtitulo2{
+    position: relative;
+    margin: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
+}
+.titulo-curso__subtitulo1{
+    font-size:100px ;
+    display: flex;
+    flex-wrap: nowrap;
+    span{
+        display: block;
+        font-size: 50px;
+    }
+}
+.titulo-curso__subtitulo2{
+    font-size:130px ;
+}
+//Información por curso
+.info{
+    font-family: $text-font;
+    font-size: 1.2rem;
+    width: 50%;
+}
+.temas{
+    font-family: $text-font;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.subtitulo-curso{
+    font-family: $text-font;
+    font-size: 1.4rem;
+}
+.opcion{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+
+    &__texto{
+        font-size: 1.1rem;
+    }
+
+    &__numero{
+        background-color: rgba(255, 255, 255, 0.226);
+        border-radius: 50%;
+        font-family: $title-font;
+        font-size: 1.7rem;
+        padding:5px;
+        width: 25px;
+        height: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin:0 10px;
+    }
+    
+}
+
+//fondos
+/* .geometria{
+    background-image: url(../img/talleres/fondo-geometria.png);
+    background-size: cover;
+}
+.maqueteria{
+    background-image: url(../img/talleres/fondo-maqueteria.png);
+    background-size: cover;
+}
+.dibujo{
+    background-image: url(../img/talleres/fondo-dibujo.png);
+    background-size: cover;
+} */
+@media screen and (max-width: 600px){
+    .maqueteria{
+        background-image: url("../img/talleres/fondo-maqueteria-cel.png");
+    }
+    .dibujo{
+        background-image: url("../img/talleres/fondo-dibujo-cel.png");
+    }
+    .geometria{
+        background-image: url("../img/talleres/fondo-geometria-cel.png");
+    }
+}
