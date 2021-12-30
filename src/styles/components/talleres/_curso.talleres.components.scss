@@ -92,26 +92,31 @@
 }
 
 //fondos
-/* .geometria{
-    background-image: url(../img/talleres/fondo-geometria.png);
-    background-size: cover;
+.geometria,.maqueteria,.dibujo{
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+.geometria{
+    background-image: url("../img/talleres/mano geometria.png");
 }
 .maqueteria{
-    background-image: url(../img/talleres/fondo-maqueteria.png);
-    background-size: cover;
+    background-image: url("../img/talleres/mano maqueteria.png");
 }
 .dibujo{
-    background-image: url(../img/talleres/fondo-dibujo.png);
-    background-size: cover;
-} */
+    background-image: url("../img/talleres/mano dibujo.png");
+}
 @media screen and (max-width: 600px){
+    .contenido{
+        background-image: url("../img/talleres/fondo contenido movil.jpg");
+    }
     .maqueteria{
-        background-image: url("../img/talleres/fondo-maqueteria-cel.png");
+        background-image: url("../img/talleres/mano maqueteria movil.png");
     }
     .dibujo{
-        background-image: url("../img/talleres/fondo-dibujo-cel.png");
+        background-image: url("../img/talleres/mano dibujo movil.png");
     }
     .geometria{
-        background-image: url("../img/talleres/fondo-geometria-cel.png");
+        background-image: url("../img/talleres/mano geometria movil.png");
     }
 }
