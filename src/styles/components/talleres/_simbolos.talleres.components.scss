@@ -1,0 +1,49 @@
+.simbolo{
+    border-radius: 50%;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    position: relative;
+    &--maqueteria{
+        background-image: url("../img/talleres/icon-maqueteria.png");
+        &:hover{
+            background-image: url("../img/talleres/icon-maqueteria-hover.png");
+        }
+    }
+    &--geometria{
+        background-image: url("../img/talleres/icon-geometria.png");
+        &:hover{
+            background-image: url("../img/talleres/icon-geometria-hover.png");
+        }
+    }
+    &--dibujo{
+        background-image: url("../img/talleres/icon-dibujo.png");
+        &:hover{
+            background-image: url("../img/talleres/icon-dibujo-hover.png");
+        }
+    }
+    a{
+        width:100%;
+        height: 100%;
+    }
+}
+
+
+.navegacion{
+    &--talleres{
+        display: flex;
+        font-family: $text-font;
+        grid-row: 7/10;
+        grid-column: 1/8;
+        margin-left: 50px;
+        margin-right: 50px;
+        justify-content: space-between;
+    }
+    &__elemento{
+        &__text{
+            text-align: center;
+            font-size: 1.2rem;
+        }
+    }
+}

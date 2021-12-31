@@ -1,0 +1,10 @@
+.informacion{
+    font-family:$text-font;
+    &__titulo{
+        font-size: 4rem;
+        text-align: center;
+        margin: 10px 0 ;
+        color: rgba(255, 253, 253, 0.541);
+        letter-spacing: 3px;
+    }
+}
