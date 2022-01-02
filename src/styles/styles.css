@@ -278,6 +278,10 @@ img {
   }
 }
 
+.pointer {
+  cursor: pointer;
+}
+
 .bloque1 {
   background-image: url(../img/portada.webp);
   background-size: cover;
@@ -2107,7 +2111,6 @@ hr {
   width: 100px;
   height: 100px;
   background-size: cover;
-  position: relative;
 }
 
 .simbolo--maqueteria {
@@ -2132,11 +2135,6 @@ hr {
 
 .simbolo--dibujo:hover {
   background-image: url("../img/talleres/icon-dibujo-hover.png");
-}
-
-.simbolo a {
-  width: 100%;
-  height: 100%;
 }
 
 .navegacion--talleres {
@@ -2168,7 +2166,7 @@ hr {
 }
 
 .contenido__curso {
-  padding: 50px 0;
+  padding: 50px 50px 0;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -2176,6 +2174,38 @@ hr {
 
 .contenido__curso > * {
   margin-left: 20px;
+}
+
+.talleres__información {
+  padding-left: 50px;
+}
+
+.talleres__texto {
+  margin: 0;
+  margin-left: 20px;
+}
+
+.talleres-flecha {
+  width: 24px;
+  height: 21px;
+  margin-right: 2%;
+}
+
+.redes-talleres {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 25%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.redes-talleres__icono {
+  width: 50px;
 }
 
 .titulo-curso {
@@ -2246,6 +2276,7 @@ hr {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  width: 100%;
 }
 
 .subtitulo-curso {
@@ -2266,11 +2297,12 @@ hr {
 
 .opcion__texto {
   font-size: 1.1rem;
+  width: 100px;
 }
 
 .opcion__numero {
   background-color: rgba(255, 255, 255, 0.226);
-  border-radius: 50%;
+  border-radius: 100%;
   font-family: "BebasNeue";
   font-size: 1.7rem;
   padding: 5px;

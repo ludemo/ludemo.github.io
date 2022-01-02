@@ -4,7 +4,6 @@
     width: 100px;
     height: 100px;
     background-size: cover;
-    position: relative;
     &--maqueteria{
         background-image: url("../img/talleres/icon-maqueteria.png");
         &:hover{
@@ -22,10 +21,6 @@
         &:hover{
             background-image: url("../img/talleres/icon-dibujo-hover.png");
         }
-    }
-    a{
-        width:100%;
-        height: 100%;
     }
 }
 

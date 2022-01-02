@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,66 +11,98 @@
 </head>
 <body>
     <section class="portada">
-        <a  href="index.html"><img class="home" src="./img/talleres/casa.png" alt="casa"></a>
+        <a href="index.html"><img class="home" src="./img/talleres/casa.png" alt="casa"></a>
         <div class="titulo titulo--talleres">
             <div class="titulo__texto titulo__texto--talleres">
-                <div class="titulo__subtitulo1 titulo__subtitulo1--talleres">Nuestros</div>
-                <div class="titulo__subtitulo2">Talleres</div>
+                <h1 class="titulo__subtitulo1 titulo__subtitulo1--talleres">Nuestros</h1>
+                <h1 class="titulo__subtitulo2">Talleres</h1>
             </div>
             <div class="navegacion--talleres">
                 <div class="navegacion__elemento">
-                    <div class="simbolo simbolo--maqueteria">
-                        <a href="#maqueteria"></a>
-                    </div>
-                    <div class="navegacion__elemento__text">Maqueteria</div>
+                    <a href="#maqueteria">
+                        <div class="simbolo simbolo--maqueteria"></div>
+                    </a>
+                    <h4 class="navegacion__elemento__text">Maqueteria</h4>
                 </div>
                 <div class="navegacion__elemento">
-                    <div class="simbolo simbolo--geometria">
-                        <a href="#geometria"></a>
-                    </div>
-                    <div class="navegacion__elemento__text">Geometria <br>Descriptiva</div>
+                    <a href="#geometria">
+                        <div class="simbolo simbolo--geometria"></div>
+                    </a>
+                    <h4 class="navegacion__elemento__text">Geometria <br>Descriptiva</h4>
                 </div>
                 <div class="navegacion__elemento">
-                    <div class="simbolo simbolo--dibujo">
-                        <a href="#dibujo"></a>
-                    </div>
-                    <div class="navegacion__elemento__text">Dibujo Técnico</div>
+                    <a href="#dibujo">
+                        <div class="simbolo simbolo--dibujo"></div>
+                    </a>
+                    <h4 class="navegacion__elemento__text">Dibujo Técnico</h4>
                 </div>
             </div>
         </div>
-      
-    </section> 
-    <section class="contenido"> 
-        <hr>
-        <div id="maqueteria" class="contenido__curso maqueteria">
-            <div class="titulo-curso ">
-                <div class="titulo-curso__texto ">
-                    <div class="titulo-curso__subtitulo2 title2__curso">Maque</div>
-                    <div class="titulo-curso__subtitulo1 title1__curso">
-                        Tería
-                        <div class="simbolo simbolo--maqueteria">
-                        <a href="maqueteria.html"> </a>
-                        </div>
-                    </div>
-                </div>
-                <p>Para estudiantes y <br>profesionales</p>
-            </div>
-            <div class="info">Aprende los instrumentos, habilidades y técnicas para
-                la elaboración de maquetas arquitectonicas
-            </div>
-            <h4 class="subtitulo-curso">Algunos temas generales</h4>
+    </section>
+
+    <section class="contenido">
+        <div class="talleres__información">
+            <p class="talleres__texto">Los Talleres Skala se aperturan cada verano, por lo que en estos meses no se ofertan. 
+                Aún así existe la siguiente modalidad para el resto del año:</p>
+            <h5 class="subtitulo-curso">Si aún no llegó el verano forma tu grupo:</h5>
             <div class="temas">
                 <div class="opcion">
                     <div class="opcion__numero">01</div>
-                    <p class="opcion__texto">Maquetas<br>Volumétricas</p>
+                    <p class="opcion__texto">Modalidad Virtual</p>
                 </div>
                 <div class="opcion">
                     <div class="opcion__numero">02</div>
-                    <p class="opcion__texto">Maquetas<br>Tipograficas</p>
+                    <p class="opcion__texto">Tu grupo debe tener 5 personas</p>
                 </div>
                 <div class="opcion">
                     <div class="opcion__numero">03</div>
-                    <p class="opcion__texto">Maqueta<br>Arquitectonicas</p>
+                    <p class="opcion__texto">Tú decides el horario</p>
+                </div>
+                <div class="redes-talleres">
+                    <p>Escríbenos</p>
+                    <img class="talleres-flecha" src="../src/img/talleres/flecha-redes.png">
+                    <a href="https://wa.link/f2iyke">
+                        <img loading="lazy" class="redes-talleres__icono" src="img/whatsapp-logo.webp" alt="whatsapp"/>
+                    </a>
+                    <a href="https://www.facebook.com/studioskala">
+                        <img loading="lazy" class="redes-talleres__icono" src="img/Facebook.webp" alt="facebook">
+                    </a>
+                    <a href="https://www.instagram.com/skalastudio_arquitectura/">
+                        <img loading="lazy" class="redes-talleres__icono" src="img/Instagram.webp" alt="instagram">  
+                    </a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div id="maqueteria" class="contenido__curso maqueteria">
+            <div class="titulo-curso">
+                <div class="titulo-curso__texto">
+                    <h2 class="titulo-curso__subtitulo2 title2__curso">Maque</h2>
+                    <h2 class="titulo-curso__subtitulo1 title1__curso">
+                        Tería
+                        <a href="maqueteria.html">
+                            <div class="simbolo simbolo--maqueteria"></div>
+                        </a>
+                    </h2>
+                </div>
+                <p>Para estudiantes y <br>profesionales</p>
+            </div>
+            <p class="info">Aprende los instrumentos, habilidades y técnicas para
+                la elaboración de maquetas arquitectonicas
+            </p>
+            <h5 class="subtitulo-curso">Algunos temas generales</h5>
+            <div class="temas">
+                <div class="opcion">
+                    <div class="opcion__numero">01</div>
+                    <p class="opcion__texto">Maquetas Volumétricas</p>
+                </div>
+                <div class="opcion">
+                    <div class="opcion__numero">02</div>
+                    <p class="opcion__texto">Maquetas Tipograficas</p>
+                </div>
+                <div class="opcion">
+                    <div class="opcion__numero">03</div>
+                    <p class="opcion__texto">Maqueta Arquitectonicas</p>
                 </div>
             </div>
             
@@ -78,17 +110,16 @@
         <hr>
         <div id="geometria" class="contenido__curso geometria">
             <div class="titulo-curso ">
-                <div class="titulo-curso__texto ">
-                    <div class="titulo-curso__subtitulo2 title2__curso">Geome</div>
-                    <div class="titulo-curso__subtitulo1 title1__curso">
-                        <div class="">
-                            tría<span>Descriptiva</span>
-                        </div>
-                        
-                        <div class="simbolo simbolo--geometria">
-                        
-                        </div>
-                    </div>
+                <div class="titulo-curso__texto">
+                    <h2 class="titulo-curso__subtitulo2 title2__curso">Geome</h2>
+                    <h2 class="titulo-curso__subtitulo1 title1__curso">
+                            <div class="">
+                                tría<span>Descriptiva</span>
+                            </div>
+                        <a href="geometria.html">
+                            <div class="simbolo simbolo--geometria"></div>
+                        </a>
+                    </h2>
                 </div>
                 <p>Para estudiantes y <br>profesionales</p>
             </div>
@@ -98,15 +129,15 @@
             <div class="temas">
                 <div class="opcion">
                     <div class="opcion__numero">01</div>
-                    <p class="opcion__texto">Sistemas de <br>Proyección</p>
+                    <p class="opcion__texto">Sistemas de Proyección</p>
                 </div>
                 <div class="opcion">
                     <div class="opcion__numero">02</div>
-                    <p class="opcion__texto">Proyeccción de<br> volumenes</p>
+                    <p class="opcion__texto">Proyeccción de volumenes</p>
                 </div>
                 <div class="opcion">
                     <div    class="opcion__numero">03</div>
-                    <p class="opcion__texto">Intersección entre<br>Formas compuestas</p>
+                    <p class="opcion__texto">Intersección entre Formas compuestas</p>
                 </div>
             </div>
         </div>
@@ -114,12 +145,13 @@
         <div id="dibujo" class="contenido__curso dibujo">
             <div class="titulo-curso ">
                 <div class="titulo-curso__texto ">
-                    <div class="titulo-curso__subtitulo2 title2__curso">dibujo</div>
-                    <div class="titulo-curso__subtitulo1 title1__curso">
+                    <h2 class="titulo-curso__subtitulo2 title2__curso">dibujo</h2>
+                    <h2 class="titulo-curso__subtitulo1 title1__curso">
                         ténico
-                        <div class="simbolo simbolo--dibujo">
-                        </div>
-                    </div>
+                        <a href="dibujo.html">
+                            <div class="simbolo simbolo--dibujo"></div>
+                        </a>
+                    </h2>
                 </div>
                 <p>Para estudiantes y <br>profesionales</p>
             </div>
@@ -129,15 +161,15 @@
             <div class="temas">
                 <div class="opcion">
                     <div class="opcion__numero">01</div>
-                    <p class="opcion__texto">Técnicas e<br>instrumentos</p>
+                    <p class="opcion__texto">Técnicas e instrumentos</p>
                 </div>
                 <div class="opcion">
                     <div class="opcion__numero">02</div>
-                    <p class="opcion__texto">Simbología y<br>escalas</p>
+                    <p class="opcion__texto">Simbología y escalas</p>
                 </div>
                 <div class="opcion">
                     <div class="opcion__numero">03</div>
-                    <p class="opcion__texto">Planos de planta,<br>cortes y elevaciones</p>
+                    <p class="opcion__texto">Planos de planta, cortes y elevaciones</p>
                 </div>
             </div>
         </div>

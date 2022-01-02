@@ -2,7 +2,7 @@
     background-image: url("../img/talleres/fondo escritorio.jpg");
     background-size:cover ;
     &__curso{        
-        padding:50px 0;
+        padding:50px 50px 0;
         width: 100%;
         margin-left: auto;
         margin-right: auto;
@@ -11,7 +11,27 @@
         }
     }
 }
-
+.talleres__información{
+    padding-left: 50px;
+}
+.talleres__texto{
+    margin: 0;
+    margin-left: 20px;
+}
+.talleres-flecha{
+    width: 24px;
+    height: 21px;
+    margin-right: 2%;
+}
+.redes-talleres{
+    display: flex;
+    align-items: center;
+    width: 25%;
+    justify-content: space-between;
+    &__icono{
+        width: 50px;
+    }
+}
 .titulo-curso{
     position: relative;
     display: flex;
@@ -60,7 +80,7 @@
     font-family: $text-font;
     display: flex;
     flex-wrap: wrap;
-
+    width: 100%;
 }
 .subtitulo-curso{
     font-family: $text-font;
@@ -73,11 +93,12 @@
 
     &__texto{
         font-size: 1.1rem;
+        width: 100px;
     }
 
     &__numero{
         background-color: rgba(255, 255, 255, 0.226);
-        border-radius: 50%;
+        border-radius: 100%;
         font-family: $title-font;
         font-size: 1.7rem;
         padding:5px;
@@ -88,7 +109,6 @@
         justify-content: center;
         margin:0 10px;
     }
-    
 }
 
 //fondos
