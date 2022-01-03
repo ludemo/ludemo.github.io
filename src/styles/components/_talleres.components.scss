@@ -26,13 +26,15 @@
 .titulo__texto--talleres{
     margin-left: 20px;
     letter-spacing: 0;
+    padding-left: 30px;
 }
 hr{
     width: 90%;
     margin-bottom: 0;
     margin-top: 0;
 }
-@media screen and (max-width: 600px){
+
+@media screen and (max-width: 480px){
     .portada{
         background-image: url("../img/talleres/portada-talleres-celular.png");
         height: 100vh;
@@ -43,6 +45,7 @@ hr{
         margin-bottom: 15px;
         bottom: 0;
         width: 100%;
+
     }
     .titulo__texto--talleres{
         text-align: center;

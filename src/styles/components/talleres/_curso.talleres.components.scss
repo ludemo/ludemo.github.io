@@ -2,18 +2,13 @@
     background-image: url("../img/talleres/fondo escritorio.jpg");
     background-size:cover ;
     &__curso{        
-        padding: 50px 0;
-        margin: 0;
+        padding: 0;
         padding-left: 50px;
-<<<<<<< HEAD
         margin:2vh 0;
-        height:98vh;
+        min-height:98vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
-=======
-        width: 100%;
->>>>>>> dccb9a065690c6d33738213f62d9d9d2b53a2b08
         >*{
             margin-left: 20px;
         }
@@ -25,27 +20,34 @@
 .talleres__texto{
     margin: 0;
     margin-left: 20px;
+    margin-right: 20px;
 }
 .talleres-flecha{
     width: 24px;
     height: 21px;
+    margin-left: 6px;
+    margin-right: 6px;
 }
 .redes-talleres{
     display: flex;
     align-items: center;
     width: 25%;
     justify-content: space-between;
-<<<<<<< HEAD
     flex-grow: .1;
-=======
-    position: relative;
-    left: 500px;
->>>>>>> dccb9a065690c6d33738213f62d9d9d2b53a2b08
+    margin-right: 10px;
+    &_logos{
+        display: flex;
+    }
     &__icono{
         width: 50px;
+        margin-left: 5px;
     }
     >*{
         margin-left: 5px;
+    }
+    &__escribenos{
+        display: flex;
+        align-items: center;
     }
 }
 .titulo-curso{
@@ -143,12 +145,44 @@
 .dibujo{
     background-image: url("../img/talleres/mano dibujo.png");
 }
+@media screen and(min-width:1200px){
+    
+}
 @media screen and (max-width:880px){
     .temas{
         flex-direction: column;
+        &-contenedor{
+            justify-content: space-evenly;
+        }
+    }
+    .titulo__{
+        &texto--talleres{
+            padding-left: 0;
+            margin:0;
+        }
+        &subtitulo1--talleres{
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .redes-talleres{
+        flex-direction: column;
+        justify-content: center;
+
+        &__icono{
+            width: 40px;
+        }
+    }
+    .contenido{
+        &__curso{            
+            padding-left: 2%;
+        }
+    }
+    .talleres__información{
+        padding-left: 2%;
     }
 }
-@media screen and (max-width: 600px){
+@media screen and (max-width: 440px){
     
     .titulo-curso{
         p{

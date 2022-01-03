@@ -2072,6 +2072,7 @@ img {
 .titulo__texto--talleres {
   margin-left: 20px;
   letter-spacing: 0;
+  padding-left: 30px;
 }
 
 hr {
@@ -2080,7 +2081,7 @@ hr {
   margin-top: 0;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
   .portada {
     background-image: url("../img/talleres/portada-talleres-celular.png");
     height: 100vh;
@@ -2156,8 +2157,8 @@ hr {
   -ms-grid-column: 1;
   -ms-grid-column-span: 7;
   grid-column: 1/8;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 66px;
+  margin-right: 66px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -2174,12 +2175,10 @@ hr {
 }
 
 .contenido__curso {
-  padding: 50px 0;
-  margin: 0;
+  padding: 0;
   padding-left: 50px;
-<<<<<<< HEAD
   margin: 2vh 0;
-  height: 98vh;
+  min-height: 98vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2190,9 +2189,6 @@ hr {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-=======
-  width: 100%;
->>>>>>> dccb9a065690c6d33738213f62d9d9d2b53a2b08
 }
 
 .contenido__curso > * {
@@ -2206,11 +2202,14 @@ hr {
 .talleres__texto {
   margin: 0;
   margin-left: 20px;
+  margin-right: 20px;
 }
 
 .talleres-flecha {
   width: 24px;
   height: 21px;
+  margin-left: 6px;
+  margin-right: 6px;
 }
 
 .redes-talleres {
@@ -2224,22 +2223,34 @@ hr {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-<<<<<<< HEAD
   -webkit-box-flex: .1;
       -ms-flex-positive: .1;
           flex-grow: .1;
-=======
-  position: relative;
-  left: 500px;
->>>>>>> dccb9a065690c6d33738213f62d9d9d2b53a2b08
+  margin-right: 10px;
+}
+
+.redes-talleres_logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .redes-talleres__icono {
   width: 50px;
+  margin-left: 5px;
 }
 
 .redes-talleres > * {
   margin-left: 5px;
+}
+
+.redes-talleres__escribenos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .titulo-curso {
@@ -2385,9 +2396,44 @@ hr {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .temas-contenedor {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .titulo__texto--talleres {
+    padding-left: 0;
+    margin: 0;
+  }
+  .titulo__subtitulo1--talleres {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .redes-talleres {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .redes-talleres__icono {
+    width: 40px;
+  }
+  .contenido__curso {
+    padding-left: 2%;
+  }
+  .talleres__información {
+    padding-left: 2%;
+  }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 440px) {
   .titulo-curso p {
     margin-left: 0;
     text-align: left;
