@@ -4,8 +4,11 @@
     &__curso{        
         padding: 0;
         padding-left: 50px;
-        margin: 50px 0;
-        width: 100%;
+        margin:2vh 0;
+        height:98vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         >*{
             margin-left: 20px;
         }
@@ -21,15 +24,18 @@
 .talleres-flecha{
     width: 24px;
     height: 21px;
-    margin-right: 2%;
 }
 .redes-talleres{
     display: flex;
     align-items: center;
     width: 25%;
     justify-content: space-between;
+    flex-grow: .1;
     &__icono{
         width: 50px;
+    }
+    >*{
+        margin-left: 5px;
     }
 }
 .titulo-curso{
@@ -80,17 +86,18 @@
     font-family: $text-font;
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    flex-grow: .2;
 }
 .subtitulo-curso{
     font-family: $text-font;
     font-size: 1.4rem;
+    margin-left: 20px;
 }
 .opcion{
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
-
+    flex-grow:.1;
     &__texto{
         font-size: 1.1rem;
         width: 100px;
@@ -126,24 +133,29 @@
 .dibujo{
     background-image: url("../img/talleres/mano dibujo.png");
 }
-@media screen and (max-width: 600px){
-    
-.titulo-curso{
-    p{
-        margin-left: 0;
-        text-align: left;
+@media screen and (max-width:880px){
+    .temas{
+        flex-direction: column;
     }
 }
-    .contenido{
-        background-image: url("../img/talleres/fondo contenido movil.jpg");
+@media screen and (max-width: 600px){
+    
+    .titulo-curso{
+        p{
+            margin-left: 0;
+            text-align: left;
+        }
     }
-    .maqueteria{
-        background-image: url("../img/talleres/mano maqueteria movil.png");
-    }
-    .dibujo{
-        background-image: url("../img/talleres/mano dibujo movil.png");
-    }
-    .geometria{
-        background-image: url("../img/talleres/mano geometria movil.png");
-    }
+        .contenido{
+            background-image: url("../img/talleres/fondo contenido movil.jpg");
+        }
+        .maqueteria{
+            background-image: url("../img/talleres/mano maqueteria movil.png");
+        }
+        .dibujo{
+            background-image: url("../img/talleres/mano dibujo movil.png");
+        }
+        .geometria{
+            background-image: url("../img/talleres/mano geometria movil.png");
+        }
 }

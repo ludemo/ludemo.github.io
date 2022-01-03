@@ -24,7 +24,10 @@
     }
 }
 
-
+.temas-contenedor{
+    display: flex;
+    flex-wrap: wrap;
+}
 .navegacion{
     &--talleres{
         display: flex;
