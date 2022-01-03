@@ -2,13 +2,18 @@
     background-image: url("../img/talleres/fondo escritorio.jpg");
     background-size:cover ;
     &__curso{        
-        padding: 0;
+        padding: 50px 0;
+        margin: 0;
         padding-left: 50px;
+<<<<<<< HEAD
         margin:2vh 0;
         height:98vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
+=======
+        width: 100%;
+>>>>>>> dccb9a065690c6d33738213f62d9d9d2b53a2b08
         >*{
             margin-left: 20px;
         }
@@ -30,7 +35,12 @@
     align-items: center;
     width: 25%;
     justify-content: space-between;
+<<<<<<< HEAD
     flex-grow: .1;
+=======
+    position: relative;
+    left: 500px;
+>>>>>>> dccb9a065690c6d33738213f62d9d9d2b53a2b08
     &__icono{
         width: 50px;
     }

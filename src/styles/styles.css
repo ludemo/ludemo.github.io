@@ -2174,8 +2174,10 @@ hr {
 }
 
 .contenido__curso {
-  padding: 0;
+  padding: 50px 0;
+  margin: 0;
   padding-left: 50px;
+<<<<<<< HEAD
   margin: 2vh 0;
   height: 98vh;
   display: -webkit-box;
@@ -2188,6 +2190,9 @@ hr {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+=======
+  width: 100%;
+>>>>>>> dccb9a065690c6d33738213f62d9d9d2b53a2b08
 }
 
 .contenido__curso > * {
@@ -2219,9 +2224,14 @@ hr {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+<<<<<<< HEAD
   -webkit-box-flex: .1;
       -ms-flex-positive: .1;
           flex-grow: .1;
+=======
+  position: relative;
+  left: 500px;
+>>>>>>> dccb9a065690c6d33738213f62d9d9d2b53a2b08
 }
 
 .redes-talleres__icono {
