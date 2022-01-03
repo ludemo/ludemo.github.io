@@ -2,9 +2,9 @@
     background-image: url("../img/talleres/fondo escritorio.jpg");
     background-size:cover ;
     &__curso{        
-        padding: 0;
+        padding: 50px 0;
+        margin: 0;
         padding-left: 50px;
-        margin: 50px 0;
         width: 100%;
         >*{
             margin-left: 20px;
@@ -28,6 +28,8 @@
     align-items: center;
     width: 25%;
     justify-content: space-between;
+    position: relative;
+    left: 500px;
     &__icono{
         width: 50px;
     }
