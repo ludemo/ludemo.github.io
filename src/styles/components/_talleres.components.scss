@@ -13,8 +13,10 @@
     }
 }
 .portada{
-    background-image: url("../img/talleres/fondo portada.jpg");
-    background-size: cover;
+    background-image: url("../img/talleres/fondo portada persona.png"),url("../img/talleres/fondo portada.png");
+    background-size: contain,cover;
+    background-position: right,center;
+    background-repeat: no-repeat;
     height: 720px;
     width: 100%;
     margin: 0;
@@ -39,6 +41,7 @@ hr{
         background-image: url("../img/talleres/portada-talleres-celular.png");
         height: 100vh;
         position: relative;
+        background-size: cover;
     }
     .titulo--talleres{
         position:absolute;

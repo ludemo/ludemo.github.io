@@ -1,5 +1,5 @@
 .contenido{
-    background-image: url("../img/talleres/fondo escritorio.jpg");
+    background-image: url("../img/talleres/fondo-contenido.jpg");
     background-size:cover ;
     &__curso{        
         padding: 0;
@@ -12,6 +12,9 @@
         >*{
             margin-left: 20px;
         }
+    }
+    &__curso:last-child{
+        margin-bottom: 0;
     }
 }
 .talleres__información{

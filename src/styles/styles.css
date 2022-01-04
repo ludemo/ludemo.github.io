@@ -2058,8 +2058,10 @@ img {
 }
 
 .portada {
-  background-image: url("../img/talleres/fondo portada.jpg");
-  background-size: cover;
+  background-image: url("../img/talleres/fondo portada persona.png"), url("../img/talleres/fondo portada.png");
+  background-size: contain,cover;
+  background-position: right,center;
+  background-repeat: no-repeat;
   height: 720px;
   width: 100%;
   margin: 0;
@@ -2086,6 +2088,7 @@ hr {
     background-image: url("../img/talleres/portada-talleres-celular.png");
     height: 100vh;
     position: relative;
+    background-size: cover;
   }
   .titulo--talleres {
     position: absolute;
@@ -2170,7 +2173,7 @@ hr {
 }
 
 .contenido {
-  background-image: url("../img/talleres/fondo escritorio.jpg");
+  background-image: url("../img/talleres/fondo-contenido.jpg");
   background-size: cover;
 }
 
@@ -2193,6 +2196,10 @@ hr {
 
 .contenido__curso > * {
   margin-left: 20px;
+}
+
+.contenido__curso:last-child {
+  margin-bottom: 0;
 }
 
 .talleres__información {
