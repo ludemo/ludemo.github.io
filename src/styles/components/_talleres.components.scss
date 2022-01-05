@@ -13,13 +13,19 @@
     }
 }
 .portada{
-    background-image: url("../img/talleres/fondo portada persona.png"),url("../img/talleres/fondo portada.png");
-    background-size: contain,cover;
-    background-position: right,center;
+    background-image: url("../img/talleres/fondo portada.png");
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     height: 720px;
     width: 100%;
     margin: 0;
+    &--limitador{
+        background-image: url("../img/talleres/fondo portada persona.png");
+        background-size:contain;
+        background-position: right;
+        background-repeat: no-repeat;
+    }
 }
 .home{
     margin: 10px;
