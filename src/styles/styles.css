@@ -2483,6 +2483,12 @@ hr {
     margin-left: 0;
     text-align: left;
   }
+  .titulo-curso__texto2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
   .contenido {
     background-image: url("../img/talleres/fondo contenido movil.jpg");
   }
