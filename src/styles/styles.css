@@ -232,9 +232,13 @@ h1, h2 {
   font-family: "BebasNeue";
 }
 
+h4, h5 {
+  font-size: 1.3125rem;
+}
+
 p {
   font-family: "PoiretOne";
-  font-size: 1.5625rem;
+  font-size: 1.25rem;
 }
 
 img {
@@ -1248,7 +1252,7 @@ img {
     min-width: 320px;
   }
   .descripcion__texto {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     padding: 10px;
   }
   .subtitulo1 {
@@ -2177,7 +2181,6 @@ hr {
 
 .navegacion__elemento__text {
   text-align: center;
-  font-size: 1.2rem;
 }
 
 .contenido {
@@ -2188,7 +2191,7 @@ hr {
 .contenido__curso {
   padding: 0;
   padding-left: 50px;
-  margin: 2vh 0;
+  margin: 1vh 0;
   min-height: 98vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2231,6 +2234,9 @@ hr {
   height: 21px;
   margin-left: 6px;
   margin-right: 6px;
+  background-image: url("../img/talleres/flecha-redes.png");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .redes-talleres {
@@ -2273,6 +2279,10 @@ hr {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
 .titulo-curso {
@@ -2303,9 +2313,14 @@ hr {
 .titulo-curso__texto2__imagen {
   position: absolute;
   bottom: 0;
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+  margin-bottom: 20px;
+}
+
+.titulo-curso__texto2__imagen--first {
   -webkit-transform: translateX(-100px);
           transform: translateX(-100px);
-  margin-bottom: 20px;
 }
 
 .titulo-curso__subtitulo1, .titulo-curso__subtitulo2 {
@@ -2337,7 +2352,6 @@ hr {
 
 .info {
   font-family: "PoiretOne";
-  font-size: 1.2rem;
   width: 50%;
 }
 
@@ -2358,7 +2372,6 @@ hr {
 
 .subtitulo-curso {
   font-family: "PoiretOne";
-  font-size: 1.4rem;
   margin-left: 20px;
 }
 
@@ -2377,7 +2390,7 @@ hr {
 }
 
 .opcion__texto {
-  font-size: 1.1rem;
+  font-size: 1.125rem;
   width: 100px;
 }
 
@@ -2476,6 +2489,9 @@ hr {
 }
 
 @media screen and (max-width: 480px) {
+  .talleres-flecha {
+    background-image: url("../img/talleres/flecha-ico.png");
+  }
   .portada--limitador {
     background-image: none;
   }

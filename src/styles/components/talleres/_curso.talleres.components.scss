@@ -4,7 +4,7 @@
     &__curso{        
         padding: 0;
         padding-left: 50px;
-        margin:2vh 0;
+        margin:1vh 0;
         min-height:98vh;
         display: flex;
         flex-direction: column;
@@ -35,6 +35,9 @@
     height: 21px;
     margin-left: 6px;
     margin-right: 6px;
+    background-image: url("../img/talleres/flecha-redes.png");
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 .redes-talleres{
     display: flex;
@@ -57,6 +60,7 @@
     &__escribenos{
         display: flex;
         align-items: center;
+        flex-direction:row-reverse
     }
 }
 .titulo-curso{
@@ -75,8 +79,11 @@
         &__imagen{
             position: absolute;
             bottom: 0;
-            transform: translateX(-100px);
+            transform: translateX(-50px);
             margin-bottom: 20px;
+            &--first{
+                transform: translateX(-100px);
+            }
         }
     }
     &__subtitulo1,&__subtitulo2{
@@ -105,7 +112,6 @@
 //Información por curso
 .info{
     font-family: $text-font;
-    font-size: 1.2rem;
     width: 50%;
 }
 .temas{
@@ -117,7 +123,6 @@
 }
 .subtitulo-curso{
     font-family: $text-font;
-    font-size: 1.4rem;
     margin-left: 20px;
 }
 .opcion{
@@ -126,7 +131,7 @@
     align-items: center;
     flex-grow:.1;
     &__texto{
-        font-size: 1.1rem;
+        font-size: $small-font-size;
         width: 100px;
     }
 
@@ -210,6 +215,9 @@
     }
 }
 @media screen and (max-width: 480px){
+    .talleres-flecha{
+        background-image: url("../img/talleres/flecha-ico.png");
+    }
     .portada--limitador{
         background-image: none;
     }    
