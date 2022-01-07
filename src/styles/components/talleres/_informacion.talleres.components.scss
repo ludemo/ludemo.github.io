@@ -1,5 +1,6 @@
 .informacion{
     font-family:$text-font;
+    max-width: 1500px;
     &__titulo{
         font-size: 4rem;
         text-align: center;
@@ -40,7 +41,6 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    margin-left: 5px;
 }
 
 .contactos__div{
@@ -54,6 +54,7 @@
     align-items: center;
     justify-content: center;
 }
+
 .inscripcion__precio{
     font-size: 55px;
     margin: 10px 0px;
@@ -90,10 +91,10 @@
     margin-right: 20px;
 }
 .duracion--margin{
-    margin-left: 52px;
+    margin-left: 10px;
 }
-.necesito{
-    margin-left: 17px;
+.duracion__titulo{
+    width: 180px;
 }
 .necesito--margin{
     margin-left: 30px;
@@ -111,7 +112,7 @@
     margin-left: 35px;
 }
 .recursos--margin{
-    padding-left: 55px;
+    padding-left: 10px;
     width: 250px;
 }
 .flecha__ico{
@@ -122,4 +123,79 @@
 }
 .contactos{
     align-items: center;
+}
+
+.informacion__tabla{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+.it-c1, .it-c2, .it-c3{
+    grid-row: 1;
+}
+.it-c4, .it-c5, .it-c6{
+    grid-row: 2;
+}
+.it-c1, .it-c4, .it-c5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titulo--margin{
+    margin-left: 20px;
+}
+
+@media screen and(max-width: 1025px){
+    .informacion__tabla{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .it-c1, .it-c2{
+        grid-row: 1;
+    }
+    .it-c3, .it-c4{
+        grid-row: 2;
+    }
+    .it-c5, .it-c6{
+        grid-row: 3;
+    }
+    .it-c4{
+        justify-content: center;
+    }
+    .duracion__titulo{
+        width: auto;
+    }
+}
+@media screen and(max-width: 500px){
+    .informacion__tabla{
+        display: flex;
+        flex-direction: column;
+    }
+    .informacion__titulo{
+        visibility: hidden;
+        height: 0;
+    }
+    .it-c3{
+        flex-direction: column-reverse;
+        margin-top: 30px;
+    }
+    .it-c1, .it-c4{
+        align-items: initial;
+    }
+    .seccion-info__titulo{
+        margin-left: 30px;
+    }
+    .duracion--margin{
+        margin-left: 85px;
+    }
+    .necesito--margin{
+        margin-left: 65px;
+    }
+    .inscripcion__boton{
+        margin-top: 20px;
+    }
+    .it-c5, .it-c6{
+        top: 0;
+        margin-top: 30px;
+    }
 }
