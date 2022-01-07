@@ -237,9 +237,13 @@ h1, h2 {
   font-family: "BebasNeue";
 }
 
+h4, h5 {
+  font-size: 1.3125rem;
+}
+
 p {
   font-family: "PoiretOne";
-  font-size: 1.5625rem;
+  font-size: 1.25rem;
 }
 
 img {
@@ -1253,7 +1257,7 @@ img {
     min-width: 320px;
   }
   .descripcion__texto {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     padding: 10px;
   }
   .subtitulo1 {
@@ -2063,11 +2067,20 @@ img {
 }
 
 .portada {
-  background-image: url("../img/talleres/fondo portada.jpg");
+  background-image: url("../img/talleres/fondo portada.png");
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   height: 720px;
   width: 100%;
   margin: 0;
+}
+
+.portada--limitador {
+  background-image: url("../img/talleres/fondo portada persona.png");
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
 }
 
 .home {
@@ -2091,6 +2104,7 @@ hr {
     background-image: url("../img/talleres/portada-talleres-celular.png");
     height: 100vh;
     position: relative;
+    background-size: cover;
   }
   .titulo--talleres {
     position: absolute;
@@ -2144,11 +2158,12 @@ hr {
 }
 
 .temas-contenedor {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .navegacion--talleres {
@@ -2171,18 +2186,17 @@ hr {
 
 .navegacion__elemento__text {
   text-align: center;
-  font-size: 1.2rem;
 }
 
 .contenido {
-  background-image: url("../img/talleres/fondo escritorio.jpg");
+  background-image: url("../img/talleres/fondo-contenido.jpg");
   background-size: cover;
 }
 
 .contenido__curso {
   padding: 0;
   padding-left: 50px;
-  margin: 2vh 0;
+  margin: 1vh 0;
   min-height: 98vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2200,6 +2214,16 @@ hr {
   margin-left: 20px;
 }
 
+.contenido__curso:last-child {
+  margin-bottom: 0;
+}
+
+.limitador {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .talleres__información {
   padding-left: 50px;
 }
@@ -2215,6 +2239,9 @@ hr {
   height: 21px;
   margin-left: 6px;
   margin-right: 6px;
+  background-image: url("../img/talleres/flecha-redes.png");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .redes-talleres {
@@ -2224,14 +2251,15 @@ hr {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 25%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-flex: .1;
       -ms-flex-positive: .1;
           flex-grow: .1;
   margin-right: 10px;
+  -ms-grid-column: 3;
+  grid-column: 3;
 }
 
 .redes-talleres_logos {
@@ -2256,6 +2284,10 @@ hr {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
 .titulo-curso {
@@ -2277,16 +2309,26 @@ hr {
   text-align: end;
 }
 
-.titulo-curso_texto {
-  top: -20px;
-  position: absolute;
-  margin-left: 120px;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 6;
-  grid-row: 1/7;
+.titulo-curso__texto2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.titulo-curso__subtitulo1, .titulo__subtitulo2 {
+.titulo-curso__texto2__imagen {
+  position: absolute;
+  bottom: 0;
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+  margin-bottom: 20px;
+}
+
+.titulo-curso__texto2__imagen--first {
+  -webkit-transform: translateX(-100px);
+          transform: translateX(-100px);
+}
+
+.titulo-curso__subtitulo1, .titulo-curso__subtitulo2 {
   position: relative;
   margin: 0;
   -webkit-user-select: none;
@@ -2315,7 +2357,6 @@ hr {
 
 .info {
   font-family: "PoiretOne";
-  font-size: 1.2rem;
   width: 50%;
 }
 
@@ -2329,11 +2370,13 @@ hr {
   -webkit-box-flex: .2;
       -ms-flex-positive: .2;
           flex-grow: .2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
 }
 
 .subtitulo-curso {
   font-family: "PoiretOne";
-  font-size: 1.4rem;
   margin-left: 20px;
 }
 
@@ -2352,7 +2395,7 @@ hr {
 }
 
 .opcion__texto {
-  font-size: 1.1rem;
+  font-size: 1.125rem;
   width: 100px;
 }
 
@@ -2394,17 +2437,29 @@ hr {
   background-image: url("../img/talleres/mano dibujo.png");
 }
 
+@media screen and (min-width: 1440px) {
+  .contenido__curso {
+    min-height: 900px;
+  }
+}
+
 @media screen and (max-width: 880px) {
   .temas {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .temas-contenedor {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+  }
+  .titulo-curso__texto2 {
+    width: 100%;
+  }
+  .titulo-curso__texto2__imagen {
+    position: relative;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
   .titulo__texto--talleres {
     padding-left: 0;
@@ -2438,21 +2493,36 @@ hr {
   }
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 480px) {
+  .talleres-flecha {
+    background-image: url("../img/talleres/flecha-ico.png");
+  }
+  .portada--limitador {
+    background-image: none;
+  }
   .titulo-curso p {
     margin-left: 0;
     text-align: left;
+  }
+  .titulo-curso__texto2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
   .contenido {
     background-image: url("../img/talleres/fondo contenido movil.jpg");
   }
   .maqueteria {
     background-image: url("../img/talleres/mano maqueteria movil.png");
+    background-size: 70%;
   }
   .dibujo {
     background-image: url("../img/talleres/mano dibujo movil.png");
+    background-size: 70%;
   }
   .geometria {
+    background-size: 70%;
     background-image: url("../img/talleres/mano geometria movil.png");
   }
 }

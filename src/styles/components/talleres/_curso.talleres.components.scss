@@ -1,10 +1,10 @@
 .contenido{
-    background-image: url("../img/talleres/fondo escritorio.jpg");
+    background-image: url("../img/talleres/fondo-contenido.jpg");
     background-size:cover ;
     &__curso{        
         padding: 0;
         padding-left: 50px;
-        margin:2vh 0;
+        margin:1vh 0;
         min-height:98vh;
         display: flex;
         flex-direction: column;
@@ -13,6 +13,14 @@
             margin-left: 20px;
         }
     }
+    &__curso:last-child{
+        margin-bottom: 0;
+    }
+}
+.limitador{
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .talleres__información{
     padding-left: 50px;
@@ -27,14 +35,18 @@
     height: 21px;
     margin-left: 6px;
     margin-right: 6px;
+    background-image: url("../img/talleres/flecha-redes.png");
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 .redes-talleres{
     display: flex;
     align-items: center;
-    width: 25%;
-    justify-content: space-between;
+    justify-content: center;
     flex-grow: .1;
     margin-right: 10px;
+    grid-column: 3;
+
     &_logos{
         display: flex;
     }
@@ -48,6 +60,7 @@
     &__escribenos{
         display: flex;
         align-items: center;
+        flex-direction:row-reverse
     }
 }
 .titulo-curso{
@@ -61,37 +74,44 @@
         margin-left: 20px;
         text-align: end;
     }
-}
-.titulo-curso_texto{
-    top: -20px;
-    position: absolute;
-    margin-left: 120px;
-    grid-row: 1/7;
-}
-.titulo-curso__subtitulo1, .titulo__subtitulo2{
-    position: relative;
-    margin: 0;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none; 
-}
-.titulo-curso__subtitulo1{
-    font-size:100px ;
-    display: flex;
-    flex-wrap: nowrap;
-    span{
-        display: block;
-        font-size: 50px;
+    &__texto2{
+        display: flex;
+        &__imagen{
+            position: absolute;
+            bottom: 0;
+            transform: translateX(-50px);
+            margin-bottom: 20px;
+            &--first{
+                transform: translateX(-100px);
+            }
+        }
+    }
+    &__subtitulo1,&__subtitulo2{
+        position: relative;
+        margin: 0;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none; 
+    }
+    &__subtitulo1{
+        font-size:100px ;
+        display: flex;
+        flex-wrap: nowrap;
+        span{
+            display: block;
+            font-size: 50px;
+        }
+    }
+    &__subtitulo2{
+    font-size:130px ;
+
     }
 }
-.titulo-curso__subtitulo2{
-    font-size:130px ;
-}
+
 //Información por curso
 .info{
     font-family: $text-font;
-    font-size: 1.2rem;
     width: 50%;
 }
 .temas{
@@ -99,10 +119,10 @@
     display: flex;
     flex-wrap: wrap;
     flex-grow: .2;
+    grid-column: 1/3;
 }
 .subtitulo-curso{
     font-family: $text-font;
-    font-size: 1.4rem;
     margin-left: 20px;
 }
 .opcion{
@@ -111,7 +131,7 @@
     align-items: center;
     flex-grow:.1;
     &__texto{
-        font-size: 1.1rem;
+        font-size: $small-font-size;
         width: 100px;
     }
 
@@ -145,14 +165,27 @@
 .dibujo{
     background-image: url("../img/talleres/mano dibujo.png");
 }
-@media screen and(min-width:1200px){
-    
+@media screen and(min-width:1440px){
+    .contenido{
+        &__curso{        
+            min-height:900px;
+        }
+    }
 }
 @media screen and (max-width:880px){
     .temas{
-        flex-direction: column;
         &-contenedor{
             justify-content: space-evenly;
+        }
+        flex-wrap: wrap;
+    }
+    .titulo-curso{
+        &__texto2{
+            width: 100%;
+            &__imagen{
+                position:relative;
+                transform: translateX(0);
+            }
         }
     }
     .titulo__{
@@ -168,7 +201,6 @@
     .redes-talleres{
         flex-direction: column;
         justify-content: center;
-
         &__icono{
             width: 40px;
         }
@@ -182,24 +214,35 @@
         padding-left: 2%;
     }
 }
-@media screen and (max-width: 440px){
-    
+@media screen and (max-width: 480px){
+    .talleres-flecha{
+        background-image: url("../img/talleres/flecha-ico.png");
+    }
+    .portada--limitador{
+        background-image: none;
+    }    
     .titulo-curso{
         p{
             margin-left: 0;
             text-align: left;
         }
+        &__texto2{
+                flex-direction: column-reverse;
+            }
     }
-        .contenido{
-            background-image: url("../img/talleres/fondo contenido movil.jpg");
-        }
-        .maqueteria{
-            background-image: url("../img/talleres/mano maqueteria movil.png");
-        }
-        .dibujo{
-            background-image: url("../img/talleres/mano dibujo movil.png");
-        }
-        .geometria{
-            background-image: url("../img/talleres/mano geometria movil.png");
-        }
+    .contenido{
+        background-image: url("../img/talleres/fondo contenido movil.jpg");
+    }
+    .maqueteria{
+        background-image: url("../img/talleres/mano maqueteria movil.png");
+        background-size: 70%;
+    }
+    .dibujo{
+        background-image: url("../img/talleres/mano dibujo movil.png");
+        background-size: 70%;
+    }
+    .geometria{
+        background-size: 70%;
+        background-image: url("../img/talleres/mano geometria movil.png");
+    }
 }
