@@ -53,4 +53,22 @@
         width: 100px;
         height: 100px;
     }
+    .navegacion--talleres{
+        margin: 0;
+        width: 95%;
+    }
+    .navegacion__elemento{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 480px){
+    .simbolo{
+        width: 80px;
+        height: 80px;
+    }
+    .navegacion__elemento__text{
+        font-size: 18px;
+    }
 }

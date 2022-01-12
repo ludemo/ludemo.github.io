@@ -2193,6 +2193,32 @@ hr {
     width: 100px;
     height: 100px;
   }
+  .navegacion--talleres {
+    margin: 0;
+    width: 95%;
+  }
+  .navegacion__elemento {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .simbolo {
+    width: 80px;
+    height: 80px;
+  }
+  .navegacion__elemento__text {
+    font-size: 18px;
+  }
 }
 
 .contenido {
@@ -2503,10 +2529,6 @@ hr {
   .talleres__información {
     padding-left: 2%;
   }
-  .navegacion--talleres {
-    margin: 0;
-    width: 380px;
-  }
 }
 
 @media screen and (max-width: 480px) {
@@ -2597,12 +2619,33 @@ hr {
 }
 
 .info-curso__tabla {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-  -ms-grid-rows: (1fr)[2];
-      grid-template-rows: repeat(2, 1fr);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nivel__turno {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: bold;
+  text-align: center;
 }
 
 .contactos__div {
@@ -2632,7 +2675,7 @@ hr {
 }
 
 .inscripcion__precio {
-  font-size: 55px;
+  font-size: 40px;
   margin: 10px 0px;
   font-weight: bold;
 }
@@ -2640,34 +2683,71 @@ hr {
 .inscripcion__boton {
   border-radius: 9px;
   background: rgba(255, 255, 255, 0.29);
-  font-size: 34px;
+  font-size: 30px;
   padding: 10px 60px;
   border: 1px solid #FFFFFF;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-weight: bold;
-  margin-bottom: 50px;
+  margin-top: 10px;
 }
 
-.nivel__turno {
+.inscripcion__tabla {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  grid-row-gap: 10px;
+}
+
+.it__promociones {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.it__promocion {
+  height: 10px;
+}
+
+.it__descuento {
   -ms-grid-column: 1;
   grid-column: 1;
+  width: 230px;
+  margin: 0;
+  padding-left: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-weight: bold;
-  letter-spacing: 0.145em;
 }
 
-.nivel__horario {
+.it__precio {
   -ms-grid-column: 2;
   grid-column: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .seccion-info__titulo {
@@ -2687,10 +2767,6 @@ hr {
 
 .duracion--margin {
   margin-left: 10px;
-}
-
-.duracion__titulo {
-  width: 180px;
 }
 
 .necesito--margin {
@@ -2795,9 +2871,6 @@ hr {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .duracion__titulo {
-    width: auto;
-  }
   .talleres__flecha-atras {
     height: 28px;
   }
@@ -2818,11 +2891,7 @@ hr {
     height: 0;
   }
   .it-c3 {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-    margin-top: 30px;
+    margin-bottom: 30px;
   }
   .it-c1, .it-c4 {
     -webkit-box-align: initial;

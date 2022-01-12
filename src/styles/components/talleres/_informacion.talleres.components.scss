@@ -39,10 +39,15 @@
         font-size: 20px;
     }
     &-curso__tabla{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+        @include centrar(column)
     }
+}
+.nivel__turno{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    text-align: center;
 }
 
 .contactos__div{
@@ -58,32 +63,43 @@
     justify-content: center;
 
     &__precio{
-        font-size: 55px;
+        font-size: 40px;
         margin: 10px 0px;
         font-weight: bold;
     }
     &__boton{
         border-radius: 9px;
         background: rgba(255, 255, 255, 0.29);
-        font-size: 34px;
+        font-size: 30px;
         padding: 10px 60px;
         border: 1px solid #FFFFFF;
         box-sizing: border-box;
         font-weight: bold;
-        margin-bottom: 50px;
+        margin-top: 10px;
+    }
+    &__tabla{
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-row-gap: 10px;
     }
 }
-
-.nivel__turno{
-    grid-column: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    letter-spacing: 0.145em;
+.it__promociones{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
-.nivel__horario{
+.it__promocion{
+    height: 10px;
+}
+.it__descuento{
+    grid-column: 1;
+    width: 230px;
+    margin: 0;
+    padding-left: 40px;
+    @include centrar(column)
+}
+.it__precio{
     grid-column: 2;
+    @include centrar(column)
 }
 .seccion-info__titulo{
     display: flex;
@@ -96,9 +112,6 @@
 }
 .duracion--margin{
     margin-left: 10px;
-}
-.duracion__titulo{
-    width: 180px;
 }
 .necesito--margin{
     margin-left: 30px;
@@ -139,6 +152,7 @@
 }
 .it-c4, .it-c5, .it-c6{
     grid-row: 2;
+    
 }
 .it-c1, .it-c4, .it-c5{
     display: flex;
@@ -166,9 +180,6 @@
     .it-c4{
         justify-content: center;
     }
-    .duracion__titulo{
-        width: auto;
-    }
     .talleres__flecha-atras{
         height: 28px;
     }
@@ -183,8 +194,7 @@
         height: 0;
     }
     .it-c3{
-        flex-direction: column-reverse;
-        margin-top: 30px;
+        margin-bottom: 30px;
     }
     .it-c1, .it-c4{
         align-items: initial;
