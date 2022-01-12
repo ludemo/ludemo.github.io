@@ -11,7 +11,7 @@
 }
 
 .talleres__flecha-atras{
-    height: 33px;
+    height: 32px;
 }
 .flecha-atras__link{
     font-family: $parrafo;
@@ -25,22 +25,24 @@
     left: 5px;
     font-size: 20px;
 }
-.info__div{
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-}
-.info__titulo{
-    font-size: 30px;
-    margin: 10px 0px;
-}
-.info__contenido{
-    font-size: 20px;
-}
-.info-curso__tabla{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+.info{
+    &__div{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+    }
+    &__titulo{
+        font-size: 30px;
+        margin: 10px 0px;
+    }
+    &__contenido{
+        font-size: 20px;
+    }
+    &-curso__tabla{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
 }
 
 .contactos__div{
@@ -48,28 +50,30 @@
     align-items: center;
     margin: 12px 0px;
 }
+
 .inscripcion{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    &__precio{
+        font-size: 55px;
+        margin: 10px 0px;
+        font-weight: bold;
+    }
+    &__boton{
+        border-radius: 9px;
+        background: rgba(255, 255, 255, 0.29);
+        font-size: 34px;
+        padding: 10px 60px;
+        border: 1px solid #FFFFFF;
+        box-sizing: border-box;
+        font-weight: bold;
+        margin-bottom: 50px;
+    }
 }
 
-.inscripcion__precio{
-    font-size: 55px;
-    margin: 10px 0px;
-    font-weight: bold;
-}
-.inscripcion__boton{
-    border-radius: 9px;
-    background: rgba(255, 255, 255, 0.29);
-    font-size: 34px;
-    padding: 10px 60px;
-    border: 1px solid #FFFFFF;
-    box-sizing: border-box;
-    font-weight: bold;
-    margin-bottom: 50px;
-}
 .nivel__turno{
     grid-column: 1;
     display: flex;
@@ -164,6 +168,9 @@
     }
     .duracion__titulo{
         width: auto;
+    }
+    .talleres__flecha-atras{
+        height: 28px;
     }
 }
 @media screen and(max-width: 500px){

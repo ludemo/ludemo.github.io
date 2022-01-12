@@ -799,7 +799,7 @@ img {
   position: relative;
   height: 550px;
   max-width: 1200px;
-  margin-top: 80px;
+  margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -807,7 +807,6 @@ img {
 .titulo__texto {
   top: -20px;
   position: absolute;
-  letter-spacing: 5px;
   margin-left: 120px;
   -ms-grid-row: 1;
   -ms-grid-row-span: 6;
@@ -818,6 +817,7 @@ img {
 .titulo__subtitulo1, .titulo__subtitulo2 {
   position: relative;
   margin: 0;
+  font-weight: normal;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -2089,7 +2089,6 @@ img {
 
 .titulo__texto--talleres {
   margin-left: 20px;
-  letter-spacing: 0;
   padding-left: 30px;
 }
 
@@ -2126,10 +2125,10 @@ hr {
 }
 
 .simbolo {
-  border-radius: 50%;
+  border-radius: 100%;
   position: relative;
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   background-size: cover;
 }
 
@@ -2178,7 +2177,6 @@ hr {
   -ms-grid-column-span: 7;
   grid-column: 1/8;
   margin-left: 66px;
-  margin-right: 66px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -2186,6 +2184,15 @@ hr {
 
 .navegacion__elemento__text {
   text-align: center;
+  font-weight: normal;
+  margin: 10px 0;
+}
+
+@media screen and (max-width: 880px) {
+  .simbolo {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 .contenido {
@@ -2288,6 +2295,10 @@ hr {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
+}
+
+.titulo__subtitulo1--talleres {
+  line-height: 120px;
 }
 
 .titulo-curso {
@@ -2472,6 +2483,7 @@ hr {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    line-height: 80px;
   }
   .redes-talleres {
     -webkit-box-orient: vertical;
@@ -2490,6 +2502,10 @@ hr {
   }
   .talleres__información {
     padding-left: 2%;
+  }
+  .navegacion--talleres {
+    margin: 0;
+    width: 380px;
   }
 }
 
@@ -2541,7 +2557,7 @@ hr {
 }
 
 .talleres__flecha-atras {
-  height: 33px;
+  height: 32px;
 }
 
 .flecha-atras__link {
@@ -2781,6 +2797,9 @@ hr {
   }
   .duracion__titulo {
     width: auto;
+  }
+  .talleres__flecha-atras {
+    height: 28px;
   }
 }
 

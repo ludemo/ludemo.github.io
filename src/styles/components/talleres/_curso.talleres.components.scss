@@ -63,6 +63,9 @@
         flex-direction:row-reverse
     }
 }
+.titulo__subtitulo1--talleres{
+    line-height: 120px;
+}
 .titulo-curso{
     position: relative;
     display: flex;
@@ -104,8 +107,7 @@
         }
     }
     &__subtitulo2{
-    font-size:130px ;
-
+        font-size:130px;
     }
 }
 
@@ -196,6 +198,7 @@
         &subtitulo1--talleres{
             display: flex;
             justify-content: center;
+            line-height: 80px;
         }
     }
     .redes-talleres{
@@ -212,6 +215,10 @@
     }
     .talleres__información{
         padding-left: 2%;
+    }
+    .navegacion--talleres{
+        margin: 0;
+        width: 380px;
     }
 }
 @media screen and (max-width: 480px){

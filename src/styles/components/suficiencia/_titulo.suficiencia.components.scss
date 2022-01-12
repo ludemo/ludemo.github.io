@@ -5,14 +5,13 @@
     position: relative;
     height: 550px;
     max-width: 1200px;
-    margin-top: 80px;
+    margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
 }
 .titulo__texto{
     top: -20px;
     position: absolute;
-    letter-spacing: 5px;
     margin-left: 120px;
     grid-row: 1/7;
     font-family: $title-font;
@@ -20,6 +19,7 @@
 .titulo__subtitulo1, .titulo__subtitulo2{
     position: relative;
     margin: 0;
+    font-weight: normal;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
