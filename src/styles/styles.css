@@ -2057,7 +2057,9 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 @media screen and (max-width: 650px) {
@@ -2568,6 +2570,19 @@ hr {
 .informacion {
   font-family: "PoiretOne";
   max-width: 1500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .informacion__titulo {
@@ -2598,6 +2613,7 @@ hr {
   top: 20px;
   left: 5px;
   font-size: 20px;
+  margin-bottom: 30px;
 }
 
 .info__div {
@@ -2669,9 +2685,6 @@ hr {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .inscripcion__precio {
@@ -2812,25 +2825,24 @@ hr {
 }
 
 .informacion__tabla {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-  -ms-grid-rows: (1fr)[2];
-      grid-template-rows: repeat(2, 1fr);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 98%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-.it-c1, .it-c2, .it-c3 {
-  -ms-grid-row: 1;
-  grid-row: 1;
+.repuesto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 95%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-.it-c4, .it-c5, .it-c6 {
-  -ms-grid-row: 2;
-  grid-row: 2;
-}
-
-.it-c1, .it-c4, .it-c5 {
+.it-c4, .it-c5 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2847,25 +2859,11 @@ hr {
   margin-left: 20px;
 }
 
+.it-c4 {
+  width: 45%;
+}
+
 @media screen and (max-width: 1025px) {
-  .informacion__tabla {
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-    -ms-grid-rows: (1fr)[3];
-        grid-template-rows: repeat(3, 1fr);
-  }
-  .it-c1, .it-c2 {
-    -ms-grid-row: 1;
-    grid-row: 1;
-  }
-  .it-c3, .it-c4 {
-    -ms-grid-row: 2;
-    grid-row: 2;
-  }
-  .it-c5, .it-c6 {
-    -ms-grid-row: 3;
-    grid-row: 3;
-  }
   .it-c4 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -2873,6 +2871,41 @@ hr {
   }
   .talleres__flecha-atras {
     height: 28px;
+  }
+  .repuesto {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 50%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .repuesto:nth-child(1) {
+    width: 40%;
+  }
+  .recursos {
+    top: 5px;
+    height: 130px;
+  }
+  .it-c3 {
+    width: 420px;
+  }
+  .informacion__tabla {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100vw;
+    margin-bottom: 25px;
+  }
+  .duracion--margin {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -2885,13 +2918,22 @@ hr {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .informacion__titulo {
     visibility: hidden;
     height: 0;
   }
+  .repuesto:nth-child(1) {
+    width: 100%;
+  }
   .it-c3 {
     margin-bottom: 30px;
+  }
+  .it-c4 {
+    width: 100%;
   }
   .it-c1, .it-c4 {
     -webkit-box-align: initial;
@@ -2900,9 +2942,6 @@ hr {
   }
   .seccion-info__titulo {
     margin-left: 30px;
-  }
-  .duracion--margin {
-    margin-left: 85px;
   }
   .necesito--margin {
     margin-left: 65px;
@@ -2913,6 +2952,9 @@ hr {
   .it-c5, .it-c6 {
     top: 0;
     margin-top: 30px;
+  }
+  .repuesto {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=styles.css.map */

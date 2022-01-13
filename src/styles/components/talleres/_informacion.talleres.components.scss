@@ -1,6 +1,7 @@
 .informacion{
     font-family:$text-font;
     max-width: 1500px;
+    @include centrar(column);
     &__titulo{
         font-size: 4rem;
         text-align: center;
@@ -24,6 +25,7 @@
     top: 20px;
     left: 5px;
     font-size: 20px;
+    margin-bottom: 30px;
 }
 .info{
     &__div{
@@ -60,7 +62,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 
     &__precio{
         font-size: 40px;
@@ -143,18 +144,16 @@
 }
 
 .informacion__tabla{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    display: flex;
+    width: 98%;
+    justify-content: space-around;
 }
-.it-c1, .it-c2, .it-c3{
-    grid-row: 1;
+.repuesto{
+    display: flex;
+    width: 95%;
+    justify-content: space-around;
 }
-.it-c4, .it-c5, .it-c6{
-    grid-row: 2;
-    
-}
-.it-c1, .it-c4, .it-c5{
+.it-c4, .it-c5{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -162,48 +161,65 @@
 .titulo--margin{
     margin-left: 20px;
 }
-
+.it-c4{
+    width: 45%;
+}
 @media screen and(max-width: 1025px){
-    .informacion__tabla{
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-    }
-    .it-c1, .it-c2{
-        grid-row: 1;
-    }
-    .it-c3, .it-c4{
-        grid-row: 2;
-    }
-    .it-c5, .it-c6{
-        grid-row: 3;
-    }
     .it-c4{
         justify-content: center;
     }
     .talleres__flecha-atras{
         height: 28px;
     }
+    .repuesto{
+        flex-direction: column;
+        width: 50%;
+        justify-content: center;
+    }
+    .repuesto:nth-child(1){
+        width: 40%;
+    }
+    .recursos{
+        top: 5px;
+        height: 130px;
+    }
+    .it-c3{
+        width: 420px;
+    }
+    .informacion__tabla{
+        justify-content: center;
+        width: 100vw;
+        margin-bottom: 25px;
+    }
+    .duracion--margin{
+        display: flex;
+        justify-content: center;
+    }
 }
 @media screen and(max-width: 500px){
     .informacion__tabla{
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
     .informacion__titulo{
         visibility: hidden;
         height: 0;
     }
+    .repuesto:nth-child(1){
+        width: 100%;
+    }
     .it-c3{
         margin-bottom: 30px;
+    }
+    .it-c4{
+        width: 100%;
     }
     .it-c1, .it-c4{
         align-items: initial;
     }
     .seccion-info__titulo{
         margin-left: 30px;
-    }
-    .duracion--margin{
-        margin-left: 85px;
     }
     .necesito--margin{
         margin-left: 65px;
@@ -214,5 +230,8 @@
     .it-c5, .it-c6{
         top: 0;
         margin-top: 30px;
+    }
+    .repuesto{
+        width: 100%;
     }
 }
