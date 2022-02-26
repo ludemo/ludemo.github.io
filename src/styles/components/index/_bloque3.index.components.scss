@@ -9,12 +9,19 @@
 /* FOOTER */
 .mapa{
 	width: 100%;
+    min-height: 50vh;
 	position: relative;
-    &__frame{
+    background-image: url(../img/mapa.png);
+/*     &__frame{
 	    min-height: 50vh;
-    }
+    } */
 }
 
+@media screen and (min-height: 700px){
+    .mapa{
+        background-image: url(../img/mapa-grande.png);
+    }
+}
 /*div general del footer*/
 .footer{
     width: 100%;
@@ -113,7 +120,9 @@
             display: none;
         }
     }
-
+    .mapa{
+        background-image: url(../img/mapa-tablet.png);
+    }
 }
 @media screen and (max-height:270px){
 	.footer__texto{

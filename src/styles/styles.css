@@ -626,11 +626,18 @@ img {
 /* FOOTER */
 .mapa {
   width: 100%;
+  min-height: 50vh;
   position: relative;
+  background-image: url(../img/mapa.png);
+  /*     &__frame{
+	    min-height: 50vh;
+    } */
 }
 
-.mapa__frame {
-  min-height: 50vh;
+@media screen and (min-height: 700px) {
+  .mapa {
+    background-image: url(../img/mapa-grande.png);
+  }
 }
 
 /*div general del footer*/
@@ -780,6 +787,9 @@ img {
 @media screen and (max-width: 700px) {
   .red__texto, .red__item {
     display: none;
+  }
+  .mapa {
+    background-image: url(../img/mapa-tablet.png);
   }
 }
 
