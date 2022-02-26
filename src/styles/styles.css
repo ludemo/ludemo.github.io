@@ -634,12 +634,6 @@ img {
     } */
 }
 
-@media screen and (min-height: 700px) {
-  .mapa {
-    background-image: url(../img/mapa-grande.png);
-  }
-}
-
 /*div general del footer*/
 .footer {
   width: 100%;
@@ -784,12 +778,27 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .mapa {
+    background-image: url(../img/mapa-grande.png);
+  }
+}
+
 @media screen and (max-width: 700px) {
   .red__texto, .red__item {
     display: none;
   }
+}
+
+@media screen and (max-width: 820px) {
   .mapa {
     background-image: url(../img/mapa-tablet.png);
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .mapa {
+    background-image: url(../img/mapa-celular.png);
   }
 }
 
