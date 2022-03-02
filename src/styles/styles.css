@@ -2086,6 +2086,10 @@ img {
   background-repeat: no-repeat;
 }
 
+.portada--verano {
+  height: 100vh;
+}
+
 .home {
   margin: 10px;
 }
@@ -2258,6 +2262,10 @@ hr {
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.limitador--verano {
+  max-width: 1800px;
 }
 
 .talleres__información {
@@ -2864,8 +2872,8 @@ hr {
   -ms-grid-column-span: 3;
   grid-column: 7/10;
   -ms-grid-row: 1;
-  -ms-grid-row-span: 6;
-  grid-row: 1/7;
+  -ms-grid-row-span: 4;
+  grid-row: 1/5;
 }
 
 .it-c4 {
