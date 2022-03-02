@@ -625,13 +625,11 @@ img {
 
 /* FOOTER */
 .mapa {
-  width: 100%;
   min-height: 50vh;
-  position: relative;
 }
 
 .mapa__frame {
-  min-height: 50vh;
+  pointer-events: none;
 }
 
 /*div general del footer*/
@@ -2837,7 +2835,7 @@ hr {
   display: -ms-grid;
   display: grid;
   width: 98%;
-  max-height: 85vh;
+  max-height: 80%;
   -ms-grid-columns: (1fr)[9];
       grid-template-columns: repeat(9, 1fr);
   -ms-grid-rows: (1fr)[10];
@@ -2863,8 +2861,8 @@ hr {
   -ms-grid-column-span: 3;
   grid-column: 4/7;
   -ms-grid-row: 1;
-  -ms-grid-row-span: 4;
-  grid-row: 1/5;
+  -ms-grid-row-span: 5;
+  grid-row: 1/6;
 }
 
 .it-c3 {
@@ -2872,8 +2870,8 @@ hr {
   -ms-grid-column-span: 3;
   grid-column: 7/10;
   -ms-grid-row: 1;
-  -ms-grid-row-span: 4;
-  grid-row: 1/5;
+  -ms-grid-row-span: 5;
+  grid-row: 1/6;
 }
 
 .it-c4 {

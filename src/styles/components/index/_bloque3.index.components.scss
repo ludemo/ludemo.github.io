@@ -8,11 +8,10 @@
 
 /* FOOTER */
 .mapa{
-	width: 100%;
+
     min-height: 50vh;
-	position: relative;
     &__frame{
-	    min-height: 50vh;
+        pointer-events: none;
     }
 }
 
