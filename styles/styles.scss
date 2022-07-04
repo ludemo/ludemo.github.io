@@ -1,0 +1,21 @@
+// 1. Sentings
+@import './imports/_settings.imports.scss';
+
+// 2. Tools
+@import './imports/_tools.imports';
+
+//3. Generic
+//ejemplo tipo @import '~normalize.css'
+@import './imports/generic.imports';
+
+//4. Elements
+@import './imports/_elements.imports';
+
+//5. Objects 
+@import './imports/_objects.imports';
+
+//6. Components
+@import './imports/_components.imports';
+
+//7. Trumps
+@import './imports/_trumps.imports';

@@ -1,0 +1,24 @@
+.seccion__titulo{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 86px;
+    text-align: center;
+}
+@media screen and (max-width: 1050px){
+    .seccion__titulo{
+        font-size: 50px;
+        line-height: 50px;
+    }
+}
+@media screen and (max-width: 540px){
+    .seccion__titulo{
+        font-size: 42px;
+        line-height: 42px;
+    }
+}
+@media screen and (max-width: 320px){
+    .seccion__titulo{
+        font-size: 38px;
+    }
+}

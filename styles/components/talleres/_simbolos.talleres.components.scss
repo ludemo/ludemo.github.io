@@ -1,0 +1,74 @@
+.simbolo{
+    border-radius: 100%;
+    position: relative;
+    width: 120px;
+    height: 120px;
+    background-size: cover;
+    &--maqueteria{
+        background-image: url("../img/talleres/icon-maqueteria.png");
+        &:hover{
+            background-image: url("../img/talleres/icon-maqueteria-hover.png");
+        }
+    }
+    &--geometria{
+        background-image: url("../img/talleres/icon-geometria.png");
+        &:hover{
+            background-image: url("../img/talleres/icon-geometria-hover.png");
+        }
+    }
+    &--dibujo{
+        background-image: url("../img/talleres/icon-dibujo.png");
+        &:hover{
+            background-image: url("../img/talleres/icon-dibujo-hover.png");
+        }
+    }
+}
+
+.temas-contenedor{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding-left:20px ;
+    padding-right: 20px;
+}
+.navegacion{
+    &--talleres{
+        display: flex;
+        font-family: $text-font;
+        grid-row: 7/10;
+        grid-column: 1/8;
+        margin-left: 66px;
+        justify-content: space-between;
+    }
+    &__elemento{
+        &__text{
+            text-align: center;
+            font-weight: normal;
+            margin: 10px 0;
+        }
+    }
+}
+
+@media screen and (max-width:880px){
+    .simbolo{
+        width: 100px;
+        height: 100px;
+    }
+    .navegacion--talleres{
+        margin: 0;
+        width: 95%;
+    }
+    .navegacion__elemento{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 480px){
+    .simbolo{
+        width: 80px;
+        height: 80px;
+    }
+    .navegacion__elemento__text{
+        font-size: 18px;
+    }
+}

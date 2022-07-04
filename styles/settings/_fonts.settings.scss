@@ -1,0 +1,22 @@
+@font-face {
+    font-family:"BebasNeue";
+    src: url('../fonts/BebasNeue-Regular.ttf')
+}
+@font-face {
+    font-family:"PoiretOne";
+    src: url('../fonts/PoiretOne.ttf')
+}
+//Usamos el 62.5% para hacer que 1rem =10px ya que normalmente 1 rem es =16px
+$normal-font-size:2rem*62.5/100;
+$small-font-size:1.8rem*62.5/100;
+$h4-font-size:2.1rem*62.5/100;
+$title-font:"BebasNeue";
+$text-font:"PoiretOne";
+$titulo: "BebasNeue";
+$parrafo: "PoiretOne";
+
+@media screen and (min-width: 1024px){
+    $normal-font-size:2.3rem*62.5/100;
+    $small-font-size:2.1rem*62.5/100;
+    $h4-font-size:2.4rem*62.5/100;
+}

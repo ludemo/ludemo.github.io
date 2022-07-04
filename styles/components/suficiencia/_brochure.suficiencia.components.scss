@@ -1,0 +1,74 @@
+.brochure{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color:#02484a83;
+    padding: 15px 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    &__contenedor{
+        display: flex;
+        position: relative;
+        flex-wrap: wrap;
+        justify-content: center;
+        color:#fff;
+        font-family: "PoiretOne";
+        text-align: center;
+        font-size: 20px;
+        
+    }
+
+    &__texto{
+            margin: 0;
+            width: 90%;
+    }
+}
+
+/*boton de descarga*/
+.boton{
+    padding: 10px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+    position: relative;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: 2px solid white;
+    background-color: #ffffff0e;
+    &__enlace{
+        color:#fff;
+        text-decoration: none;
+    }   
+    &:hover{
+        background-color:#166b6e;
+    }
+    &__icono{
+        height: 20px;
+        margin-left: 15px;
+    }
+}
+
+/*Fin del boton de descarga*/
+
+@media screen and (min-width:900px){
+    .brochure__contenedor{
+        font-size: 24px;
+    }
+}
+@media screen and (max-width:700px){
+    .brochure__contenedor{
+        font-size: 21px;
+    }
+}
+@media screen and (max-width: 400px){
+    .brochure__contenedor{
+        font-size: 19px;
+    }
+
+}  
+@media screen and (max-width: 320px){
+    .brochure__contenedor{
+        font-size: 18px;
+    }
+}

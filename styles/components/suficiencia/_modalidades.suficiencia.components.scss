@@ -1,0 +1,229 @@
+/* BLOQUE MODALIDADES */
+.modalidades{
+    width: 100%;
+    min-height: 660px;
+    max-height: 100vh;
+    max-width: 1800px;
+    margin-left: auto;
+    margin-right: auto;
+    &__contenedor{
+        @include centrar(row);
+    }
+
+    &__raya{
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+    }
+
+    &__img{
+        width: 467px;
+        margin-top: 1.5%;
+    }
+    
+}
+
+.modalidad{
+
+    &__clasica, &__plus{
+        width: 30%;
+        height: 460px;
+        margin: 0px;
+        @include centrar(column);
+    }
+    
+    &__clasica{
+        color:#E2D8D8;
+    }
+
+    &__plus{
+        margin-left: 3%;
+    }
+
+    &__subtitulo{
+        font-family: BebasNeue;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: normal;
+        margin: 0px;
+        margin-bottom: 20px;
+    }
+
+    &__lista{
+        padding-left: 30px;
+    }
+
+    &__item{
+        font-family: PoiretOne;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 28px;
+    
+        list-style: none;
+        display: flex;
+        align-items: center;
+        margin: 28px 0px;
+    
+        &:nth-child(1){
+            margin-top: 0px;
+        }
+    
+        &:nth-child(5){
+            margin-bottom: 0px;
+            align-items: flex-start;
+        }
+    
+    }
+}
+
+.item__texto{
+    margin: 0px;
+    margin-left: 15px;
+
+    &:nth-child(5){
+        align-items: flex-start;
+    }
+}
+
+/*MODALIDADES RESPONSIVE*/
+@media screen and (max-width: 1200px){
+    .modalidades{
+        height: 100%;
+        min-height: 605px;
+        
+        &__img{
+            width: 350px;
+            height: 386.17px;
+            margin-top: 11%;
+        }
+    }
+    .modalidad{
+        &__clasica, &__plus{
+            width: 80%;
+        }
+
+        &__subtitulo{
+            font-size: 41px;
+        }
+
+        &__item{
+            font-size: 25px;
+        }
+    }
+}
+@media screen and (max-width: 1050px){
+    .modalidades__img{
+        width: 300px;
+        height: 331px;
+        margin-top: 19%;
+    }
+    .modalidad__item{
+        font-size: 23px;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .modalidad{
+        &__clasica, &__plus{
+            width: 80%;
+        }
+
+        &__subtitulo{
+            font-size: 40px;
+        }
+
+        &__lista{
+            padding-right: 30px;
+        }
+
+        &__item{
+            font-size: 23px;
+        }
+    }
+
+    .modalidades{
+        max-height: 160vh;
+
+        &__img{
+            width: 0px;
+        }
+    }
+}
+@media screen and (max-width: 620px){
+    .modalidades{
+        min-height: 120vh;
+    }
+}
+@media screen and (max-width: 570px) and (max-height: 320px){
+    .modalidades{
+        min-height: 190vh;
+    }
+}
+@media screen and (max-width: 540px){
+
+    .modalidad{
+        &__clasica, &__plus{
+            width: 80%;
+        }
+
+        &__plus{
+            margin-left: 0px;
+            margin-top: 30px;
+        }
+
+        &__clasica{
+            margin-bottom: 30px;
+        }
+
+        &__subtitulo{
+            font-size: 40px;
+        }
+
+        &__lista{
+            padding-right: 20px;
+        }
+
+        &__item{
+            font-size: 20px;
+        }
+    }
+    .modalidades{
+        max-height: 200vh;
+
+        &__raya{
+            visibility: visible;
+            width: 100%;
+            border: 2px solid transparent; 
+            border-image: linear-gradient(270deg, 
+            rgba(255, 255, 255, 0) 12.8%, 
+            rgba(255, 255, 255, 0.497055) 51.13%, 
+            rgba(255, 255, 255, 0) 90.22%) 1;
+        }
+
+        &__contenedor{
+            flex-direction: column;
+            margin-bottom: 0px;
+        }
+
+        &__img{
+            width: 0px;
+            height: 0px;
+            margin: 0px;
+            visibility: hidden;
+        }
+    }
+}
+@media screen and (max-width: 420px){
+    .modalidad__lista{
+        padding-right: 0px;
+    }
+}
+@media screen and (max-width: 320px){
+    .modalidad__item{
+        font-size: 18px;
+    }
+    .modalidad__subtitulo{
+        font-size: 35px;
+    }
+
+}

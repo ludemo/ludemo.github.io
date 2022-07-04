@@ -1,0 +1,71 @@
+/*--Quienes somos--*/
+.descripcion{
+    max-width: 1200px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+
+    &__texto{
+        padding: 0 45px;
+    }
+
+    &__titulo{
+        padding:20px;
+    }
+
+    &__subtitulo2, &__subtitulo1{
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        margin-left: auto;
+        margin-right: auto;
+    }
+} 
+
+.subtitulo1{
+    font-size: 100px;
+
+    &__img{
+        height: 85px;
+    }
+}
+
+.subtitulo2{
+    font-size: 120px;
+
+    &__img{
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .descripcion{
+        min-width: 320px;
+
+        &__texto{
+            font-size: $small-font-size;
+            padding:10px;
+        }
+    
+    }
+    .subtitulo1{
+        font-size: 60px;
+
+        &__img{
+            height: 50px;
+        }
+    }
+    .subtitulo2{
+        font-size: 70px;
+
+        &__img{
+            height: 60px;
+            position: relative;
+            bottom: 0;
+        }
+    }
+}

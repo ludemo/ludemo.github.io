@@ -1,0 +1,19 @@
+
+//Barra completa gigante-track
+::-webkit-scrollbar-track {
+   
+}
+//
+::-webkit-scrollbar {
+    width: 12px;     /* Tamaño del scroll en vertical */
+    background-color: #011D23;
+}
+//BArrita que se mueve
+::-webkit-scrollbar-thumb {
+    background: rgb(223, 226, 225);
+    border-radius:8px;
+    
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #ffffff;
+}

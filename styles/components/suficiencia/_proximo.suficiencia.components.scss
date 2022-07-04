@@ -1,0 +1,24 @@
+.inicio{
+    margin:20px auto;
+    max-width: 1800px;
+    &__contenedor{
+        display: flex;
+        justify-content: space-around;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+        flex-wrap: wrap;
+        width:80%;
+
+    }
+
+    &__img{ 
+        width: 100%;
+        height: auto;
+    }
+    &__imagen{
+        max-width:40%;
+	    min-width:300px;
+        margin: 10px;
+    }
+}

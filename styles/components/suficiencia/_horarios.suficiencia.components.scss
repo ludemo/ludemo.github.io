@@ -1,0 +1,141 @@
+/* HORARIOS*/
+.horarios{
+    @include centrar(column);
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+    &__tabla{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 20px;
+    }
+
+    &__nivel{
+        grid-row: 1;
+        border-radius: 25px;
+        font-family: BebasNeue;
+        font-size: 36px;
+        @include centrar(row);
+        padding: 40px 20px; 
+        text-align: center;
+
+        &:nth-child(1){
+            grid-column: 1;
+            background-color: rgba(1, 140, 148, 1);
+        }
+        &:nth-child(2){
+            grid-column: 2;
+            background-color: rgba(0, 105, 115, 1);
+        }
+        &:nth-child(3){
+            grid-column: 3;
+            background-color: rgba(2, 72, 74, 1);
+        }
+    }
+    &__hora{
+        @include centrar(row); 
+        font-size: 22px;
+    }
+
+}
+
+@media screen and (max-width: 740px){
+    .horarios{
+        &__tabla{
+            margin: 0px 10px;
+        }
+        &__hora{
+            font-size: 20px;
+        }
+        &__nivel{
+            font-size: 35px;
+            padding: 25px 25px;
+        }
+    }
+
+}
+@media screen and (max-width: 570px) and (max-height: 320px){
+    .horarios__hora{
+        font-size: 17px;
+    }
+}
+@media screen and (max-width: 560px){
+    .horarios{
+        &__tabla{
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            width: 95%;
+            grid-gap: 15px;
+        }
+
+        &__nivel{
+            grid-column: 1;
+            font-size: 25px;
+            padding: 30px 15px;
+
+            &:nth-child(1){
+                grid-row: 1;
+                grid-column: 1;
+            }
+
+            &:nth-child(2){
+                grid-row: 2;
+                grid-column: 1;
+            }
+
+            &:nth-child(3){
+                grid-row: 3;
+                grid-column: 1;
+            }
+        }
+
+        &__hora{
+            grid-column: 2;
+            font-size: 18px;
+
+            &:nth-child(1){
+                grid-row: 1;
+            }
+
+            &:nth-child(2){
+                grid-row: 2;
+            }
+
+            &:nth-child(3){
+                grid-row: 3;
+            }
+        }
+    }
+
+}
+@media screen and (max-width: 380px){
+    .horarios{
+        &__tabla{
+            grid-gap: 0px;
+            grid-row-gap: 15px;
+            width: 92%;
+        }
+
+        &__hora{
+            font-size: 17px;
+        }
+
+        &__nivel{
+            width: 120px;
+            padding: 20px 15px;
+        }
+    }
+}
+@media screen and (max-width: 355px){
+    .horarios{
+        &__nivel{
+            width: 70%;
+            font-size: 22px;
+            padding: 15px 14px;
+        }
+        &__hora{
+            font-size: 15px;
+        }
+    }
+}

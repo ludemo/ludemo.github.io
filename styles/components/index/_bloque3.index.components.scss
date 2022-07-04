@@ -1,0 +1,122 @@
+.bloque4{
+    background-image: url(../img/fondo-portada-2.webp);
+    background-size: cover;
+    font-family: PoiretOne;
+    position: relative;
+	flex-direction: column;
+}
+
+/* FOOTER */
+.mapa{
+    min-height: 50vh;
+    &__frame{
+        pointer-events: none;
+    }
+}
+
+/*div general del footer*/
+.footer{
+    width: 100%;
+	display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    &--suficiencia{
+        background-color: #011D23;
+        min-height: 50vh;
+    }
+    &--index{
+        height: 50vh;
+    }
+    &> *{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &__logo{
+        position: relative;
+        padding: 10px;
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width:50%;
+        max-width:600px;
+        min-width:270px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    &__logo-img{
+        max-width:100%;
+	    height:auto;/*Esto no debería ser necesario pero porsiacaso */
+    }
+    &__texto{
+        font-size: 4vh;
+        font-family: PoiretOne;
+        margin: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /*la recta de las redes*/
+    &__redes{ 
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    &__copy{
+        color: rgb(172, 172, 172); 
+        font-size: large;
+    }
+}
+.red{
+    display: flex;
+    align-items: center;
+    margin:10px;
+    &__enlace{ 
+        @include centrar(row);
+        text-decoration: none;
+        color: $blanco;
+    }
+    &__icono{ 
+        width:9vh;
+        max-width:120px;
+        min-width:40px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    &__texto{
+        text-align: center;
+        margin-left: 7px; 
+        font-size:3vh;
+    }
+}
+
+/*Terminamos contenido*/
+@media screen and (min-width: 1930px){
+    .footer--suficiencia{
+        min-height: 750px;
+    }
+}
+@media (orientation: landscape){
+    .red{
+        &__texto, &__item{
+            display: block;
+        }
+    }
+    .footer__logo{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .red{
+        &__texto, &__item{
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-height:270px){
+	.footer__texto{
+		display: none;
+	}
+}
