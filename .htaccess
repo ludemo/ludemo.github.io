@@ -1,4 +1,4 @@
-RewriteBase /Skala_final_version/src/
+RewriteBase /Skala_final_version
 
 RewriteEngine On
 
