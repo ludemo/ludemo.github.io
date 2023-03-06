@@ -61,11 +61,12 @@ function avanzar(){
 }
 function siguiente(){
     console.log(section);
-     if(section == 0){
+    if(section == 0){
         let image = document.getElementById("file").value;
         var nombreBoleta = document.getElementById("nombreBoleta").value;
         //is value esta vacio entones reviso lo manda a su casa y luego peude llenar el form otar vez.
         var documentoBoleta = document.getElementById("documentoBoleta").value;
+        var TipoDocumentoBoleta = document.getElementById("TipoDocumentoBoleta").value;
         if(image == ""){
             alert("Ingrese una imagen de su comprobante");
         }
@@ -74,6 +75,9 @@ function siguiente(){
         }
         else if(documentoBoleta == ""){
             alert("Ingrese el número de documento de su boleta");
+        }
+        else if(documentoBoleta.length != 8 && TipoDocumentoBoleta == "D.N.I."){
+            alert("Ingrese un número de DNI válido");
         }
         else{
             cant+=100;
@@ -87,6 +91,7 @@ function siguiente(){
         var nacimientoEstudiante = document.getElementById("nacimientoEstudiante").value;
         var celularEstudiante = document.getElementById("celularEstudiante").value;
         var documentoEstudiante = document.getElementById("documentoEstudiante").value;
+        var tipoDocumentoEstudiante = document.getElementById("tipoDocumentoEstudiante").value;
         if(apellidoEstudiante == ""){
             alert("Ingrese el apellido del estudiante");
         }
@@ -99,8 +104,14 @@ function siguiente(){
         else if(celularEstudiante == ""){
             alert("Ingrese el número de celular del estudiante");
         }
+        else if(celularEstudiante.length != 9){
+            alert("Ingrese un número de celular válido");
+        }
         else if(documentoEstudiante == ""){
             alert("Ingrese el número de documento del estudiante");
+        }
+        else if(documentoEstudiante.length != 8 && tipoDocumentoEstudiante == "D.N.I."){
+            alert("Ingrese un número de DNI válido");
         }
         else{
             cant+=100;
