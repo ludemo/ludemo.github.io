@@ -17,9 +17,9 @@ function cambiarTexto(){
     console.log("Entramos a cambiar texto")
     if(viewport.matches){
         if(section == 0){
-                facturacion.style.display = "block";
-                datosPersonales.style.display = "none";
-                datosUbicacion.style.display = "none";
+            facturacion.style.display = "block";
+            datosPersonales.style.display = "none";
+            datosUbicacion.style.display = "none";
             datosFinales.style.display = "none";
         }
         else if(section == 1){
@@ -69,6 +69,9 @@ function siguiente(){
         var TipoDocumentoBoleta = document.getElementById("TipoDocumentoBoleta").value;
         if(image == ""){
             alert("Ingrese una imagen de su comprobante");
+        }
+        else if(NumeroOperacion == "" && modalidadPago != "Yape"){
+            alert("Ingrese el numero de operación");
         }
         else if(nombreBoleta ==""){
             alert("Ingrese el nombre para su boleta");

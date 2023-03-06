@@ -1,5 +1,5 @@
 //Envio a google sheet
-let urlScriptSheet = "https://script.google.com/macros/s/AKfycbxItl5PVwJruFbAy-boxtEt5C0ZqIbELkYBJDnGBX0DdjKpPHqvwfboxiTjng90yWbe/exec";
+let urlScriptSheet = "https://script.google.com/macros/s/AKfycbzFeXGCXxNUffxFGAX66P9tU_8jjYraGy7U0OBc9n9oayYvSQ8qghKrEOyW-vInnVzq_w/exec";
 //Envio hacia whatsapp
 function isMobile() {
     if (sessionStorage.desktop)
@@ -27,6 +27,7 @@ formulario.addEventListener('submit', async (event) => {
     var institucion = document.getElementById("institucion").value;
     var nombreRepresentante   = document.getElementById("nombreRepresentante").value;  
     var apellidoRepresentante = document.getElementById("apellidoRepresentante").value;
+    var numeroRepresentante = document.getElementById("numeroRepresentante").value;
 
     if(fechaInicio == ""){
         alert("Ingrese la fecha cuando iniciara sus clases");
@@ -38,6 +39,10 @@ formulario.addEventListener('submit', async (event) => {
     }
     else if(apellidoRepresentante == ""){
         alert("Ingrese el apellido del apoderado");
+        event.preventDefault();
+    }
+    else if(numeroRepresentante == ""){
+        alert("Ingrese el Número de celular del representante");
         event.preventDefault();
     }
     else if(nombreRepresentante == ""){
@@ -55,8 +60,9 @@ formulario.addEventListener('submit', async (event) => {
         //Recolección de datos
         //Datos de boleta
             let image = document.getElementById("file");
+            var modalidaPago = document.getElementById("pago").value;
+            var numeroOperacion = document.getElementById("numeroOperacion").value;
             var nombreBoleta = document.getElementById("nombreBoleta").value;
-            //is value esta vacio entones reviso lo manda a su casa y luego peude llenar el form otar vez.
             var TipoDocumentoBoleta = document.getElementById("TipoDocumentoBoleta").value;
             var documentoBoleta = document.getElementById("documentoBoleta").value;
             //Datos personales
@@ -79,7 +85,8 @@ formulario.addEventListener('submit', async (event) => {
             var institucion = document.getElementById("institucion").value;
             var nombreRepresentante   = document.getElementById("nombreRepresentante").value;  
             var apellidoRepresentante = document.getElementById("apellidoRepresentante").value; 
-            
+            var telefonoRepresentante = document.getElementById("numeroRepresentante").value; 
+
             //Desactivación del boton enviar porque ya envio y que actualice la página
             event.preventDefault()
             buttonSubmit.disabled = true
@@ -114,7 +121,7 @@ formulario.addEventListener('submit', async (event) => {
         fr.readAsDataURL(image.files[0])
         //Envio de datos sin imagen a google sheet
         try{
-            await fetch('https://sheet.best/api/sheets/ccbce7ee-c532-4a77-8a92-233ea4dc8671',{
+            await fetch('https://sheet.best/api/sheets/6d93adc1-1678-4695-abc5-dcd0fc459ce1',{
                 method : 'POST',
                 mode : 'cors',
                 headers : {
@@ -124,6 +131,8 @@ formulario.addEventListener('submit', async (event) => {
             body : JSON.stringify({
                 //Datos de boleta
                 "NombreBoleta" : nombreBoleta,
+                "Banco" : modalidaPago,
+                "NumeroOperacion" :  numeroOperacion,
                 "TipoDocumentoBoleta" : TipoDocumentoBoleta,
                 "DocumentoBoleta" : documentoBoleta,
                 //Datos personales
@@ -147,6 +156,8 @@ formulario.addEventListener('submit', async (event) => {
                 //Datos del apoderado
                 "NombreRepresentante" : nombreRepresentante,
                 "ApellidoRepresentante" : apellidoRepresentante,
+                "telefonoRepresentante" : telefonoRepresentante,
+
             })  
         });
         console.log("Terminoo de enviar todooo")

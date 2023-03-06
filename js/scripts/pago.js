@@ -21,3 +21,20 @@ tipoPago.addEventListener("change", function() {
         img.src = "img/cuentas.png";
     }
 });
+
+//cambio de pago
+
+var modalidadPago = document.getElementById("pago");
+var labelNumeroOperacion = document.getElementById("labelNumeroOperacion");
+var NumeroOperacion = document.getElementById("numeroOperacion");
+
+modalidadPago.addEventListener("change",function(){
+    if (modalidadPago.value == "Yape"){
+        labelNumeroOperacion.style.display = "none";
+        NumeroOperacion.style.display = "none";
+    }
+    else{
+        labelNumeroOperacion.style.display = "block";
+        NumeroOperacion.style.display = "block";
+    }
+})
