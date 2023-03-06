@@ -1,9 +1,78 @@
 .pointer{
     cursor: pointer;
 }
-.negrita{
-    font-weight:bold;
+
+.text__disabled{
+    color:#808080;
 }
-.center{
-    text-align: center;
+.none{
+    display: none;
+}
+
+
+.boton__descarga{
+    padding: 10px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8px;
+    position: relative;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: 2px solid white;
+    background-color: #ffffff0e;
+    font-family: $text-font;  
+    &:hover{
+        background-color:#166b6e;
+    }
+    &__icono{
+        height: 20px;
+        margin-left: 15px;
+    }
+    &--a{
+        margin: 10px;
+    }
+
+}
+
+
+.container__boton--link{
+    font-family:$title-font;
+    position: relative;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 50px;
+}
+
+.boton__link{
+    position: relative;
+    padding-left: 11px;
+    padding-right: 11px;
+    &::before, &::after{
+        position: absolute;
+        width: 2px;
+        height: 100%;
+        top: 0px;
+        content: '';
+        background: #FFF;
+        opacity: 1;
+        transition: all 0.3s;
+        transition: opacity 0;
+    }
+    
+    &:before{
+        left: 0px;
+    } 
+
+    &:after{
+        right: 0px;
+    }
+
+    &:hover:before,&:hover:after{
+        width: 100%;
+        opacity: 0.3;
+    }
 }

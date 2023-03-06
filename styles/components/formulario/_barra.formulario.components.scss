@@ -1,0 +1,147 @@
+html{
+  overflow-x: hidden;
+}
+.iconos-conteiner,.textos-conteiner,.barra-conteiner{
+    margin-left:auto;
+    margin-right:auto;
+    display: grid;
+    align-content: center;
+    position:relative;
+    align-items: center;
+    grid-template-columns: repeat(4,1fr);
+  }
+  .textos-conteiner{
+    h4{
+      height: 50%;
+      position: relative;
+      text-align: center;
+      margin: 0;
+      font-family: $parrafo;
+      left:4vw;
+    }
+  }
+  .estado-img{
+    position: relative;
+    left: calc( 15vw - 25px);
+    height: 50%;
+    margin: 4px;
+    filter: invert(86%) sepia(1%) saturate(1739%) hue-rotate(221deg) brightness(113%) contrast(69%);
+  }
+  .actual-img{
+    filter: invert(49%) sepia(22%) saturate(6026%) hue-rotate(151deg) brightness(90%) contrast(92%);
+  }
+  .paso-img{
+    filter : invert(29%) sepia(13%) saturate(7341%) hue-rotate(155deg) brightness(96%) contrast(103%)
+  }
+  .barras-conteiner{
+    width: 100%;
+    height: 100%;
+    left: 15vw  ;
+    position: relative;
+  }
+  .barra-gris{
+    position: absolute;
+    height: 50%;
+    background-color: #D2D3D8;
+    width: calc(100% - 20px);
+    top: 0;
+    z-index: -1;
+  }
+  .barrita{
+    margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90vw;
+   /*  left: 15vw; */
+    position: relative;
+  }
+  .barra{ 
+    height:50%;
+    animation-name: carga;
+    animation-duration: 4s;
+    animation-fill-mode: none;
+    transition: 1s width ease;
+    width: 0;
+    position: relative;
+    background: linear-gradient(90deg, rgba(0,109,119,1) 0%, rgba(10,158,167,1) 79%);
+
+  }
+  
+  .noPaso{
+    height:30px;
+    width:30px;
+    left:-25px;
+    top:-25%;
+    border-radius:50%;
+    position:absolute;
+    border:8px solid #D2D3D8;
+    box-sizing:border-box;
+  }
+  .estado{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .paso{
+    height:40px;
+    width:40px;
+    left:-25px;
+    top:-50%;
+    background-color:#006D77;    
+    position:absolute ;
+    border:none;
+    display:flex;
+    align-items:center;
+    border-radius: 50%;
+  }
+  .actual{
+    height:40px;
+    width:40px;
+    left:-25px;
+    top:-50%;
+    position: relative;
+    background-color:#0A9EA7;    
+    border:none;
+    border-radius:50%;
+  }
+  .button{
+    margin:30px;
+    width:50px;
+    height:20px;
+    border:black 2px solid;
+    padding:5px;
+  }
+
+  .proceso{
+    object-fit: cover;
+    height: 60%;
+    display: none;
+  }
+  .listo{
+    object-fit: cover;
+    display: none;
+    height: 50%;
+  }
+//580px
+@media (max-width: 700px)  {
+  .barrita{
+    margin:0;
+  }
+  .textos-conteiner {
+    margin: 20px;
+    position: relative;
+    display: flex;
+    h4{
+      display: none;
+      width: 100%;
+      br {
+        display: none;
+      }
+    }
+
+  }
+  #form__text__facturacion{
+    display: block;
+  }
+}

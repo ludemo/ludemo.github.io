@@ -14,9 +14,15 @@
 @import '../components/suficiencia/modalidades.suficiencia.components';
 @import '../components/suficiencia/brochure.suficiencia.components';
 
-//Otros
-@import '../components/talleres.components';
+//Nuestros talleres
 @import '../components/talleres/simbolos.talleres.components';
 @import '../components/talleres/curso.talleres.components';
 @import '../components/talleres/informacion.talleres.components';
 
+//Studio Arquitectura
+@import '../components/arquitectura/arquitectura.components';
+
+//Formulario
+@import '../components/formulario/facturacion.formulario.components';
+@import '../components/formulario/barra.formulario.components';
+@import '../components/formulario/loader.formulario.components';

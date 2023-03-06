@@ -5,6 +5,7 @@ h2{
 a{
     text-decoration: none;
     color: white;
+    cursor: pointer;
 }
 body{
     color: $blanco;
@@ -18,7 +19,7 @@ body{
 h1, h2{
     font-family: $title-font;
 }
-h4,h5{
+h4, h5{
     font-size: $h4-font-size;
 }
 p{
@@ -28,6 +29,10 @@ p{
 img{
     user-select: none;
 }
+input, select{
+    color: #FFFFFF;
+}
+
 @media screen and (max-width: 768px){
     body{
         background-image:url(../img/fondo-suficiencia-cel.webp);
