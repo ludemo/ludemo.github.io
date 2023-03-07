@@ -103,6 +103,7 @@ formulario.addEventListener('submit', async (event) => {
             }
             fetch(urlScriptSheet,{
                 method:"POST",
+                mode : "cors",
                 body:JSON.stringify(obj)
             })
             .then(r=>r.text())
