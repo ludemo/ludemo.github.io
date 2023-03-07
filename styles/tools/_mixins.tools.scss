@@ -4,3 +4,14 @@
     align-items: center;
     justify-content: center;
 }
+@mixin grillaForm($columnas){
+    display: grid;
+    grid-template-columns: repeat(1 fr, $columnas);
+    align-items: center;
+    grid-column-gap: 30px;
+    grid-row-gap: 35px;
+}
+@mixin justificar($jc){
+    display: flex;
+    justify-content: $jc;
+}
