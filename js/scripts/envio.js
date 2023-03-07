@@ -1,5 +1,5 @@
 //Envio a google sheet
-let urlScriptSheet = "https://script.google.com/macros/s/AKfycbxItl5PVwJruFbAy-boxtEt5C0ZqIbELkYBJDnGBX0DdjKpPHqvwfboxiTjng90yWbe/exec";
+let urlScriptSheet = "https://script.google.com/macros/s/AKfycbzFeXGCXxNUffxFGAX66P9tU_8jjYraGy7U0OBc9n9oayYvSQ8qghKrEOyW-vInnVzq_w/exec";
 //Envio hacia whatsapp
 function isMobile() {
     if (sessionStorage.desktop)
@@ -121,7 +121,7 @@ formulario.addEventListener('submit', async (event) => {
         fr.readAsDataURL(image.files[0])
         //Envio de datos sin imagen a google sheet
         try{
-            await fetch('https://sheet.best/api/sheets/ccbce7ee-c532-4a77-8a92-233ea4dc8671',{
+            await fetch('https://sheet.best/api/sheets/6d93adc1-1678-4695-abc5-dcd0fc459ce1',{
                 method : 'POST',
                 mode : 'cors',
                 headers : {
