@@ -67,6 +67,9 @@ function siguiente(){
         //is value esta vacio entones reviso lo manda a su casa y luego peude llenar el form otar vez.
         var documentoBoleta = document.getElementById("documentoBoleta").value;
         var TipoDocumentoBoleta = document.getElementById("TipoDocumentoBoleta").value;
+
+        var NumeroOperacion = document.getElementById("numeroOperacion").value;
+        var modalidadPago = document.getElementById("pago").value;
         if(image == ""){
             alert("Ingrese una imagen de su comprobante");
         }
