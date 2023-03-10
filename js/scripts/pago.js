@@ -29,7 +29,7 @@ var labelNumeroOperacion = document.getElementById("labelNumeroOperacion");
 var NumeroOperacion = document.getElementById("numeroOperacion");
 
 modalidadPago.addEventListener("change",function(){
-    if (modalidadPago.value == "Yape"){
+    if (modalidadPago.value == "Yape" || modalidadPago.value == "Efectivo"){
         labelNumeroOperacion.style.display = "none";
         NumeroOperacion.style.display = "none";
     }

@@ -11,7 +11,7 @@
 
     </head>
     <body>
-        <a href="suficiencia-Unsa.html" class="flecha-atras__link">
+        <a href="suficiencia-Unsa" class="flecha-atras__link">
             <img class="talleres__flecha-atras" src="img/talleres/flecha.png" alt="atras">
         Suficiencia Unsa
     </a>
@@ -87,6 +87,7 @@
                         <option class="form__opcion">Depósito - BCP</option>
                         <option class="form__opcion">Depósito - BBVA</option>
                         <option class="form__opcion">Yape</option>
+                        <option class="form__opcion">Efectivo</option>
                     </select>
                     <label id = "labelNumeroOperacion" class="form__label">Número de operación del deposito</label> 
                     <input type="text" class="form__input" enterkeyhint="done" maxlength="50" id="numeroOperacion">
@@ -189,12 +190,12 @@
                 <a href ="www.skalastudioarquitectura.com" class="container__boton--link">
                     <div class="boton__link" id="open">regresar al incio</div>
                 </a>
-             <!--    <a class="boton__descarga--a" href="archivos/Brochure 2023 enero.pdf">
+                <a class="boton__descarga--a" onclick="generarPDF()"> 
                     <div class="boton__descarga">
-                        Descargar comprobante
+                        Descargar constancia
                         <img loading="lazy" class="boton__icono" src="img/descarga.webp" alt="descarga">
                     </div>
-                </a> -->
+                </a>
             </div>
         </div>
     </div>
@@ -202,7 +203,9 @@
     <script src = "js/scripts/pago.js"></script>
     <script src = "js/scripts/botones.js"></script>
     <script src = "js/scripts/envio.js"></script>
-    <script src = "js/scripts/pdf.js"></script>
     <script src = "js/scripts/modalidad.js"></script>
+    <script src = "js/scripts/pdf.js"></script>
+    <script src = "js/scripts/PoiretOne-normal.js"></script>
+    <script src = "js/scripts/constancia.js"></script>
 </body>
 </html>
