@@ -62,27 +62,20 @@ function avanzar(){
 function siguiente(){
     console.log(section);
     if(section == 0){
-        let image = document.getElementById("file").value;
-        var nombreBoleta = document.getElementById("nombreBoleta").value;
         //is value esta vacio entones reviso lo manda a su casa y luego peude llenar el form otar vez.
-        var documentoBoleta = document.getElementById("documentoBoleta").value;
-        var TipoDocumentoBoleta = document.getElementById("TipoDocumentoBoleta").value;
-
-        var NumeroOperacion = document.getElementById("numeroOperacion").value;
-        var modalidadPago = document.getElementById("pago").value;
-        if(image == ""){
+        if(image.value == ""){
             alert("Ingrese una imagen de su comprobante");
         }
-        else if(NumeroOperacion == "" && modalidadPago != "Yape"){
+        else if(numeroOperacion.value == "" && modalidadPago.value != "Yape" && modalidadPago.value != "Efectivo"){
             alert("Ingrese el numero de operación");
         }
-        else if(nombreBoleta ==""){
+        else if(nombreBoleta.value ==""){
             alert("Ingrese el nombre para su boleta");
         }
-        else if(documentoBoleta == ""){
+        else if(documentoBoleta.value == ""){
             alert("Ingrese el número de documento de su boleta");
         }
-        else if(documentoBoleta.length != 8 && TipoDocumentoBoleta == "D.N.I."){
+        else if(documentoBoleta.value.length != 8 && TipoDocumentoBoleta.value == "D.N.I."){
             alert("Ingrese un número de DNI válido");
         }
         else{
@@ -92,31 +85,25 @@ function siguiente(){
         }
     }
     else if(section == 1){
-        var apellidoEstudiante = document.getElementById("apellidoEstudiante").value;
-        var nombreEstudiante = document.getElementById("nombreEstudiante").value;
-        var nacimientoEstudiante = document.getElementById("nacimientoEstudiante").value;
-        var celularEstudiante = document.getElementById("celularEstudiante").value;
-        var documentoEstudiante = document.getElementById("documentoEstudiante").value;
-        var tipoDocumentoEstudiante = document.getElementById("tipoDocumentoEstudiante").value;
-        if(apellidoEstudiante == ""){
+        if(apellidoEstudiante.value == ""){
             alert("Ingrese el apellido del estudiante");
         }
-        else if(nombreEstudiante == ""){
+        else if(nombreEstudiante.value == ""){
             alert("Ingrese el nombre del estudiante");
         }
-        else if (nacimientoEstudiante == ""){
+        else if (nacimientoEstudiante.value == ""){
             alert("Ingrese la fecha de nacimiento del estudiante");
         }
-        else if(celularEstudiante == ""){
+        else if(celularEstudiante.value == ""){
             alert("Ingrese el número de celular del estudiante");
         }
-        else if(celularEstudiante.length != 9){
+        else if(celularEstudiante.value.length != 9){
             alert("Ingrese un número de celular válido");
         }
-        else if(documentoEstudiante == ""){
+        else if(documentoEstudiante.value == ""){
             alert("Ingrese el número de documento del estudiante");
         }
-        else if(documentoEstudiante.length != 8 && tipoDocumentoEstudiante == "D.N.I."){
+        else if(documentoEstudiante.value.length != 8 && tipoDocumentoEstudiante.value == "D.N.I."){
             alert("Ingrese un número de DNI válido");
         }
         else{
@@ -126,17 +113,13 @@ function siguiente(){
         }
     }
     else if(section == 2){
-        var lugarNacimientoEstudiante = document.getElementById("lugarNacimientoEstudiante").value;
-        var direccionEstudiante = document.getElementById("direccionEstudiante").value;
-        var correoEstudiante = document.getElementById("correoEstudiante").value;
-
-        if(lugarNacimientoEstudiante == ""){
+        if(lugarNacimientoEstudiante.value == ""){
             alert("Ingrese el lugar de nacimiento del estudiante");
         }
-        else if(direccionEstudiante ==""){
+        else if(direccionEstudiante.value ==""){
             alert("Ingrese la dirección del estudiante");
         }
-        else if(correoEstudiante == ""){
+        else if(correoEstudiante.value == ""){
             alert("Ingrese el correo del estudiante");
         }
         else{ 

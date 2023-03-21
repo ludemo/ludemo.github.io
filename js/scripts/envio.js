@@ -24,30 +24,23 @@ var opciones_form = document.getElementById("opciones__form");
 //hasta aquí noma
 
 formulario.addEventListener('submit', async (event) => {
-    var fechaInicio = document.getElementById("fechaInicio").value;
-    //Academicos
-    var institucion = document.getElementById("institucion").value;
-    var nombreRepresentante   = document.getElementById("nombreRepresentante").value;  
-    var apellidoRepresentante = document.getElementById("apellidoRepresentante").value;
-    var numeroRepresentante = document.getElementById("numeroRepresentante").value;
-
-    if(fechaInicio == ""){
+    if(fechaInicio.value == ""){
         alert("Ingrese la fecha cuando iniciara sus clases");
         event.preventDefault();
     }
-    else if(institucion == ""){
+    else if(institucion.value == ""){
         alert("Ingrese la institución de procedencia");
         event.preventDefault();
     }
-    else if(apellidoRepresentante == ""){
+    else if(apellidoRepresentante.value == ""){
         alert("Ingrese el apellido del apoderado");
         event.preventDefault();
     }
-    else if(numeroRepresentante == ""){
+    else if(telefonoRepresentante.value == ""){
         alert("Ingrese el Número de celular del representante");
         event.preventDefault();
     }
-    else if(nombreRepresentante == ""){
+    else if(nombreRepresentante.value == ""){
         alert("Ingrese el nombre del apoderado");
         event.preventDefault();
     }
@@ -59,40 +52,10 @@ formulario.addEventListener('submit', async (event) => {
         window.scrollTo(0, 0);
         html.style.overflow = "hidden";
         confirm == true;
-        //Recolección de datos
-        //Datos de boleta
-            let image = document.getElementById("file");
-            var modalidaPago = document.getElementById("pago").value;
-            var numeroOperacion = document.getElementById("numeroOperacion").value;
-            var nombreBoleta = document.getElementById("nombreBoleta").value;
-            var TipoDocumentoBoleta = document.getElementById("TipoDocumentoBoleta").value;
-            var documentoBoleta = document.getElementById("documentoBoleta").value;
-            //Datos personales
-            var apellidoEstudiante = document.getElementById("apellidoEstudiante").value;
-            var nombreEstudiante = document.getElementById("nombreEstudiante").value;
-            var nacimientoEstudiante = document.getElementById("nacimientoEstudiante").value;
-            var celularEstudiante = document.getElementById("celularEstudiante").value;
-            var tipoDocumentoEstudiante = document.getElementById("tipoDocumentoEstudiante").value;
-            var documentoEstudiante = document.getElementById("documentoEstudiante").value;
-            //Datos de ubicación
-            var lugarNacimientoEstudiante = document.getElementById("lugarNacimientoEstudiante").value;
-            var direccionEstudiante = document.getElementById("direccionEstudiante").value;
-            var correoEstudiante = document.getElementById("correoEstudiante").value;
-            //Plan
-            var modalidad = document.getElementById("modalidad").value;
-            var nivel = document.getElementById("nivel").value;
-            var horario = document.getElementById("horario").value;
-            var fechaInicio = document.getElementById("fechaInicio").value;
-            //Academicos
-            var institucion = document.getElementById("institucion").value;
-            var nombreRepresentante   = document.getElementById("nombreRepresentante").value;  
-            var apellidoRepresentante = document.getElementById("apellidoRepresentante").value; 
-            var telefonoRepresentante = document.getElementById("numeroRepresentante").value; 
-
-            //Desactivación del boton enviar porque ya envio y que actualice la página
-            event.preventDefault()
-            buttonSubmit.disabled = true
-            //Envio de imagen 
+        //Desactivación del boton enviar porque ya envio y que actualice la página
+        event.preventDefault()
+        buttonSubmit.disabled = true
+        //Envio de imagen 
         //Si paso las validaciones de los datos puede ejecutar todo esto
         let fr = new FileReader();
         fr.addEventListener('loadend',()=>{
@@ -133,34 +96,33 @@ formulario.addEventListener('submit', async (event) => {
             //al poner un objeto js, y esta cosa lo transforma a JSON   
             body : JSON.stringify({
                 //Datos de boleta
-                "NombreBoleta" : nombreBoleta,
-                "Banco" : modalidaPago,
-                "NumeroOperacion" :  numeroOperacion,
-                "TipoDocumentoBoleta" : TipoDocumentoBoleta,
-                "DocumentoBoleta" : documentoBoleta,
+                "NombreBoleta" : nombreBoleta.value,
+                "Banco" : modalidadPago.value,
+                "NumeroOperacion" :  numeroOperacion.value,
+                "TipoDocumentoBoleta" : TipoDocumentoBoleta.value,
+                "DocumentoBoleta" : documentoBoleta.value,
                 //Datos personales
-                "ApellidoEstudiante" : apellidoEstudiante,
-                "NombreEstudiante" : nombreEstudiante,
-                "NacimientoEstudiante" : nacimientoEstudiante,
-                "CelularEstudiante" : celularEstudiante,
-                "TipoDocumentoEstudiante" : tipoDocumentoEstudiante,
-                "DocumentoEstudiante" : documentoEstudiante,
+                "ApellidoEstudiante" : apellidoEstudiante.value,
+                "NombreEstudiante" : nombreEstudiante.value,
+                "NacimientoEstudiante" : nacimientoEstudiante.value,
+                "CelularEstudiante" : celularEstudiante.value,
+                "TipoDocumentoEstudiante" : tipoDocumentoEstudiante.value,
+                "DocumentoEstudiante" : documentoEstudiante.value,
                 //Datos de ubicación
-                "LugarNacimientoEstudiante" : lugarNacimientoEstudiante,
-                "DireccionEstudiante" : direccionEstudiante,
-                "CorreoEstudiante" : correoEstudiante,
+                "LugarNacimientoEstudiante" : lugarNacimientoEstudiante.value,
+                "DireccionEstudiante" : direccionEstudiante.value,
+                "CorreoEstudiante" : correoEstudiante.value,
                 //Plan
-                "Modalidad" : modalidad,
-                "Nivel" : nivel,
-                "Horario" : horario,
-                "FechaInicio" : fechaInicio,
+                "Modalidad" : modalidad.value,
+                "Nivel" : nivel.value,
+                "Horario" : horario.value,
+                "FechaInicio" : fechaInicio.value,
                 //Datos academicos
-                "Institucion" : institucion,
+                "Institucion" : institucion.value,
                 //Datos del apoderado
-                "NombreRepresentante" : nombreRepresentante,
-                "ApellidoRepresentante" : apellidoRepresentante,
-                "telefonoRepresentante" : telefonoRepresentante,
-
+                "NombreRepresentante" : nombreRepresentante.value,
+                "ApellidoRepresentante" : apellidoRepresentante.value,
+                "telefonoRepresentante" : telefonoRepresentante.value,
             })  
         });
         console.log("Terminoo de enviar todooo")

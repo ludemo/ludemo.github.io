@@ -14,5 +14,6 @@ function generarPDF(){
     pdf.text(75, 127, horario.value);
     pdf.text(190, 119, modalidad.value);
     pdf.text(190, 127, nivel.value);
+    console.log(pdf.value);
     pdf.save('babasa.pdf');
 }
