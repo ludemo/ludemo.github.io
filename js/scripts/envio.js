@@ -1,5 +1,5 @@
 //Envio a google sheet
-let urlScriptSheet = "https://script.google.com/macros/s/AKfycbxItl5PVwJruFbAy-boxtEt5C0ZqIbELkYBJDnGBX0DdjKpPHqvwfboxiTjng90yWbe/exec";
+let urlScriptSheet = "https://script.google.com/macros/s/AKfycbzFeXGCXxNUffxFGAX66P9tU_8jjYraGy7U0OBc9n9oayYvSQ8qghKrEOyW-vInnVzq_w/exec";
 //Envio para hacer pruebas y no gastar solicitudes :" 
 //let urlScriptSheet : "https://script.google.com/macros/s/AKfycbxItl5PVwJruFbAy-boxtEt5C0ZqIbELkYBJDnGBX0DdjKpPHqvwfboxiTjng90yWbe/exec"
 //Envio hacia whatsapp
@@ -38,6 +38,10 @@ formulario.addEventListener('submit', async (event) => {
     }
     else if(telefonoRepresentante.value == ""){
         alert("Ingrese el Número de celular del representante");
+        event.preventDefault();
+    }
+    else if(telefonoRepresentante.value.length != 9){
+        alert("IIngrese un número de celular válido");
         event.preventDefault();
     }
     else if(nombreRepresentante.value == ""){
@@ -88,7 +92,7 @@ formulario.addEventListener('submit', async (event) => {
         //Envio de datos sin imagen a google sheet
         try{
             //Link para pruebas :https://sheet.best/api/sheets/ccbce7ee-c532-4a77-8a92-233ea4dc8671
-            await fetch('https://sheet.best/api/sheets/ccbce7ee-c532-4a77-8a92-233ea4dc8671',{
+            await fetch('https://sheet.best/api/sheets/6d93adc1-1678-4695-abc5-dcd0fc459ce1',{
                 method : 'POST',
                 headers : {
                 'Content-Type' : 'application/json'
