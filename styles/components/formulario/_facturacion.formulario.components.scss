@@ -110,13 +110,13 @@
     font-size: 20px;
     padding: 10px 0px;
     @include justificar(center);
-    width: 300px;
     cursor: pointer;
 }
 .boton--enviar{
     width: 180px;
     visibility: hidden;
     color: #ffffff;
+    font-family: $parrafo;
 }
 .boton--left{
     right: 7.5%;
