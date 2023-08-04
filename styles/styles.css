@@ -2501,7 +2501,6 @@ hr {
   padding: 10px 0px;
   display: flex;
   justify-content: center;
-  width: 300px;
   cursor: pointer;
 }
 
@@ -2509,6 +2508,7 @@ hr {
   width: 180px;
   visibility: hidden;
   color: #ffffff;
+  font-family: "PoiretOne";
 }
 
 .boton--left {

@@ -73,7 +73,7 @@ function siguiente(){
             alert("Ingrese el nombre para su boleta");
         }
         else if(documentoBoleta.value == ""){
-            alert("Ingrese el número de documento de su boleta");
+            alert("Ingrese el número de DNI para su boleta");
         }
         else if(documentoBoleta.value.length != 8 && TipoDocumentoBoleta.value == "D.N.I."){
             alert("Ingrese un número de DNI válido");

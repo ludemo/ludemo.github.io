@@ -1,5 +1,5 @@
 //Envio a google sheet
-let urlScriptSheet = "https://script.google.com/macros/s/AKfycbyZ7_QUqjMvl9JutDwSRfV3Y97DtYKPuLrUbDCR7xlzhxW4hi4VjYa0o7MHuoPKkJuZDg/exec";
+let urlScriptSheet = "https://script.google.com/macros/s/AKfycbzFeXGCXxNUffxFGAX66P9tU_8jjYraGy7U0OBc9n9oayYvSQ8qghKrEOyW-vInnVzq_w/exec";
 //Envio para hacer pruebas y no gastar solicitudes :" 
 //let urlScriptSheet : "https://script.google.com/macros/s/AKfycbxItl5PVwJruFbAy-boxtEt5C0ZqIbELkYBJDnGBX0DdjKpPHqvwfboxiTjng90yWbe/exec"
 //Envio hacia whatsapp
@@ -38,6 +38,10 @@ formulario.addEventListener('submit', async (event) => {
     }
     else if(telefonoRepresentante.value == ""){
         alert("Ingrese el Número de celular del representante");
+        event.preventDefault();
+    }
+    else if(telefonoRepresentante.value.length != 9){
+        alert("IIngrese un número de celular válido");
         event.preventDefault();
     }
     else if(nombreRepresentante.value == ""){
