@@ -1,0 +1,40 @@
+h2{
+    margin: 0;
+    font-weight: normal;
+}
+a{
+    text-decoration: none;
+    color: white;
+    cursor:pointer;
+}
+body{
+    color: $blanco;
+    overflow-x: hidden;
+    background-image: url("img/fondo-pc.webp");
+    background-size: 80%;
+    background-repeat: repeat;
+    position: relative;
+
+}
+h1, h2{
+    font-family: $title-font;
+}
+h4, h5{
+    font-size: $h4-font-size;
+}
+p{
+    font-family: $text-font;
+    font-size:$normal-font-size;
+}
+img{
+    user-select: none;
+}
+input, select{
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 768px){
+    body{
+        background-image:url("img/fondo-suficiencia-cel.webp");
+    }
+}

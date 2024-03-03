@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html id ="html" lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shorcut icon" href="../img/icono-web-lampara.ico">
+        <link rel="stylesheet" href="../styles.css">
+        <title>Formulario matrícula</title>
+        <script src="https://unpkg.com/jspdf@latest/dist/jspdf.umd.min.js"></script>
+
+    </head>
+    <body class="mantenimiento">
+  <!--
+        <a href="suficiencia-Unsa" class="flecha-atras__link">
+            <img class="talleres__flecha-atras" src="../img/talleres/flecha.png" alt="atras">
+        Suficiencia Unsa
+    </a>
+    <h1 class="seccion__titulo">Formulario de matrícula</h1>
+    <div class="barrita" id="barrita">
+        <div class="iconos-conteiner">
+            
+            <img class = "estado-img actual-img" src="../img/pago.svg" alt="">
+            <img class = "estado-img" src="../img/datos.png" alt="">
+            <img class = "estado-img" src="../img/mapa.png" alt="">
+            <img class = "estado-img" src="../img/final.png" alt="" id="listo">
+        </div>
+        <div class="barra-conteiner" id="barra">
+            <div class="barras-conteiner">
+                <div class="barra barra__1">
+                    <div class="estado actual">
+                        <img class = "listo"   src="../img/listo.png" alt="">
+                        <img class = "proceso" src="../img/proceso.png" alt="">
+                    </div>
+                </div>
+                <div class="barra-gris"></div>
+            </div>
+            <div class="barras-conteiner">
+                <div class="barra barra__2">
+                    <div class="estado noPaso">
+                        <img class = "listo" src="../img/listo.png" alt="">
+                        <img class = "proceso"src="../img/proceso.png" alt="">
+                    </div>
+                    <div class="barra-gris"></div>
+                </div>
+                <div class="barra-gris"></div>
+            </div>
+            <div class="barras-conteiner">
+                <div class="barra barra__3">
+                    <div class="estado noPaso">
+                        <img class = "listo" src="../img/listo.png" alt="">
+                        <img class = "proceso" src="../img/proceso.png" alt="">
+                    </div>
+                </div>
+                <div class="barra-gris"></div>
+            </div>
+            <div class="barras-conteiner">
+                <div class="barra barra__4">
+                    <div class="estado noPaso">
+                        <img class = "listo"  src="../img/listo.png" alt="">
+                        <img class = "proceso"  src="../img/proceso.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="textos-conteiner">
+            <h4 id = "form__text__facturacion">Datos de <br>facturación</h4>
+            <h4 id = "form__text__datosPersonales">Datos del <br>alumno</h4>
+            <h4 id = "form__text__datosUbicacion">Datos de <br>ubicación</h4>
+            <h4 id = "form__text__ultimo">Último <br> paso</h4>
+        </div>
+    </div>
+    <form onkeydown="return event.key != 'Enter';" id = "form" action="">
+        <div class="form" >
+            <!--DATOS BOLETA--><!--
+            <div class="form__seccion">
+                <div class="facturacion__imagen">
+                    <img src="../img/cuentas nuevas.png" id="pago-imagen" class="form__img">
+                    <div class="inscripcion__boton boton--form boton--subir">
+                        <input type="file" accept="image/png, .jpeg, .jpg" enterkeyhint="done" id="file">
+                    </div>
+                    <div id="file-content" class="pago-notificacion"></div>
+                </div>
+                <div class="facturacion__form">
+                    <label class="form__label">Modalidad de pago</label> 
+                    <select class="form__input" id="pago">
+                        <option class="form__opcion">Depósito - Interbank</option>
+                        <option class="form__opcion">Depósito - BCP</option>
+                        <option class="form__opcion">Depósito - BBVA</option>
+                        <option class="form__opcion">Yape</option>
+                        <option class="form__opcion">Efectivo</option>
+                    </select>
+                    <label id = "labelNumeroOperacion" class="form__label">Número de operación del deposito</label> 
+                    <input type="text" class="form__input" enterkeyhint="done" maxlength="50" id="numeroOperacion">
+                    <label class="form__label">¿A nombre de quién va la boleta?</label> 
+                    <input type="text" class="form__input" enterkeyhint="done" maxlength="50" id="nombreBoleta">
+                    <label class="form__label">Tipo de documento</label> 
+                    <select id = "TipoDocumentoBoleta" class="form__input">
+                        <option class="form__opcion">D.N.I.</option>
+                        <option class="form__opcion">Carne de extranjería</option>
+                    </select>
+                    <label class="form__label">Documento</label>
+                    <input id = "documentoBoleta" type="number" maxlength="8" class="form__input" enterkeyhint="done" >
+                </div>
+            </div>
+            <!--DATOS PERSONALES--><!--
+            <div class="form__seccion">
+                <div class="personales__form">
+                    <label class="form__label">Nombres y Apellidos</label>
+                    <input id = "apellidoEstudiante" type="text" class="form__input" placeholder="Apellidos" enterkeyhint="done" >
+                    <input id = "nombreEstudiante" type="text" class="form__input input3" placeholder="Nombres" enterkeyhint="done">
+                    <label class="form__label">Fecha de nacimiento</label>
+                    <input id = "nacimientoEstudiante" type="date" class="form__input" enterkeyhint="done">
+                    <label class="form__label">Celular</label>
+                    <input id = "celularEstudiante" type="number" minlenht = "6"    maxlength="9" class="form__input" enterkeyhint="done">
+                    <label  class="form__label">Documentos</label>
+                    <select id = "tipoDocumentoEstudiante" class="form__input">
+                        <option class="form__opcion">D.N.I.</option> 
+                        <option class="form__opcion">Carné de extranjería</option>
+                    </select>
+                    <input id = "documentoEstudiante" type="number" maxlength="8" class="form__input input3" enterkeyhint="done">
+                </div>
+            </div>
+        <!--Datos de ubicación--><!--
+            <div class="form__seccion">
+                <div class="facturacion__form">
+                    <label class="form__label">Lugar de nacimiento</label>
+                    <input id = "lugarNacimientoEstudiante" type="text" class="form__input" enterkeyhint="done">
+                    <label class="form__label">Dirección domiciliaria</label>
+                    <input id = "direccionEstudiante" type="text" class="form__input" enterkeyhint="done">
+                    <label class="form__label">Correo electrónico</label>
+                    <input id = "correoEstudiante" type="email" class="form__input" enterkeyhint="done">
+                </div>
+            </div>
+        <!--Datos de plan--><!--
+            <div class="form__seccion">
+                <div class="facturacion__form">
+                    <h3 class="form__subs">Elige tu plan skala studio</h3>
+                    <label class="form__label">Modalidad</label>
+                    <select id = "modalidad" class="form__input">
+                        <option class="form__opcion">Virtual</option>
+                        <option class="form__opcion">Virtual plus</option>
+                        <option class="form__opcion">Semipresencial</option>
+                        <option class="form__opcion">Presencial</option>
+                        <option class="form__opcion">Presencial plus</option>
+                    </select>
+                    <label  id = "nivel__label" class="form__label">Nivel</label>
+                    <select id = "nivel" class="form__input">
+                        <option class="form__opcion" >Básico</option>
+                        <option class="form__opcion" >Intermedio</option>
+                        <option class="form__opcion" >Avanzado</option>
+                    </select>
+                    <label  class="form__label">Horario</label>
+                    <select id = "horario" class="form__input">
+                        <option class="form__opcion" >8:30 a 10:30pm L a V</option>
+                    </select>
+                    <label class="form__label">Fecha de inicio</label>
+                    <input id = "fechaInicio" type="date" class="form__input">
+                </div>
+            <!--Datos academicos y del familiar apoderado--><!--
+                <div class="facturacion__imagen">
+                    <h3>Datos académicos</h3>
+                    <label class="form__label label--margin">Institución de procedencia</label>
+                    <input type="text" id = "institucion" class="form__input input--margin" enterkeyhint="done">
+                    <h3>Datos del familiar apoderado</h3>
+                    <label class="form__label label--margin">Nombre y apellido del representante</label>
+                    <input type="text" id = "apellidoRepresentante" class="form__input input--margin" placeholder="Apellidos" enterkeyhint="done">
+                    <input type="text" id = "nombreRepresentante" class="form__input input--margin" placeholder="Nombres" enterkeyhint="done">
+                    <label class="form__label label--margin">Número del apoderado</label>
+                    <input type="number" id = "numeroRepresentante" class="form__input input--margin" placeholder="Número" enterkeyhint="done">
+                </div>
+            </div>
+        </div>
+        <div class="botones" id="botones">
+            <a id="anterior" class="form__boton boton--right" onclick="anterior()">Anterior</a>
+            <button type="submit" id="enviar" class="inscripcion__boton boton--enviar boton--form" value="Enviar">Enviar</button>
+            <a id="siguiente" class="form__boton boton--left" onclick="siguiente()">Siguiente</a>
+        </div>
+    </form>
+    <!--Loader de formulario final final final final ya me canse, tengo sueño--><!--
+    <div id = "carga" class = "carga">
+        <div class="carga__img">
+            <img id = "img__carga" class = "img__carga" src="../img/icono-web-lampara.ico" alt="">
+            <div id = "carga__efecto" class="carga__efecto"></div>
+        </div><br>
+        <div class = "carga__info">
+            <!--Regresar al principio-->
+            <!--Descargar tu comprobate--><!--
+            <p id = "texto__carga">Registrando</p>
+            <div id = "opciones__form" class="opciones__form">
+                <a href ="www.skalastudioarquitectura.com" class="container__boton--link">
+                    <div class="boton__link" id="open">regresar al inicio</div>
+                </a>
+              <a class="boton__descarga--a" onclick="generarPDF()"> 
+                    <div class="boton__descarga">
+                        Descargar constancia
+                        <img loading="lazy" class="boton__icono" src="../img/descarga.webp" alt="descarga">
+                    </div>
+                </a> 
+            </div>
+        </div>
+    </div>
+    <!--FInal del loader porque me llega, weno toy cansadito xd --><!--
+    <script src = "../js/scripts/variables.js"></script>
+    <script src = "../js/scripts/pago.js"></script>
+    <script src = "../js/scripts/botones.js"></script>
+    <script src = "../js/scripts/envio.js"></script>
+    <script src = "../js/scripts/modalidad.js"></script>
+    <script src = "../js/scripts/pdf.js"></script>
+    <script src = "../js/scripts/PoiretOne-normal.js"></script>
+    <script src = "../js/scripts/constancia.js"></script>-->
+</body>
+</html>
