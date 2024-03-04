@@ -1,0 +1,95 @@
+.bloque1{
+    background-image: url(../img/portada.webp);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-repeat: no-repeat;
+    align-items: flex-end;
+    justify-content: center;
+}
+.bloque1__imagen{
+    display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.preloader{
+    font-size: 1.4rem;
+    color:#fff;
+    position:absolute;
+    display:flex;
+    justify-content:center;
+    font-family:"PoiretOne";
+    height: 100px;
+    &:before{
+        content:"";
+        border:1.7px solid #ffff;    
+        width:30px;
+        height:55px;
+        border-radius:40px;
+        position:absolute;
+        top:30px;
+      }
+      
+    &:after{
+        content:"";
+        background-color:#fff;
+        width:22px;
+        height:22px;
+        border-radius:50%;
+        position:absolute;
+        animation-name:scroll;
+        animation-duration:2s;
+        animation-iteration-count: infinite;
+      }  
+  }
+  
+  @keyframes scroll
+  {
+    from{
+      top:70px;
+    }
+    to{
+      top:30px;
+      opacity:0;
+    }
+  }
+/*---------Bloque de bolitas--------------*/
+
+@media screen and (max-width: 440px){
+    .bloque1__imagen{
+        display: block;
+    }
+    
+    .bolitas{
+        top: 25px;
+    }
+}
+@media screen and (min-width:1500px){
+    .preloader{
+        font-size: 2rem;
+        height: 150px;
+        &:before{
+            border:1.7px solid #ffff;    
+            width:50px;
+            height:90px;
+            border-radius:40px;
+            top:40px;
+          }
+          
+        &:after{
+            width:45px;
+            height:45px;
+          }  
+      }
+    @keyframes scroll{
+        from{
+            top:80px;
+          }
+          to{
+            top:40px;
+            opacity:0;
+          }
+    }
+}
+/*--------Fin del bloque de bolitas--------*/
