@@ -4,8 +4,7 @@
     &__contenedor{
         display: flex;
         justify-content: space-around;
-        margin-left: auto;
-        margin-right: auto;
+        margin : 20px auto 100px auto;
         align-items: center;
         flex-wrap: wrap;
         width:80%;
@@ -15,6 +14,7 @@
     &__img{ 
         width: 100%;
         height: auto;
+        border-radius: 20px;
     }
     &__imagen{
         max-width:40%;

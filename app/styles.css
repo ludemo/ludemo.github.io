@@ -1250,7 +1250,8 @@ input, select {
 .inicio__contenedor {
   display: flex;
   justify-content: space-around;
-  margin: 20px auto 100px auto;
+  margin-left: auto;
+  margin-right: auto;
   align-items: center;
   flex-wrap: wrap;
   width: 80%;
@@ -1258,7 +1259,6 @@ input, select {
 .inicio__img {
   width: 100%;
   height: auto;
-  border-radius: 20px;
 }
 .inicio__imagen {
   max-width: 40%;
